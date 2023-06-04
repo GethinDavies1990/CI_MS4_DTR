@@ -71,6 +71,10 @@ body {
     border: 1px solid black !important;
 }
 
+.bg-blue {
+    background: #7FCBD8;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
