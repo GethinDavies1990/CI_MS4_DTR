@@ -1,0 +1,66 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "girls_tshirts",
+        "friendly_name": "Girls T Shirts"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "girls_hoodies",
+        "friendly_name": "Girls Hoodies"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "girls_sweatshirts",
+        "friendly_name": "Girls Sweatshirts"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "boys_tshirts",
+        "friendly_name": "Boys T Shirts"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "boys_hoodies",
+        "friendly_name": "Boys Hoodies"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "boys_sweatshirts",
+        "friendly_name": "Boys Sweatshirts"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.category",
+      "fields": {
+        "name": "caps_hats",
+        "friendly_name": "Caps & Hats"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.category",
+      "fields": {
+        "name": "bags",
+        "friendly_name": "Bags"
+      }
+    }
+  ]

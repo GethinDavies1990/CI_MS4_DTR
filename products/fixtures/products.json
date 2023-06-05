@@ -1,0 +1,22 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "01166",
+        "name": "Kids Sporty T-Shirt",
+        "description": "This item runs small in comparison to some other brands. Please check sizing before decoration.
+        Textured breathable fabric.
+        Self fabric bound collar.
+        Raglan sleeves.
+        Twin needle sleeves and hem.
+        Curved back hem.
+        Suitable for sublimation printing.",
+        "price": 53.99,
+        "category": 6,
+        "rating": 4.6,
+        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+        "image": "DP0709201205510679M.jpg"
+      }
+    }
+  ]
