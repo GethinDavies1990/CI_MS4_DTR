@@ -22,7 +22,7 @@ def product_detail(request, product_id):
     A view to show all product detail
     """
 
-    product = get_object_or404(Product, pk=product_id)
+    product = get_object_or_404(Product, pk=product_id)
 
     context = {
         'product': product,
