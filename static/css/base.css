@@ -75,6 +75,25 @@ body {
     background: #7FCBD8;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #fff;
+    z-index: -1;
+}
+
+/* Product Card */
+
+.background-green {
+    background: #7BC192;
+    color: #fff;
+    border-radius: 8px;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
