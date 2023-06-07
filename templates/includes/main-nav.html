@@ -17,10 +17,10 @@
                 Girls
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="girls-clothing-link">
-                <a href="" class="dropdown-item">T Shirts</a>
-                <a href="" class="dropdown-item">Hoodies</a>
-                <a href="" class="dropdown-item">Sweatshirts</a>
-                <a href="" class="dropdown-item">All Girls Clothing</a>
+                <a href="{% url 'products' %}?category=girls_tshirts" class="dropdown-item">T Shirts</a>
+                <a href="{% url 'products' %}?category=girls_hoodies" class="dropdown-item">Hoodies</a>
+                <a href="{% url 'products' %}?category=girls_sweatshirts" class="dropdown-item">Sweatshirts</a>
+                <a href="{% url 'products' %}?category=girls_tshirts,girls_hoodies,girls_sweatshirts" class="dropdown-item">All Girls Clothing</a>
             </div>
         </li>
 
@@ -29,10 +29,10 @@
                 Boys
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="boys-clothing-link">
-                <a href="" class="dropdown-item">T Shirts</a>
-                <a href="" class="dropdown-item">Hoodies</a>
-                <a href="" class="dropdown-item">Sweatshirts</a>
-                <a href="" class="dropdown-item">All Boys Clothing</a>
+                <a href="{% url 'products' %}?category=boys_tshirts" class="dropdown-item">T Shirts</a>
+                <a href="{% url 'products' %}?category=boys_hoodies" class="dropdown-item">Hoodies</a>
+                <a href="{% url 'products' %}?category=boys_sweatshirts" class="dropdown-item">Sweatshirts</a>
+                <a href="{% url 'products' %}?category=boys_tshirts,boys_hoodies,boys_sweatshirts" class="dropdown-item">All Boys Clothing</a>
             </div>
         </li>
 
@@ -41,8 +41,8 @@
                 Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
-                <a href="" class="dropdown-item">Hats &amp; Caps</a>
-                <a href="" class="dropdown-item">Bags</a>
+                <a href="{% url 'products' %}?category=caps_hats" class="dropdown-item">Hats &amp; Caps</a>
+                <a href="{% url 'products' %}?category=bags" class="dropdown-item">Bags</a>
             </div>
         </li>
     </ul>
