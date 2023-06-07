@@ -85,6 +85,16 @@ body {
     z-index: -1;
 }
 
+a.category-badge > span.badge {
+    background-color: #7BC192;
+    color: #fff;
+    border: #000;
+}
+
+a.category-badge > span.badge:hover {
+    background: #7FCBD8;
+}
+
 /* Product Card */
 
 .background-green {
