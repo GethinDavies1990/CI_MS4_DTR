@@ -27,9 +27,10 @@ SECRET_KEY = 'django-insecure-0z^ljh6#f3iuw-$1c0s!xihh+03rkg@gm=s4kg#$p0x%tu!q4t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu99.gitpod.io']
+ALLOWED_HOSTS = ['localhost']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu99.gitpod.io']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu99.gitpod.io']
 
 # Application definition
 
@@ -95,7 +96,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION =  'mandatory'
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
