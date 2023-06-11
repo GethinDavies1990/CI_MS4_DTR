@@ -29,7 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu99.gitpod.io']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu98.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu99.gitpod.io']
 
 # Application definition
 
@@ -157,7 +157,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 FREE_DELIVERY_THRESHOLD = 75
-STANDARD_DELIVERY_COST = 9.99
+STANDARD_DELIVERY_PERCENTAGE = 10
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
