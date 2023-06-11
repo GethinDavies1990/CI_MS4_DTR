@@ -42,6 +42,20 @@ body {
     color: white;
 }
 
+.btn-outline-green {
+    background: white;
+    color: #7BC192 !important;
+    border: 1px solid #7BC192 !important;
+}
+
+.btn-outline-green:hover,
+.btn-outline-green:active,
+.btn-outline-green:focus {
+    background: #7BC192 !important;
+    color: white !important;
+}
+
+
 .icon-green {
     color: #7BC192;
 }
