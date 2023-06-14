@@ -3,8 +3,8 @@ from django.contrib import messages
 
 from .forms import OrderForm
 
+
 def checkout(request):
-    """ A view to return the checkout page """
     bag = request.session.get('bag', {})
     if not bag:
         messages.error(request, "There's nothing in your bag at the moment")
@@ -16,4 +16,4 @@ def checkout(request):
         'order_form': order_form,
     }
 
-    return render(request, 'checkout/checkout.html')
+    return render(request, template, context)
