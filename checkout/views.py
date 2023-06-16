@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.conf import settings
 
 from .forms import OrderForm
-from bag.contextx import bag_contents
+from bag.contexts import bag_contents
 
 import stripe
 
@@ -21,16 +21,22 @@ def checkout(request):
     total = current_bag['grand_total']
     stripe_total = round(total * 100)
     stripe.api_key = stripe_secret_key
-    stripe.PaymentIntent.create(
+    intent = stripe.PaymentIntent.create(
         amount=stripe_total,
-        currency=settings.STRIPE_CURRENCY,)
+        currency=settings.STRIPE_CURRENCY,
+    )
 
     order_form = OrderForm()
+
+    if not stripe_public_key:
+        messages.warning(request, 'Stripe public key is missing. \
+            Did you forget to set your environment variable?')
+
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
-        'stripe_public_key': 'pk_test_51NA8mMJQY6CtcGzqlSTXKQ1MGEjojV7rkeuAo1hdnAyY7S3fbO0kju8weyQdcDjW1Y7nnJ1rFSpn9JVeAOwYMACJ00UUHhn0si',
-        'client_secret': 'test client secret',
+        'stripe_public_key': 'stripe_public_key',
+        'client_secret': 'intent.stripe_secret_key',
     }
 
     return render(request, template, context)
