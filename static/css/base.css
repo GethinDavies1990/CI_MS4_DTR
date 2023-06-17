@@ -1,3 +1,10 @@
+:root {
+    --main-color-cream: #F3E99F;
+    --main-color-red: #D91A1A;
+    --text-black: #000;
+    ;
+  }
+
 html {
     height: 100%;
 }
@@ -11,7 +18,15 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: 80px;
+}
+
+.bg-main {
+    background-color: var(--main-color-cream);
+}
+
+.bg-secondary {
+    background-color: var(--main-color-red);
 }
 
 /* from Bulma */
@@ -32,7 +47,7 @@ body {
 }
 
 .shop-now-button {
-    background: #7BC192;
+    background: var(--main-color-red);
     color: white;
     min-width: 260px;
 }
@@ -56,13 +71,13 @@ body {
 }
 
 
-.icon-green {
-    color: #7BC192;
+.icon-dark {
+    color: var(--text-black);
 }
 
-.icon-green:hover,
-.icon-green:active,
-.icon-green:focus {
+.icon-dark:hover,
+.icon-dark:active,
+.icon-dark:focus {
     color: #7FCBD8;
 }
 
