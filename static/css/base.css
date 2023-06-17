@@ -25,8 +25,8 @@ body {
     background-color: var(--main-color-cream);
 }
 
-.bg-secondary {
-    background-color: var(--main-color-red);
+.bg-red {
+    background-color: var(--main-color-red) !important;
 }
 
 /* from Bulma */
@@ -52,8 +52,8 @@ body {
     min-width: 260px;
 }
 
-.btn-green {
-    background: #7BC192;
+.btn-red {
+    background: var(--main-color-red);
     color: white;
 }
 
@@ -88,8 +88,8 @@ body {
 .btn-green:hover,
 .btn-green:active,
 .btn-green:focus {
-    background: #7FCBD8;
-    color: white;
+    background: var(--main-color-cream);
+    color: black;
 }
 
 .text-black {
