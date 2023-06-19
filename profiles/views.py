@@ -3,6 +3,6 @@ from django.shortcuts import render
 def profile(request):
     """ Display user's Profile """
     template = 'profiles/profile.html'
-    constext = {}
+    context = {}
 
     return render(request, template, context)
