@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: url('/media/hero.jpeg') no-repeat center center fixed;
+    background: url('/media/hero.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -27,6 +27,10 @@ body {
 
 .bg-red {
     background-color: var(--main-color-red) !important;
+}
+
+.home-page-box {
+    background-color: var(--main-color-cream);
 }
 
 /* from Bulma */
