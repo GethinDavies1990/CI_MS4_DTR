@@ -1,1 +1,1 @@
-web: python app.py
+web: gunicorn taco-taco_y_tequila.wsgi:application
