@@ -1,5 +1,5 @@
 """
-URL configuration for dynow_clothing project.
+URL configuration for taco_y_tequila project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/

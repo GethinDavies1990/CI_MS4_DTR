@@ -1,5 +1,5 @@
 """
-ASGI config for dynow_clothing project.
+ASGI config for taco_y_tequila project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dynow_clothing.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'taco_y_tequila.settings')
 
 application = get_asgi_application()

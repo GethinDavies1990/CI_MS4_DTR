@@ -1,5 +1,5 @@
 """
-WSGI config for dynow_clothing project.
+WSGI config for taco_y_tequila project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dynow_clothing.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'taco_y_tequila.settings')
 
 application = get_wsgi_application()
