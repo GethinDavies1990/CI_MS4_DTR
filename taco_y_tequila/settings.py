@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-0z^ljh6#f3iuw-$1c0s!xihh+03rkg@gm=s4kg#$p0x%tu!q4t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost',
+'8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu100.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu99.gitpod.io']
@@ -167,6 +168,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
