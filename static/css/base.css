@@ -1,5 +1,5 @@
 :root {
-    --main-color-cream: #F3E99F;
+    --main-color-cream: yellow;
     --main-color-red: #D91A1A;
     --text-black: #000;
     ;
@@ -170,7 +170,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
+.allauth-form-inner-content input[type='submit']:hover {
 	color: #fff;
     background-color: #222;
     border-color: #222;
