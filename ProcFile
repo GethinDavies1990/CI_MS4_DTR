@@ -1,1 +1,1 @@
-web: gunicorn taco-taco_y_tequila.wsgi:application
+web: gunicorn taco_y_tequila.wsgi:application
