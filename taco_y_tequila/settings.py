@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['taco-y-tequila.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['taco-y-tequila.herokuapp.com', 'localhost', 'https://taco-y-tequila-139255e4fb81.herokuapp.com/']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu99.gitpod.io']
