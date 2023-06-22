@@ -30,7 +30,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['https://taco-y-tequila-6c36dccf242c.herokuapp.com', 'localhost']
 
-heroku config:set DJANGO_ALLOWED_HOSTS = 'https://taco-y-tequila-6c36dccf242c.herokuapp.com'
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu99.gitpod.io']
