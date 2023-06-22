@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://taco-y-tequila-6c36dccf242c.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['taco-y-tequila-6c36dccf242c.herokuapp.com', 'localhost']
 
 
 CSRF_TRUSTED_ORIGINS = [
