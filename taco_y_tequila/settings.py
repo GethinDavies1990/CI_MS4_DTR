@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-0z^ljh6#f3iuw-$1c0s!xihh+03rkg@gm=s4kg#$p0x%tu!q4t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['taco-y-tequila.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['https://taco-y-tequila-6c36dccf242c.herokuapp.com/', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu99.gitpod.io']
