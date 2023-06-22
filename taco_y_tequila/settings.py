@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '*', 'taco-y-tequila-6c36dccf242c.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = [ '*', 'taco-y-tequila-6c36dccf242c.herokuapp.com', 'localhost', '8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu100.gitpod.io']
 
 
 CSRF_TRUSTED_ORIGINS = [
@@ -221,3 +221,13 @@ DEFAULT_FROM_EMAIL = 'gethindavies1990@gmail.com'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+if not User.objects.filter(is_superuser=True).first():
+    user = User.objects.create(
+        username = 'admin',
+        email = 'admin@mywebsite.com',
+        is_superuser = True,
+        ...
+    )
+    user.set_password('some password')
+    user.save()
