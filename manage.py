@@ -24,10 +24,11 @@ if __name__ == '__main__':
 
 if not User.objects.filter(is_superuser=True).first():
     user = User.objects.create(
-        username = 'admin',
+        username = 'superadmin',
         email = 'admin@mywebsite.com',
         is_superuser = True,
         ...
     )
-    user.set_password('some password')
+    user.set_password('password')
     user.save()
+
