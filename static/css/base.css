@@ -277,13 +277,14 @@ footer > .text-small {
 }
 
 footer > a {
-    color: inherit;
+    color: var(--block-main);
     text-decoration: none;
     transition: all 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 footer > a:hover, a:focus {
-    text-decoration: none;
+    color: var(--main-color-red);
 }
 
 footer > .form-control {
