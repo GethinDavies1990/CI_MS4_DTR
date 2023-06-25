@@ -13,3 +13,11 @@ def meet_the_team(request):
 
     return render(request, 'meet_the_team.html', context)
 
+
+def how_we_started(request):
+    """
+    A view to render the how we started page
+    """
+
+    return render(request, 'how_we_started.html')
+
