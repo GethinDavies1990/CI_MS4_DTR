@@ -13,36 +13,45 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="girls-clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Girls
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="meal-kits-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Meal Kits
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="girls-clothing-link">
-                <a href="{% url 'products' %}?category=girls_tshirts" class="dropdown-item">T Shirts</a>
-                <a href="{% url 'products' %}?category=girls_hoodies" class="dropdown-item">Hoodies</a>
-                <a href="{% url 'products' %}?category=girls_sweatshirts" class="dropdown-item">Sweatshirts</a>
-                <a href="{% url 'products' %}?category=girls_tshirts,girls_hoodies,girls_sweatshirts" class="dropdown-item">All Girls Clothing</a>
+            <div class="dropdown-menu border-0" aria-labelledby="meal-kits-link">
+                <a href="{% url 'products' %}?category=girls_tshirts" class="dropdown-item">Mild</a>
+                <a href="{% url 'products' %}?category=girls_hoodies" class="dropdown-item">Hot</a>
+                <a href="{% url 'products' %}?category=girls_sweatshirts" class="dropdown-item">Very Hot</a>
+                <a href="{% url 'products' %}?category=girls_tshirts,girls_hoodies,girls_sweatshirts" class="dropdown-item">All Meal Kits</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="boys-clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Boys
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="drinks-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Drinks
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="boys-clothing-link">
-                <a href="{% url 'products' %}?category=boys_tshirts" class="dropdown-item">T Shirts</a>
-                <a href="{% url 'products' %}?category=boys_hoodies" class="dropdown-item">Hoodies</a>
-                <a href="{% url 'products' %}?category=boys_sweatshirts" class="dropdown-item">Sweatshirts</a>
-                <a href="{% url 'products' %}?category=boys_tshirts,boys_hoodies,boys_sweatshirts" class="dropdown-item">All Boys Clothing</a>
+            <div class="dropdown-menu border-0" aria-labelledby="drinks-link">
+                <a href="{% url 'products' %}?category=boys_tshirts" class="dropdown-item">Tequila</a>
+                <a href="{% url 'products' %}?category=boys_hoodies" class="dropdown-item">Soft Drinks</a>
+                <a href="{% url 'products' %}?category=boys_sweatshirts" class="dropdown-item">Beers</a>
+                <a href="{% url 'products' %}?category=boys_tshirts,boys_hoodies,boys_sweatshirts" class="dropdown-item">All Drinks</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white" href="#" id="accessories-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Accessories
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="spices-sauces-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sauces &amp; Spices
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
-                <a href="{% url 'products' %}?category=caps_hats" class="dropdown-item">Hats &amp; Caps</a>
-                <a href="{% url 'products' %}?category=bags" class="dropdown-item">Bags</a>
+            <div class="dropdown-menu border-0" aria-labelledby="spices-sauces-link">
+                <a href="{% url 'products' %}?category=caps_hats" class="dropdown-item">Sauces</a>
+                <a href="{% url 'products' %}?category=bags" class="dropdown-item">Spices</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="events-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Event's
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="events-link">
+                <a href="{% url 'products' %}?category=boys_tshirts" class="dropdown-item">Book a Event</a>
             </div>
         </li>
     </ul>
