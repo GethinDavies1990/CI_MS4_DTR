@@ -136,13 +136,13 @@ body {
 }
 
 a.category-badge > span.badge {
-    background-color: #7BC192;
+    background-color: var(--main-color-red);
     color: #fff;
     border: #000;
 }
 
 a.category-badge > span.badge:hover {
-    background: #7FCBD8;
+    background: var(--main-color);
 }
 
 .btt-button {
@@ -270,6 +270,7 @@ input[name='q']::placeholder {
 
 .footer {
     padding-top: 20px;
+    width: 100%;
 }
 
 footer > .text-small {
