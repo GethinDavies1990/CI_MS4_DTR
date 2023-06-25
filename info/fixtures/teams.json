@@ -3,8 +3,9 @@
       "model": "info.Teams",
       "fields": {
         "full_name": "Tony",
-        "about": "Taco y Tequila Fajitas Meal Kit (Hot)",
-        "image": "fajitas-hot.webp"
+        "role": "Head Chef",
+        "about": "Tony is our talented head chef hailing from Mexico. With over 10 years of experience in the culinary world, Tony brings the vibrant flavors of authentic Mexican cuisine to our restaurant. His passion for cooking and deep-rooted knowledge of traditional Mexican recipes have made him an invaluable asset to our team. Tony's creativity shines through in every dish he creates, combining traditional techniques with his own modern twist. His commitment to using fresh, locally-sourced ingredients ensures that every bite is bursting with flavor. Whether it's crafting mouthwatering tacos, sizzling fajitas, or rich and hearty mole sauce, Tony's culinary expertise never fails to impress our patrons. Come and experience the authentic taste of Mexico, expertly prepared by Tony and his talented team.",
+        "image": "chef-tony.jpg"
       }
     }
   ]

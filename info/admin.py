@@ -6,6 +6,7 @@ from .models import Teams
 class TeamsAdmin(admin.ModelAdmin):
     list_display = (
         'full_name',
+        'role',
         'about',
         'image',
     )

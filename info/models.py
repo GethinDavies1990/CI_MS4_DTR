@@ -6,6 +6,7 @@ class Teams(models.Model):
         verbose_name_plural = 'Teams'
 
     full_name = models.CharField(max_length=254)
+    role = models.CharField(max_length=254, null=True)
     about = models.TextField()
     image = models.ImageField(null=True, blank=True)
 
