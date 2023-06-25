@@ -3,6 +3,19 @@
       "pk": 1,
       "model": "products.product",
       "fields": {
+        "sku": "faj-hot",
+        "name": "Taco y Tequila Fajitas Meal Kit (Hot)",
+        "description": "Introducing our Kids Sport T-Shirt, the ultimate choice for active young athletes. Made with textured breathable fabric, it keeps them cool and dry. The self-fabric bound collar ensures a secure fit, while raglan sleeves provide unrestricted movement. With twin needle sleeves and hem, it's durable for rough play. The curved back hem adds a stylish touch. Suitable for sublimation printing, it can be personalized. Give your child the comfort, functionality, and style they need to excel in sports with our Kids Sport T-Shirt.",
+        "price": 6.99,
+        "category": 3,
+        "rating": 4.8,
+        "image": "fajitas-hot"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
         "sku": "01166",
         "name": "Kids Sporty T-Shirt",
         "description": "Introducing our Kids Sport T-Shirt, the ultimate choice for active young athletes. Made with textured breathable fabric, it keeps them cool and dry. The self-fabric bound collar ensures a secure fit, while raglan sleeves provide unrestricted movement. With twin needle sleeves and hem, it's durable for rough play. The curved back hem adds a stylish touch. Suitable for sublimation printing, it can be personalized. Give your child the comfort, functionality, and style they need to excel in sports with our Kids Sport T-Shirt.",
@@ -12,44 +25,6 @@
         "image": "01166.jpg"
       }
     },
-    {
-    "pk": 2,
-      "model": "products.product",
-      "fields": {
-        "sku": "01183",
-        "name": "Kids Regent T-Shirt",
-        "description": "Introducing our Kids T-Shirt, a comfortable and durable choice for your little ones. Please note: it runs small compared to other brands, so check sizing before decoration. Featuring an elastane ribbed collar, taped neck, and twin needle stitching. Unbranded size label at neckline. Perfect for everyday wear or customization. Get the perfect fit and style with our Kids T-Shirt.",
-        "price": 15.99,
-        "category": 4,
-        "rating": 4.6,
-        "image": "01183.jpg"
-      }
-    },
-    {
-      "pk": 3,
-        "model": "products.product",
-        "fields": {
-          "sku": "01400",
-          "name": "Kids Miles Striped T-Shirt",
-          "description": "Introducing our Striped Miles T-Shirt, a trendy and comfortable choice for kids. Please note: it runs small compared to other brands, so check sizing before decoration. With a self-fabric neckline, taped neck, and twin needle sleeves. Unbranded size label at neckline. Style, comfort, and durability in one. Get the perfect fit with our Striped Miles T-Shirt.",
-          "price": 15.99,
-          "category": 4,
-          "rating": 4.8,
-          "image": "01400.jpg"
-        }
-      },
-      {
-        "pk": 4,
-          "model": "products.product",
-          "fields": {
-            "sku": "01719",
-            "name": "Kids Classico V-Neck T-Shirt",
-            "description": "Introducing our Kids Classico V-Neck T-Shirt, a stylish and breathable choice. Note: it runs small compared to other brands, so check sizing before decoration. Made with breathable polyester mesh and featuring a V neckline with contrast trim. Forward shoulder seams and contrast mesh side panels provide comfort and ventilation. With twin needle stitching for durability. Style, comfort, and durability in one. Get the perfect fit with our Kids Classico V-Neck T-Shirt.",
-            "price": 25.99,
-            "category": 4,
-            "rating": 3.2,
-            "image": "01719.jpg"
-          }
-        }
+
 
   ]
