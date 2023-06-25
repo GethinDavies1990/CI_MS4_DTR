@@ -17,6 +17,17 @@ def book_event(request):
         day = reques.POST.get('day')
         if event_type == None:
             messages.warning(request, "Please select an event type!")
+            return redirect('book_event')
+
+        request.session['day'] = day
+        request.session['event_type'] = event_type
+
+        return redirect('eventBooked')
+
+    return render(request, 'book_event.html', {
+        'weekdays':weekdays,
+        'validateWeekdays': validateWeekdays,
+    })
 
 
 
