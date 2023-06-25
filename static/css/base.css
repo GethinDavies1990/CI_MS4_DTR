@@ -92,7 +92,7 @@ body {
 .icon-dark:hover,
 .icon-dark:active,
 .icon-dark:focus {
-    color: #7FCBD8;
+    color: var(--main-color-red);
 }
 
 
@@ -115,7 +115,7 @@ body {
 }
 
 .bg-blue {
-    background: #7FCBD8;
+    background: var(--block-main);
 }
 
 .overlay {
@@ -211,7 +211,7 @@ input[name='q']::placeholder {
 }
 
 .toast-capper {
-    height: 2px;
+    height: 5px;
 }
 
 /* Product Card */
