@@ -1,7 +1,8 @@
 :root {
-    --main-color-cream: yellow;
-    --main-color-red: #D91A1A;
-    --text-black: #000;
+    --main-color: #F2BE22;
+    --main-color-red: #F24C3D;
+    --text-main: #1B365C;
+    --block-main: #1B365C;
     ;
   }
 
@@ -22,7 +23,11 @@ body {
 }
 
 .bg-main {
-    background-color: var(--main-color-cream);
+    background-color: var(--block-main);
+}
+
+.top-nav {
+    background-color: var(--main-color);
 }
 
 .bg-red {
@@ -30,7 +35,8 @@ body {
 }
 
 .home-page-box {
-    background-color: var(--main-color-cream);
+    background-color: var(--block-main);
+    color: #fff;
 }
 
 /* from Bulma */
@@ -61,22 +67,22 @@ body {
     color: white;
 }
 
-.btn-outline-green {
+.btn-outline {
     background: white;
     color: #7BC192 !important;
     border: 1px solid #7BC192 !important;
 }
 
-.btn-outline-green:hover,
-.btn-outline-green:active,
-.btn-outline-green:focus {
-    background: #7BC192 !important;
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus {
+    background: var(--main-color-red) !important;
     color: white !important;
 }
 
 
 .icon-dark {
-    color: var(--text-black);
+    color: var(--text-main);
 }
 
 .icon-dark:hover,
@@ -92,15 +98,15 @@ body {
 .btn-green:hover,
 .btn-green:active,
 .btn-green:focus {
-    background: var(--main-color-cream);
+    background: var(--main-color);
     color: black;
 }
 
-.text-black {
+.text-main {
     color: #000 !important;
 }
 
-.border-black {
+.border-main {
     border: 1px solid black !important;
 }
 
