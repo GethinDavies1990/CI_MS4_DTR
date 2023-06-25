@@ -73,7 +73,7 @@ body {
 
 .btn-outline {
     background: white;
-    color: #7BC192 !important;
+    color: var(--main-color-red) !important;
     border: 1px solid #7BC192 !important;
 }
 
@@ -99,9 +99,9 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-green:hover,
-.btn-green:active,
-.btn-green:focus {
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus {
     background: var(--main-color);
     color: black;
 }
