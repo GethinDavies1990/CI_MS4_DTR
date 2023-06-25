@@ -9,7 +9,7 @@
         "price": 6.99,
         "category": 3,
         "rating": 4.8,
-        "image": "fajitas-hot"
+        "image": "fajitas-hot.webp"
       }
     },
     {
@@ -22,9 +22,9 @@
         "price": 17.99,
         "category": 4,
         "rating": 4.2,
-        "image": "01166.jpg"
+        "image": "fajitas-medium.webp"
       }
-    },
+    }
 
 
   ]
