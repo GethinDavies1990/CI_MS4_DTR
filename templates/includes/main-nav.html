@@ -17,10 +17,11 @@
                 Meal Kits
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="meal-kits-link">
-                <a href="{% url 'products' %}?category=girls_tshirts" class="dropdown-item">Mild</a>
-                <a href="{% url 'products' %}?category=girls_hoodies" class="dropdown-item">Hot</a>
-                <a href="{% url 'products' %}?category=girls_sweatshirts" class="dropdown-item">Very Hot</a>
-                <a href="{% url 'products' %}?category=girls_tshirts,girls_hoodies,girls_sweatshirts" class="dropdown-item">All Meal Kits</a>
+                <a href="{% url 'products' %}?category=mealkits_mild" class="dropdown-item">Mild</a>
+                <a href="{% url 'products' %}?category=mealkits_medium" class="dropdown-item">Medium</a>
+                <a href="{% url 'products' %}?category=mealkits_hot" class="dropdown-item">Hot</a>
+                <a href="{% url 'products' %}?category=mealkits_veryhot" class="dropdown-item">Very Hot</a>
+                <a href="{% url 'products' %}?category=mealkits_mild,mealkits_medium,mealkits_hot,mealkits_veryhot" class="dropdown-item">All Meal Kits</a>
             </div>
         </li>
 
@@ -29,10 +30,10 @@
                 Drinks
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="drinks-link">
-                <a href="{% url 'products' %}?category=boys_tshirts" class="dropdown-item">Tequila</a>
-                <a href="{% url 'products' %}?category=boys_hoodies" class="dropdown-item">Soft Drinks</a>
-                <a href="{% url 'products' %}?category=boys_sweatshirts" class="dropdown-item">Beers</a>
-                <a href="{% url 'products' %}?category=boys_tshirts,boys_hoodies,boys_sweatshirts" class="dropdown-item">All Drinks</a>
+                <a href="{% url 'products' %}?category=drinks_tequila" class="dropdown-item">Tequila</a>
+                <a href="{% url 'products' %}?category=drinks_softdrinks" class="dropdown-item">Soft Drinks</a>
+                <a href="{% url 'products' %}?category=drinks_beers" class="dropdown-item">Beers</a>
+                <a href="{% url 'products' %}?category=drinks_tequila,drinks_softdrinks,drinks_beers" class="dropdown-item">All Drinks</a>
             </div>
         </li>
 
@@ -41,8 +42,8 @@
                 Sauces &amp; Spices
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="spices-sauces-link">
-                <a href="{% url 'products' %}?category=caps_hats" class="dropdown-item">Sauces</a>
-                <a href="{% url 'products' %}?category=bags" class="dropdown-item">Spices</a>
+                <a href="{% url 'products' %}?sauces" class="dropdown-item">Sauces</a>
+                <a href="{% url 'products' %}?spices" class="dropdown-item">Spices</a>
             </div>
         </li>
 
