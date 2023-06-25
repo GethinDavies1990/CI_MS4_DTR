@@ -1,0 +1,10 @@
+[
+    {
+      "model": "info.Teams",
+      "fields": {
+        "full_name": "Tony",
+        "about": "Taco y Tequila Fajitas Meal Kit (Hot)",
+        "image": "fajitas-hot.webp"
+      }
+    }
+  ]

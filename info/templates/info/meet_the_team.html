@@ -1,1 +1,99 @@
-<h1>TEST</h1>
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Products</h2>
+            {% for c in current_categories %}
+                <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                    <span class="p-2 mt-3 mr-2 badge rounded-pill">{{ c.friendly_name }}</span>
+                </a>
+            {% endfor %}
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="product-container col-10 offset-1">
+            <div class="row">
+                {% for team in teams %}
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card h-100 border-0 product-card">
+                            {% if teams.image %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid" src="{{ team.image.url }}" alt="{{ product.name }}">
+                            </a>
+                            {% else %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no-image.jpg" alt="{{ product.name }}">
+                            </a>
+                            {% endif %}
+                            <div class="card-body pb-0 product-card">
+                                <p class="mb-0">{{ product.name }}</p>
+                            </div>
+                            <div class="card-footer pt-0 border-0 text-left">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                                        <div class="product-card-block product-card-block-blue">
+                                            {% if product.category %}
+                                            <p class="small mt-1 mb-1">
+                                                <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-white mr-1 mt-1 mb-1">
+                                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                                </a>
+                                            </p>
+                                        </div>
+                                        {% endif %}
+                                        <div class="product-card-block product-card-block-red">
+                                        {% if product.rating %}
+                                            <small class="text-white"><i class="fa-solid fa-pepper-hot mr-1 mt-1"></i></i>{{ product.rating }} / 5</small>
+                                        {% else %}
+                                            <small class="text-white">No Rating</small>
+                                        {% endif %}
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% if forloop.counter|divisibleby:1 %}
+                        <div class="col-12 d-sm-none mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:2 %}
+                        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:3 %}
+                        <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:4 %}
+                        <div class="col-12 d-none d-xl-block mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="btt-button shadow-sm rounded-0 border border-black">
+    <a class="btt-link d-flex h-100">
+        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+    </a>
+</div>
+{% endblock %}
