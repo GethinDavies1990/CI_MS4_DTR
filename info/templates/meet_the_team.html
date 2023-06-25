@@ -10,7 +10,11 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay">
-    <h1>{{ teams }}</h1>
-</div>
+{% for team in teams %}
+  <div>
+    <h2>{{ team.full_name }}</h2>
+    <p>{{ team.about }}</p>
+    <img src="{{ team.image.url }}" alt="{{ team.full_name }}" width="200">
+  </div>
+{% endfor %}
 {% endblock %}
