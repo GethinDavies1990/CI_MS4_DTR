@@ -4,6 +4,8 @@ from .models import Events
 from profiles.models import UserProfile
 from django.contrib import messages
 
+strdeltatime = ''
+date = ''
 
 def book_event(request):
     """
@@ -205,7 +207,7 @@ def valid_weekday(days):
 def is_weekday_valid(x):
     validate_weekdays = []
     for j in x:
-        if Appointment.objects.filter(day=j).count() < 10:
+        if Events.objects.filter(day=j).count() < 10:
             validate_weekdays.append(j)
     return validate_weekdays
 

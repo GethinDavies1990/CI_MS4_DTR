@@ -1,6 +1,6 @@
 from django.db import models
 from datetime import datetime
-info/templates/meet_the_team.html
+from profiles.models import UserProfile
 
 SERVICE_CHOICES = (
     ("Fajita Party", "Fajita Party"),
@@ -13,7 +13,7 @@ TIME_CHOICES = (
 )
 
 class Events(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE, null=True, blank=True)
     event_type = models.CharField(max_length=50, choices=SERVICE_CHOICES, default="Fajita Party")
     day = models.DateField(default=datetime.now)
     time = models.CharField(max_length=10, choices=TIME_CHOICES, default="5.30 PM")

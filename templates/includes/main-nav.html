@@ -48,11 +48,11 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="#" id="events-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'book_event' %}" id="events-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Event's
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="events-link">
-                <a href="{% url 'products' %}?category=boys_tshirts" class="dropdown-item">Book a Event</a>
+                <a href="{% url 'book_event' %}" class="dropdown-item">Book a Event</a>
             </div>
         </li>
     </ul>
