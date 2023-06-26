@@ -10,7 +10,7 @@ def book_event(request):
     Book event function,
     """
     weekdays = valid_weekday(60)
-    validate_weekdays =is_weekday_valid(weekdays)
+    validate_weekdays = is_weekday_valid(weekdays)
 
     if request.method == 'POST':
         event_type = request.POST.get('event_type')
@@ -42,7 +42,7 @@ def event_booked(request):
     day = request.session.get('day')
     event_type = request.session.get('event_type')
 
-    hour = checkTime(times, day)
+    hour = check_time(times, day)
     if request.method == 'POST':
         time = request.POST.get('time')
         date = day_to_weekday(day)
@@ -184,5 +184,45 @@ def staff_panel(request):
     })
 
 
+def day_to_weekday(x):
+    z = datetime.strptime(x, "%d-%m-%Y")
+    y = z.strftime('%A')
+    return y
 
 
+def valid_weekday(days):
+    #Loop days you want in the next 21 days:
+    today = datetime.now()
+    weekdays = []
+    for i in range (0, days):
+        x = today + timedelta(days=i)
+        y = x.strftime('%A')
+        if y =='Thursday' or date == 'Friday' or date =='Saturday' or date == 'Sunday':
+            weekdays.append(x.strftime('%Y-%m-%d'))
+    return weekdays
+
+
+def is_weekday_valid(x):
+    validate_weekdays = []
+    for j in x:
+        if Appointment.objects.filter(day=j).count() < 10:
+            validate_weekdays.append(j)
+    return validate_weekdays
+
+def check_time(times, day):
+    #Only show the time of the day that has not been selected before:
+    x = []
+    for k in times:
+        if Events.objects.filter(day=day, time=k).count() < 1:
+            x.append(k)
+    return x
+
+def check_edit_time(times, day, id):
+    #Only show the time of the day that has not been selected before:
+    x = []
+    event = Events.objects.get(pk=id)
+    time = event.time
+    for k in times:
+        if Events.objects.filter(day=day, time=k).count() < 1 or time == k:
+            x.append(k)
+    return x
