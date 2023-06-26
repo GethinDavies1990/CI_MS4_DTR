@@ -85,6 +85,35 @@ def userPanel(request):
     })
 
 
+def userUpdateEvent(request, id):
+    event = Events.objects.get(pk=id)
+    userdatepicked = event.day
+    today = datetime.today()
+    minDate = today.strftime('%d-%m-%Y')
+
+    delta24 = (userdatepicked).strftime('%Y-%m-%d') >= (today + timedelta(days=1)).strftime('%Y-%m-%d')
+    weekdays = validWeekday(22)
+
+    #Only show the days that are not full:
+    validateWeekdays = isWeekdayValid(weekdays)
+
+
+    if request.method == 'POST':
+        event_type = request.POST.get('event_type')
+        day = request.POST.get('day')
+
+        request.session['day'] = day
+        request.session['event_type'] = event_type
+
+        return redirect('userUpdateEventSubmit', id=id)
+
+
+    return render(request, 'user_update_event.html', {
+            'weekdays':weekdays,
+            'validateWeekdays':validateWeekdays,
+            'delta24': delta24,
+            'id': id,
+        })
 
 
 
