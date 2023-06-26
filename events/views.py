@@ -170,4 +170,19 @@ def user_update_event_submit(request, id):
     })
 
 
+def staff_panel(request):
+    today = datetime.today()
+    min_date = today.strftime('%d-%m-%Y')
+    deltatime = today + timedelta(days=21)
+    strdeltatime = deltatime.strftime('%d-%m-%Y')
+    max_date = strdeltatime
+    #Only show the Events 21 days from today
+    items = Events.objects.filter(day__range=[min_date, max_date]).order_by('day', 'time')
+
+    return render(request, 'staff_panel.html', {
+        'items':items,
+    })
+
+
+
 
