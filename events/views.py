@@ -76,4 +76,15 @@ def eventBooked(request):
     })
 
 
+def userPanel(request):
+    user = request.user
+    appointments = Events.objects.filter(user=user).order_by('day', 'time')
+    return render(request, 'userPanel.html', {
+        'user':user,
+        'events':events,
+    })
+
+
+
+
 
