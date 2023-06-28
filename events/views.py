@@ -9,6 +9,7 @@ strdeltatime = ''
 date = ''
 
 
+@login_required
 def book_event(request):
     """
     Book event function,
