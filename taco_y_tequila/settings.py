@@ -28,10 +28,12 @@ SECRET_KEY = 'django-insecure-0z^ljh6#f3iuw-$1c0s!xihh+03rkg@gm=s4kg#$p0x%tu!q4t
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost',
-'8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu100.gitpod.io']
+'8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu100.gitpod.io',
+'8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu101.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu100.gitpod.io']
+    'https://8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu100.gitpod.io',
+    'https://8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu101.gitpod.io']
 
 # Application definition
 
