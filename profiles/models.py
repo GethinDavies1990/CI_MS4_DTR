@@ -8,7 +8,7 @@ from django_countries.fields import CountryField
 
 class UserProfile(models.Model):
     """
-    A user profile for maintaining defualt
+    A user profile for maintaining default
     delivery information and order history
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -21,7 +21,7 @@ class UserProfile(models.Model):
     default_country = CountryField(blank_label='Country', null=True, blank=True)
 
     def __str__(self):
-        return self.user.username
+        return self.user.username if self.user else ''
 
 
 @receiver(post_save, sender=User)
@@ -31,5 +31,5 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
     """
     if created:
         UserProfile.objects.create(user=instance)
-    # Exsisting users: just save profile
+    # Existing users: just save profile
     instance.userprofile.save()
