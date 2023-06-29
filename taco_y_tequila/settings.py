@@ -31,7 +31,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['localhost',
 '8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu100.gitpod.io',
 '8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu101.gitpod.io',
-'taco-y-tequila.herokuapp.com',]
+'taco-y-tequila-c6ff831b9a3a.herokuapp.com',]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-gethindavies19-cims4dtr-g8g3rbb7xpp.ws-eu100.gitpod.io',
