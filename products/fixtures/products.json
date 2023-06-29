@@ -1,30 +1,28 @@
 [
-    {
-      "pk": 1,
-      "model": "products.product",
-      "fields": {
-        "sku": "faj-hot",
-        "name": "Taco y Tequila Fajitas Meal Kit (Hot)",
-        "description": "Introducing our Kids Sport T-Shirt, the ultimate choice for active young athletes. Made with textured breathable fabric, it keeps them cool and dry. The self-fabric bound collar ensures a secure fit, while raglan sleeves provide unrestricted movement. With twin needle sleeves and hem, it's durable for rough play. The curved back hem adds a stylish touch. Suitable for sublimation printing, it can be personalized. Give your child the comfort, functionality, and style they need to excel in sports with our Kids Sport T-Shirt.",
-        "price": 6.99,
-        "category": 3,
-        "rating": 4.8,
-        "image": "fajitas-hot.webp"
-      }
-    },
-    {
-      "pk": 2,
-      "model": "products.product",
-      "fields": {
-        "sku": "01166",
-        "name": "Kids Sporty T-Shirt",
-        "description": "Introducing our Kids Sport T-Shirt, the ultimate choice for active young athletes. Made with textured breathable fabric, it keeps them cool and dry. The self-fabric bound collar ensures a secure fit, while raglan sleeves provide unrestricted movement. With twin needle sleeves and hem, it's durable for rough play. The curved back hem adds a stylish touch. Suitable for sublimation printing, it can be personalized. Give your child the comfort, functionality, and style they need to excel in sports with our Kids Sport T-Shirt.",
-        "price": 17.99,
-        "category": 4,
-        "rating": 4.2,
-        "image": "fajitas-medium.webp"
-      }
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "faj-hot",
+      "name": "Taco y Tequila Fajitas Meal Kit (Hot)",
+      "description": "Introducing our Kids Sport T-Shirt, the ultimate choice for active young athletes. Made with textured breathable fabric, it keeps them cool and dry. The self-fabric bound collar ensures a secure fit, while raglan sleeves provide unrestricted movement. With twin needle sleeves and hem, it's durable for rough play. The curved back hem adds a stylish touch. Suitable for sublimation printing, it can be personalized. Give your child the comfort, functionality, and style they need to excel in sports with our Kids Sport T-Shirt.",
+      "price": 6.99,
+      "category": 3,
+      "spice_rating": 4.8,
+      "image": "fajitas-hot.webp"
     }
-
-
-  ]
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "01166",
+      "name": "Kids Sporty T-Shirt",
+      "description": "Introducing our Kids Sport T-Shirt, the ultimate choice for active young athletes. Made with textured breathable fabric, it keeps them cool and dry. The self-fabric bound collar ensures a secure fit, while raglan sleeves provide unrestricted movement. With twin needle sleeves and hem, it's durable for rough play. The curved back hem adds a stylish touch. Suitable for sublimation printing, it can be personalized. Give your child the comfort, functionality, and style they need to excel in sports with our Kids Sport T-Shirt.",
+      "price": 17.99,
+      "category": 4,
+      "spice_rating": 4.2,
+      "image": "fajitas-medium.webp"
+    }
+  }
+]
