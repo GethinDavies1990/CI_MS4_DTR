@@ -1,0 +1,1 @@
+media/hero-vid.mov filter=lfs diff=lfs merge=lfs -text
