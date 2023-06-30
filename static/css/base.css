@@ -2,9 +2,12 @@
     --main-color: #cce293;
     --main-color-red: #509bb9;
     --text-main: #1B365C;
-    --block-main: #1B365C;
-    ;
+    --block-main: #b7c2ec;
   }
+
+p {
+    font-family: 'Comfortaa', cursive;
+}
 
 html {
     height: 100%;
@@ -60,7 +63,7 @@ body {
 }
 
 .logo-font {
-    font-family: 'Mansalva', cursive;
+    font-family: 'Paytone One', sans-serif;
 }
 
 .main-logo-link {
