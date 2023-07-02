@@ -62,3 +62,57 @@ The apps are described as follows
 - products (part of the original Boutique Ado project): This app contains functionality regarding a product.
 - profiles (part of the original Boutique Ado project): This app contains functionality regarding a users profile and order history
 
+To complement the apps there are
+- taco_y_tequila: Containing settings.py(Settings) and urls.py(Website urls) for example
+- templates: Containing the base.html, allauth(django authentication) and includes html files
+- static: Base css
+- manage.py: Main python file for starting the website
+- README.md: Readme documentation
+- TESTING.md: Testing documentation
+- custom_storage.py: AWS Boto3 configuration
+- Procfile: To run the application
+- Requirements.txt: Containing the python libraries installed
+Note: Environment variable values are not exposed in the source code, they are stored locally in env.py that is not checked in(and listed in .gitignore, and on Heroku in app settings
+
+### Database
+- The website is a data-centric one with html, javascript, css used with the bootstrap framework as a frontend
+- The backend consists of Python built with the Django framework with a database of a Postgres for the deployed Heroku version(production)
+- Postgres is a powerful, open source object-relational database system (https://www.postgresql.org/)
+- A SQLLite database was used for local development (https://www.sqlite.org/index.html)
+
+#### Physical database model
+This model contains all fields stored in the database collections with their data type and mimics the structure of what is actually stored in the Postgres database
+<br>![Database model](readme/misc/database-schema.png)
+
+#### Models
+- The following models were created to represent the database model structure for the website
+##### Order Model
+- The Order model contains information about orders made on the website.
+- It contains UserProfile as a foreign-key.
+- The model contains the following fields: order_number, user_profile, full_name, email, phone_number, country, postcode, town_or_city, street_address1
+, street_address2, county, date, delivery_cost, order_total, grand_total, original_bag, stripe_pid
+##### OrderLineItem Model
+- The OrderLineItem model contains information about an entry in an order, for orders made on the website.
+- It contains Order and Product as foreign-keys.
+- The model contains the following fields: order, product, product_size, quantity, lineitem_total
+##### Product Model
+- The Product Model represents a product and its details
+- It contains Category as a foreign-key
+- The model contains the following fields: category, sku, name, description, has_sizes, price, spice_rating, image
+- The image field contains the product image
+##### UserProfile Model
+- The UserProfile model has a one-to-one relationship with User
+- The model contains the following fields: default_phone_number, default_street_address1, default_street_address2
+default_town_or_city, default_county, default_postcode and default_country
+##### Events Model
+- The Events Model contains the information to book an event
+- The model contains the following fields: user, event_type, date, time, time_ordered
+##### Team Model
+- The Team Model represents the members of staff currently employed by the restaurant
+- The model contains the following fields: name, role, about, image
+##### Category Model
+- The Category model contains a product category
+- it contains the following fields: name, friendly name
+
+
+
