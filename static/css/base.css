@@ -54,6 +54,10 @@ body {
     color: #fff;
 }
 
+.hidden {
+    display: none;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
