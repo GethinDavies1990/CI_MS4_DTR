@@ -208,3 +208,25 @@ The user stories for the regular user eg: "shopper user" (a potential or existin
 - User Story 9.5: As an admin user I can view users in the django admin page and can view their username, email address, first name, last name, staff status
 - User Story 9.6: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
 - User Story 9.7: As an admin user I can view categories in the django admin page and can view a category name and friendly name
+
+## Skeleton
+### Wireframes
+Each wireframe image below contains three sub images, one for desktop, tablet and mobile
+Figma was used to create the wireframes
+
+Page | Wireframe | 
+------------ | ------------- 
+bag/templates/bag/bag.html | [Desktop/Tablet/Mobile](readme/wireframes/bag.png)
+checkout/templates/checkout/checkout.html | [Desktop/Tablet/Mobile](readme/wireframes/checkout.png)
+checkout/templates/checkout/checkout_success.html | [Desktop/Tablet/Mobile](readme/wireframes/checkout_success.png)
+home/templates/home/index.html | [Desktop/Tablet/Mobile](readme/wireframes/index.png)
+products/templates/products/add_product.html | [Desktop/Tablet/Mobile](readme/wireframes/add_product.png)
+products/templates/products/edit_product.html | [Desktop/Tablet/Mobile](readme/wireframes/edit_product.png)
+products/templates/products/product_detail.html | [Desktop/Tablet/Mobile](readme/wireframes/product_detail.png)
+products/templates/products/products.html  | [Desktop/Tablet/Mobile](readme/wireframes/products.png)
+profile/templates/profile/profile.html | [Desktop/Tablet/Mobile](readme/wireframes/profile.png)
+profile/templates/profile/order_history.html | [Desktop/Tablet/Mobile](readme/wireframes/order_history.png)
+templates/allauth/account/login.html | [Desktop/Tablet/Mobile](readme/wireframes/login.png)
+templates/allauth/account/logout.html | [Desktop/Tablet/Mobile](readme/wireframes/logout.png)
+templates/allauth/account/register.html| [Desktop/Tablet/Mobile](readme/wireframes/register.png)
+
