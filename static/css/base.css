@@ -405,4 +405,8 @@ footer {
     .home-page-box h1 {
         font-size: .8rem;
     }
+
+    .hero-background {
+        background-size: contain;
+    }
 }
