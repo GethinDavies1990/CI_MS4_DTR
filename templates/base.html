@@ -49,15 +49,16 @@
 			<div id="topnav" class="row top-nav pt-lg-2 d-none d-lg-flex">
 				<div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
 					<a href="{% url 'home' %}" class="nav-link main-logo-link">
-						<img src="https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/logo-3.png" class="my-0 logo" height="80px" width="80px">
+						<img src="https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/logo-3.png" alt="taco-y-tequila logo" class="my-0 logo" height="80px" width="80px">
 					</a>
 				</div>
 				<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
 					<form method="GET" action="{% url 'products' %}">
 						<div class="input-group w-100">
+							<label for="search"></label>
 							<input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
 							<div class="input-group-append">
-								<button class="form-control btn btn-red border border-black rounded-0" type="submit">
+								<button class="form-control btn btn-red border border-black rounded-0" type="submit" aria-label="Search">
 									<span class="icon-dark">
 										<i class="fas fa-search"></i>
 									</span>
