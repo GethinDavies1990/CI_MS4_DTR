@@ -401,4 +401,8 @@ footer {
     .increment-qty, .decrement-qy {
         padding: .25rem .5rem !important;
     }
+
+    .hero-box-text {
+        font-size: .8rem;
+    }
 }
