@@ -314,6 +314,7 @@ The website links in the footer are the same for all users
 <br>![404](readme/testing/404_desktop.PNG)
 
 
+
 #### User Stories feature 1
 - User Story 1.1: As an admin/regular user the navigation bar is displayed with a logo on all pages with a search box, My account and shopping bag icons on a desktop device
 - User Story 1.2: As an admin/regular user the navigation bar is displayed on all pages with a search box, My account and shopping bag icons on a mobile/tablet device
@@ -331,3 +332,13 @@ The website links in the footer are the same for all users
 - User Story 1.14: As a regular/admin user I can click on the "Sauces & Spices" filter and filter by Sauces, Spices
 - User Story 1.15: As a regular/admin user I can click on the "Events" Tab and be directing to the events booking page.
 - User Story 1.16: As a regular/admin user if I encounter an error on the site, I will be navigated to the applicable 400, 403, 404 or 500 error page
+
+### Feature 2 Footer
+#### Description feature 2
+- A footer is displayed at the bottom of the page
+- The footer also contains a logo, some text, links to the 'About us' and 'Events' pages and a 'Newsletter' Sign Up
+- A user can sign up for the mailing list by entering their email and clicking the "Signup" button
+<br>![Mailing list](readme/testing/mailing_list_email.PNG)
+#### User Stories feature 2
+- User Story 2.1: As a regular user the footer is displayed with a logo, 'About us links', 'Events' and 'Newsletter' sign up
+- User Story 2.2: As a regular user I can sign up for a newsletter by entering my email address and clicking Signup. I will receive an email after signing up
