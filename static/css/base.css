@@ -306,6 +306,7 @@ footer {
     background: var(--main-color);
     bottom: 0;
     padding: 5px;
+    margin-top: 30px;
 }
 
 /* Product Form */
