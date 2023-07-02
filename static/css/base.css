@@ -26,6 +26,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    opacity: 0.8;
 }
 
 .logo {
@@ -49,10 +50,10 @@ body {
     background-color: var(--main-color) !important;
 }
 
-.home-page-box {
+/* .home-page-box {
     background-color: var(--block-main);
     border-radius: 3px;
-}
+} */
 
 .text-white {
     color: #fff;
@@ -413,7 +414,4 @@ footer {
         font-size: .8rem;
     }
 
-    .hero-background {
-        background-size: contain;
-    }
 }

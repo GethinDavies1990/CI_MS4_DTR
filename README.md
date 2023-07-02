@@ -292,3 +292,42 @@ Log in               |&#9989;        |&#10060;         |&#10060; |
 Bag |&#9989;        |&#9989;          |&#9989; |
 Checkout |&#9989;        |&#9989;          |&#9989; |
 Checkout success |&#9989;        |&#9989;          |&#9989; |
+
+## Existing Features
+The screenshots below show mainly desktop images, the tablet and mobile images are displayed in the TESTING.MD file for each feature/user story
+### Feature 1 Navigation Bar and Homepage
+#### Description feature 1
+- The homepage consists of a hero image and a call to action to look at the products for sale, a header/nav bar and footer
+- The header and footer is consistent across all pages
+- The navigation bar is displayed with a logo on all pages with a search box, My account, and shopping bag icons on a desktop device
+<br>![Homepage desktop](readme/testing/homepage.png)
+The website links in the footer are the same for all users
+<br>![Homepage footer](readme/testing/footer.png)
+- The navigation bar is displayed on all pages with a search box, My account, and shopping bag icons on a Desktop device
+<br>![Homepage Desktop](readme/testing/desktop-navbar.png)
+- A regular user logged in, I see a "My Profile"/Logout under the My Account dropdown
+- An admin user logged in, I see a Product Management/My Profile/Logout under the My Account dropdown
+<br>![Homepage Regular desktop](readme/testing/navbar-logged-in.png)
+- On a desktop device there is a number of filters described below: All Products, Meal Kits, Drinks, Sauces & Spices, Event's
+<br>![Homepage desktop filter price](readme/testing/homepage-filters.png)
+- If a user encounters an error, the relevant error page is displayed (400, 403, 404 or 500)
+<br>![404](readme/testing/404_desktop.PNG)
+
+
+#### User Stories feature 1
+- User Story 1.1: As an admin/regular user the navigation bar is displayed with a logo on all pages with a search box, My account and shopping bag icons on a desktop device
+- User Story 1.2: As an admin/regular user the navigation bar is displayed on all pages with a search box, My account and shopping bag icons on a mobile/tablet device
+- User Story 1.3: As a regular user not logged in, I see a Register/Login link under the My Account dropdown
+- User Story 1.4: As a regular user logged in/not logged in, I am brought to my shopping bag if I click on the Bag icon
+- User Story 1.5: As a regular/admin user logged in, I see a "My Profile"/Logout under the My Account dropdown
+- User Story 1.6: As a regular/admin user logged in, if I click on the My Profile under My Account I am brought to the My Profile page
+- User Story 1.7: As a regular/admin user logged in, if I click on the My Profile under My Account I am brought to the Logout page. If I click Logout I am Logged out. If I click cancel I am brought back to the homepage
+- User Story 1.8: As a regular/admin user I can view the Home link in the header, and clicking it will bring the user to the homepage
+- User Story 1.9: As a regular/admin user I can click on the "All Products" filter, click By Price, and will be brought to the Products page, with products price low to high displayed
+- User Story 1.10: As a regular/admin user I can click on the "All Products" filter, click By Rating, and will be brought to the Products page, with products rating high to low displayed
+- User Story 1.11: As a regular/admin user I can click on the "All Products" filter, click By Category, and will be brought to the Products page, with products category a-z displayed
+- User Story 1.12: As a regular/admin user I can click on the "Meal Kits" filer and filter by Mild, Medium, Hot, Very Hot, All Meal Kits
+- User Story 1.13: As a regular/admin user I can click on the "Drinks" filter and filter by Tequila, Soft Drinks, Beers, All Drinks
+- User Story 1.14: As a regular/admin user I can click on the "Sauces & Spices" filter and filter by Sauces, Spices
+- User Story 1.15: As a regular/admin user I can click on the "Events" Tab and be directing to the events booking page.
+- User Story 1.16: As a regular/admin user if I encounter an error on the site, I will be navigated to the applicable 400, 403, 404 or 500 error page
