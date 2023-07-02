@@ -230,3 +230,65 @@ templates/allauth/account/login.html | [Desktop/Tablet/Mobile](readme/wireframes
 templates/allauth/account/logout.html | [Desktop/Tablet/Mobile](readme/wireframes/logout.png)
 templates/allauth/account/register.html| [Desktop/Tablet/Mobile](readme/wireframes/register.png)
 
+## Surface
+### Color Palette
+I have gone for a simple and minimal design for the website, with 2 shades of green, and a bright blue to add some pop to the website, I used ColorHunt to suggest some colour themes, then used Adobe color to check these colours for accessibility. I stored these in the root folder as variables which allowed me to quickly play around with some colours and looks.
+<code>
+<br>
+```
+:root {
+    --main-color: #cce293; <img valign='middle' alt='green' src='https://readme-swatches.vercel.app/cce293'/>
+    --main-color-sec: #40724e;
+    --text-main: #0C1829;
+    --block-main: #22A699;
+  }
+  ```
+<br>
+</code>
+<br>
+
+![green](https://readme-swatches.vercel.app/cce293) --main-color: #cce293;
+<br>
+
+![green](https://readme-swatches.vercel.app/40724e) --main-color: #40724e;
+<br>
+
+![green](https://readme-swatches.vercel.app/0C1829) --main-color: #0C1829;
+<br>
+
+![green](https://readme-swatches.vercel.app/22A699) --main-color: #22A699;
+<br>
+
+
+### Typography
+The Paytone One is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the Paytone One font cannot be imported into the website correctly. This font is from the Google fonts library. For the secondary font I used Comfortaa, which is also from the google fonts library.
+<br>
+
+![Font - Paytone](readme/misc/font-paytone.png)
+<br>
+
+![Font - Comfortaa](readme/misc/font-comfortaa.png)
+
+# Features
+The website has twenty distinct features, and they are described below
+What is important to detail is what pages are accessible by the three types of users
+1. A user not logged into the site
+2. A regular(shopper) user logged into the site
+3. An admin(administrator) user
+
+ Nav Link              |Not logged in  |Logged in as regular user|Logged in as admin
+:-------------         |:------------- |:----------------|:------------- |
+Home     |&#9989;        |&#9989;          |&#9989; |
+Products           |&#9989;        |&#9989;          |&#9989; |
+Product Detail           |&#9989;        |&#9989;          |&#9989; |
+Product Management(Add Product)     |&#10060;       |&#10060;         |&#9989; |
+Product Management(Edit Product)     |&#10060;       |&#10060;         |&#9989; |
+Product Management(Delete Product)     |&#10060;       |&#10060;         |&#9989; |
+My Profile             |&#10060;       |&#9989;          |&#9989; |
+Order History         |&#10060;       |&#9989;          |&#9989; |
+Log out               |&#10060;       |&#9989;          |&#9989; |
+Register               |&#9989;        |&#10060;         |&#10060; |
+Log in               |&#9989;        |&#10060;         |&#10060; |
+Bag |&#9989;        |&#9989;          |&#9989; |
+Checkout |&#9989;        |&#9989;          |&#9989; |
+Checkout success |&#9989;        |&#9989;          |&#9989; |

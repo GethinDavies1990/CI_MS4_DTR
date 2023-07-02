@@ -1,6 +1,6 @@
 :root {
     --main-color: #cce293;
-    --main-color-red: #40724e;
+    --main-color-sec: #40724e;
     --text-main: #0C1829;
     --block-main: #22A699;
   }
@@ -34,7 +34,7 @@ body {
 }
 
 .dark-green-block {
-    background-color: var(--main-color-red);
+    background-color: var(--main-color-sec);
 }
 
 .bg-main {
@@ -80,19 +80,19 @@ body {
 }
 
 .shop-now-button {
-    background: var(--main-color-red);
+    background: var(--main-color-sec);
     color: white;
     min-width: 260px;
 }
 
 .btn-red {
-    background: var(--main-color-red);
+    background: var(--main-color-sec);
     color: white;
 }
 
 .btn-outline {
     background: white;
-    color: var(--main-color-red) !important;
+    color: var(--main-color-sec) !important;
     border: 1px solid #7BC192 !important;
 }
 
@@ -111,7 +111,7 @@ body {
 .icon-dark:hover,
 .icon-dark:active,
 .icon-dark:focus {
-    color: var(--main-color-red);
+    color: var(--main-color-sec);
 }
 
 
@@ -148,7 +148,7 @@ body {
 }
 
 a.category-badge > span.badge {
-    background-color: var(--main-color-red);
+    background-color: var(--main-color-sec);
     color: #fff;
     border: #000;
 }
@@ -250,7 +250,7 @@ input[name='q']::placeholder {
 }
 
 .product-card-block-red {
-    background-color: var(--main-color-red);
+    background-color: var(--main-color-sec);
     width: 95%;
 }
 
@@ -297,7 +297,7 @@ footer > a {
 }
 
 footer > a:hover, a:focus {
-    color: var(--main-color-red);
+    color: var(--main-color-sec);
 }
 
 footer > .form-control {
