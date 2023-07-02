@@ -224,7 +224,7 @@ STRIPE_WH_KEY = os.getenv('STRIPE_WH_KEY', '')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'gethindavies1990@gmail.com'
+    DEFAULT_FROM_EMAIL = 'Taco y Tequila <gethindavies1990@gmail.com>'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True

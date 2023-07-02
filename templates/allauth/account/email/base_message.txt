@@ -1,7 +1,7 @@
-{% load i18n %}{% autoescape off %}{% blocktrans with site_name=current_site.name %}Hello from {{ Taco y Tequila }}!{% endblocktrans %}
+{% load i18n %}{% autoescape off %}{% blocktrans with site_name=current_site.name %}Hello from Taco y Tequila {% endblocktrans %}
 
 {% block content %}{% endblock %}
 
-{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}Thank you for using {{ site_name }}!
-{{ site_domain }}{% endblocktrans %}
+{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}Thank you for using {{ https://taco-y-tequila-c6ff831b9a3a.herokuapp.com/ }}!
+{{ https://taco-y-tequila-c6ff831b9a3a.herokuapp.com/ }}{% endblocktrans %}
 {% endautoescape %}

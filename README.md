@@ -342,3 +342,36 @@ The website links in the footer are the same for all users
 #### User Stories feature 2
 - User Story 2.1: As a regular user the footer is displayed with a logo, 'About us links', 'Events' and 'Newsletter' sign up
 - User Story 2.2: As a regular user I can sign up for a newsletter by entering my email address and clicking Signup. I will receive an email after signing up
+
+### Feature 3 Register
+#### Description feature 3
+- A regular user can register for an account.
+- The user must provide a valid email address, email address(confirmation), username, password, password confirmation
+<br>![Register](readme/testing/register.png)
+- These 5 fields are  mandatory and a user cannot register the same details twice for an account
+<br>![Register error](readme/testing/register-error.png)
+- A confirmation link is sent to the users email address, they must click on the verification link to verify the account.
+<br>![Email content](readme/testing/verification_email_content.jpg)
+- The user must confirm their email address
+<br>![Confirm email](readme/testing/confirm_email.jpg)
+<br>![Email confirmed](readme/testing/email_confirmed.jpg)
+- Once that is done they can sign in to the website with their username/email address and password
+#### User Stories feature 3
+- User Story 3.1: As a regular user I can register on the website by providing an email address, email address(confirmation), username, password, password confirmation
+- User Story 3.1: As a regular user I will receive an email to verify my account after registering
+- User Story 3.1: As a regular user I can log in to my account once I click on the verification link in the email I receive regarding my registration
+
+### Feature 4 Login
+#### Description feature 4
+- An admin/regular user can log in to the website using their username or email address and password
+- Both fields are mandatory
+- Once logged in the user will be navigated to the homepage
+<br>![Email confirmed](readme/testing/login-error.png)
+- The user must have an account in the system, and they must enter the correct  username or email address and password
+- If the user needs to request a password, they can click on the Forgot Password link
+<br>![Forgot Password](readme/testing/password-reset.png)
+- They enter their email address, and they are emailed reset their password. Once they do this they can log in
+<br>![Password updated](readme/testing/change-password.png)
+#### User Stories feature 4
+- User Story 4.1: As an admin/regular user I can log in to the website using my username or email address and password. Both fields are mandatory. Once correct, I will be navigated to the homepage and a message displayed
+- User Story 4.2: As an admin/regular user I can request a new password if I forget my current password. I will receive an email to reset my password. Once I reset I can log in
