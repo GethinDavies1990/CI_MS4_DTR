@@ -2,7 +2,7 @@
     --main-color: #cce293;
     --main-color-red: #40724e;
     --text-main: #0C1829;
-    --block-main: #3abeff;
+    --block-main: #0081C9;
   }
 
 p {
@@ -47,6 +47,7 @@ body {
 .home-page-box {
     background-color: var(--block-main);
     color: #fff;
+    border-radius: 3px;
 }
 
 .text-white {
