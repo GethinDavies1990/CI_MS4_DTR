@@ -28,6 +28,10 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
+            elif sortkey == 'spice_asc':
+                sortkey = 'spice'
+            elif sortkey == 'spice_desc':
+                sortkey = '-spice'
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
