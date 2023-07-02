@@ -47,8 +47,8 @@ body {
 
 .home-page-box {
     background-color: var(--block-main);
-    color: #fff;
     border-radius: 3px;
+    opacity: 0.6;
 }
 
 .text-white {
