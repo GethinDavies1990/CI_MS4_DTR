@@ -200,7 +200,6 @@ if 'USE_AWS' in os.environ:
     AWS_ACCESS_KEY_ID_TACO = os.environ.get('AWS_ACCESS_KEY_ID_TACO')
     AWS_SECRET_ACCESS_KEY_TACO = os.environ.get('AWS_SECRET_ACCESS_KEY_TACO')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-    AWS_S3_SIGNATURE_VERSION = os.environ.get('AWS_S3_SIGNATURE_VERSION')
 
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
