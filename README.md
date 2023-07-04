@@ -485,3 +485,58 @@ Number | Update
 3 | Add pagination |
 4 | The functionality to add and display multiple images per product |
 5 | Review section for the website |
+
+# Technologies Used
+## Languages
+- HTML (https://en.wikipedia.org/wiki/HTML)
+    - The project uses html to build the relevant pages
+- CSS (https://en.wikipedia.org/wiki/CSS)
+    - The project uses CSS to style the relevant pages
+- Javascript (https://www.javascript.com/)
+    - Javascript was used for all scripting on the site
+- Django (https://www.djangoproject.com/)
+    - Django is the framework used in this project
+    - The Django templating language was used to render pages
+    - The Django unit test library was used for unit tests (https://docs.djangoproject.com/en/3.2/topics/testing/overview/)
+- Python v3.9 (https://www.python.org/)
+    - Python was used for server side coding on the project, a number of libraries were also used(The requirements.txt file
+  contains this list):
+      - boto3==1.26.159 (Python SDK for AWS)
+      - botocore==1.29.159 (Python SDK for AWS)
+      - dj-database-url==0.5.0 (Support for DATABASE_URL environment variable)
+      - Django==4.2.1 (Web framework)
+      - django-allauth==0.54.0 (Web framework authentication)
+      - django-countries==7.5.1
+      - django-crispy-forms==1.12.0 (Django rendering of forms)
+      - django-storages==1.13.2 (Django storage backend for AWS S3)
+      - gunicorn==20.1.0 (Python WSGI Http server)
+      - jmespath==1.0.1 (Full suite of data driven testcase)
+      - oauthlib==3.2.2 (Framework for oauth1 and oauth2)
+      - Pillow==9.5.0 (Imaging library)
+      - psycopg2==2.9.6 (Postgres adapter)
+      - PyJWT==2.7.0
+      - python3-openid==3.2.0 (Support for the OpenID decentralized identity system)
+      - requests-oauthlib==1.3.1 (Authentication support for Requests)
+      - s3transfer==0.6.1 (Python library for managing Amazon S3 transfers)
+      - sqlparse==0.4.4 (Non-validating SQL parser for Python)
+      - stripe==5.4.0(SDK for processing payments)
+      - unicorn==2.0.1.post1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
