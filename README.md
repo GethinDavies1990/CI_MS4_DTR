@@ -448,3 +448,25 @@ The website links in the footer are the same for all users
 - User Story 7.15: As a regular user on the checkout page if I click the Complete Order button, and the transaction is successful, the order is saved to my order history in My profile page
 - User Story 7.16: As a regular user on the checkout success page, the Order details will be displayed (Order number, Order date/time, Full NameStreet Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country, Phone Number, Order Total, Deliver, Grand Total) and a link to the sales item page is displayed
 - User Story 7.17: As a regular user not logged in, I can add items to my bag and make a purchase
+
+### Feature 8 Admin
+#### Description feature 8
+- As per the user stories below there are a number of admin views that have been configured at https://taco-y-tequila-c6ff831b9a3a.herokuapp.com/admin
+- They give excellent CRUD operations to the data in the Postgres database as well as search and filter options
+- They are as follows:
+- Order
+<br>![Order](readme/testing/admin-orders.png)
+- Products
+<br>![Products](readme/testing/admin-products.png)
+- Users
+<br>![Users](readme/testing/admin-users.png)
+- Categories
+<br>![Categories](readme/testing/admin-categories.png)
+
+- User Story 9.1: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
+- User Story 9.2: As an admin user I can view users orders in the django admin page and can search by order number, full name and filter by order number, full name and order date
+- User Story 9.3: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, spice rating, image
+- User Story 9.4: As an admin user I can view products in the django admin page and can view search and filter by code, category, name and price
+- User Story 9.5: As an admin user I can view users in the django admin page and can view their username, email address, first name, last name, staff status
+- User Story 9.6: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
+- User Story 9.7: As an admin user I can view categories in the django admin page and can view a category name and friendly name
