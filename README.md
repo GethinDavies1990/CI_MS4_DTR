@@ -522,6 +522,62 @@ Number | Update
       - stripe==5.4.0(SDK for processing payments)
       - unicorn==2.0.1.post1
 
+      ## Libraries and other resources
+- Bootstrap 5.0 (https://getbootstrap.com/docs/4.4.1)
+    - The project uses the bootstrap library for some UI components in the website (Buttons, Card, Modal, Navbar)
+- Postgres (https://www.postgresql.org/)
+  - The deployed project on Heroku uses a Postgres database
+- SQLLite (https://www.sqlite.org/index.html)
+  - The database uses in local development was a SQLLite database
+- Gitpod (https://gitpod.io/)
+    - Gitpod was used as an IDE for the project initially, then I switched to VS code and used my local environment
+- Github (https://github.com/)
+    - GitHub was used to store the project code in a repository
+- Google Fonts (https://fonts.google.com/)
+    - Google font Comfortaa and Paytone One was used as the website font
+- Figma (https://figma.com/)
+    - Figma
+- Font Awesome (https://fontawesome.com/)
+    - Font awesome was used to provide the relevant fonts/icons for the website
+- JQuery (https://jquery.com)
+    - JQuery was used in some javascript files for DOM manipulation
+- Cloud Convert (https://cloudconvert.com/)
+    - Cloud COnvert was used to compress the images for performance
+- CSS Validation Service (https://jigsaw.w3.org/css-validator/)
+   - CSS validation service for validation the css in the project
+- HTML Markup Validation Service (https://validator.w3.org/)
+    - HTML validation service for validation the css in the project
+- Chrome dev tools (https://developers.google.com/web/tools/chrome-devtools)
+    - For troubleshooting and debugging of the project code
+- Chrome Lighthouse (https://developers.google.com/web/tools/lighthouse)
+    - For performance, accessibility, progressive web apps, SEO analysis of the project code
+- Responsive Design (http://ami.responsivedesign.is/)
+    - Website for generating the responsive image in this README
+- GitHub Wiki TOC generator (https://ecotrust-canada.github.io/markdown-toc/)
+    - Used for generating a table of contents for this README
+- Gofullpage chrome plugin  (https://chrome.google.com/webstore/detail/gofullpage-full-page-scre)
+    - This plugin was used to take full page screenshots for testing images
+- Python online interpreter (https://www.programiz.com/python-programming/online-compiler/)
+    - For testing python code snippets
+- Unittest (https://docs.djangoproject.com/en/3.2/topics/testing/overview/)
+    - For Python unit testing
+- JSHint (https://jshint.com/)
+  - For javascript code quality
+- PEP8 (https://www.python.org/dev/peps/pep-0008/)
+  - I used the pep8 code analysis plugin in Pycharm to check for pep8 errors
+- Stripe (https://www.stripe.com)
+  - For processing a test credit card to test a payment as part of an order
+- Coverage (https://coverage.readthedocs.io/en/6.1.2/)
+  - For unit test code coverage reports
+- Quick Database diagrams (https://www.quickdatabasediagrams.com)
+  - For the database schema diagram
+- Temp mail (http://temp-mail.org/en/)
+  - For a temporary email account for test registrations
+- Adobe color (https://color.adobe.com)
+  - For checking the accessibility on the colors before designing
+- Color Hunt (https://colorhunt.co/)
+  - For finding color mixes
+
 
 
 
