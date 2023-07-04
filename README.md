@@ -750,14 +750,39 @@ To deploy this application to Heroku, run the following steps.
 20. Ensure the following environment variables are set in Heroku
 <br>![Heroku Env variables](readme/testing/heroku-config.png)
 21. Connect the app to GitHub, and enable automatic deploys from main
-<br>![Heroku Postgres](readme/misc/heroku_deployment.png)
+<br>![Heroku Postgres](readme/testing/heroku-git-connect.png)
 
 22. Click deploy to deploy your application to Heroku for the first time
 23. Click on the link provided to access the application
 24. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
 
+# Credits
+- The project is based on the Boutique Ado project by the Code Institute and was used as a basic for my project (https://github.com/Code-Institute-Solutions/boutique_ado_v1/)
+- For the footer I used free front end and amended to suit my requirements https://freefrontend.com/bootstrap-footers/
+- For the send-email functionality I used some code from the code institute module from the course
+- For Django Comments, I found this link useful: https://djangocentral.com/creating-comments-system-with-django/
+- For unit testing, I found the unit test code in the Code Institute chapter Hello Django very useful and this link also:
+https://www.section.io/engineering-education/django-unit-testing/#testing-views where it gave me a good idea on the type of unit tests
+to write
+- To get a deeper understanding I found this Youtube channel very helpful https://www.youtube.com/watch?v=HHx3tTQWUx0&list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy
+- I also took a brief course on udemy to further my knowledge with django https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/
+- I used stackoverflow.com a lot for programming issues,
 
+# Content
+- Font Awesome (http://fontawesome.com)
+    - The icons used on the site from font awesome
+- Fonts (https://fonts.google.com/)
+    - The text fonts used are from Google fonts
 
+<br>
+
+# Media
+- Imagery used for the products and team members were from envato - https://elements.envato.com/
+ <br>
+
+# Acknowledgements
+- I would like to thank my wife,son and cat for their support, understanding and motivation and inspiration along this course and my final project.
+- I would like to thank my mentor Mo Shami, for his input, help feedback through the duration of this project and my course.
 
 
 
