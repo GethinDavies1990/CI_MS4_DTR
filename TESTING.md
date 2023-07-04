@@ -463,5 +463,39 @@ Bug no. | Bug description |  Bug fix |
 3 | The webhook handler is not firing when an order is successful | LOOKING INTO
 4 | A lot of responsive issues on mobile | added more media queries tt fix this
 
+# Code Validators and Website Analysis
+The website's pages was tested against the following validators:
+
+## HTML Markup Validation Service
+I used https://validator.w3.org/ to validate the html files
+
+Page | Result | Test Detail/Screenshot
+------------ | ------------- | -------------
+bag/templates/bag/bag.html  | 0 errors | [Results](readme/html_validation/html_validation_bag.PNG)
+bag/templates/bag/bag.html (Empty)  | 0 errors | [Results](readme/html_validation/html_validation_bag_empty.PNG)
+checkout/templates/checkout/checkout.html | 0 errors | [Results](readme/html_validation/html_validation_checkout.PNG)
+checkout/templates/checkout/checkout_success.html | 0 errors | [Results](readme/html_validation/html_validation_checkout_success.png)
+favourites/templates/favourites/favourites.html | 0 errors | [Results](readme/html_validation/html_validation_favourites.PNG)
+home/templates/home/index.html | 0 errors | [Results](readme/html_validation/html_validation_index.PNG)
+news/templates/news/add_news_item.html | 0 errors | [Results](readme/html_validation/html_validation_add_news_item.PNG)
+news/templates/news/edit_news_item.html | 0 errors | [Results](readme/html_validation/html_validation_edit_news_item.png)
+news/templates/news/manage_news_items.html | 0 errors | [Results](readme/html_validation/html_validation_news_item_management.PNG)
+news/templates/news/news.html | 0 errors | [Results](readme/html_validation/html_validation_news.PNG)
+news/templates/news/news_item.html | 0 errors | [Results](readme/html_validation/html_validation_news_item.png)
+products/templates/products/add_product.html | 0 errors | [Results](readme/html_validation/html_validation_add_product.PNG)
+products/templates/products/edit_product.html | 0 errors | [Results](readme/html_validation/html_validation_edit_product.PNG)
+products/templates/products/product_detail.html | 0 errors | [Results](readme/html_validation/html_validation_product_detail.PNG)
+products/templates/products/products.html | 0 errors | [Results](readme/html_validation/html_validation_products.PNG)
+products/templates/products/sale_items.html | 0 errors | [Results](readme/html_validation/html_validation_sale_items.png)
+profile/templates/profile/profile.html | 0 errors | [Results](readme/html_validation/html_validation_profile.PNG)
+profile/templates/profile/order_history.html | 0 errors | [Results](readme/html_validation/html_validation_order_history.PNG)
+templates/allauth/account/login.html | 0 errors | [Results](readme/html_validation/html_validation_login.PNG)
+templates/allauth/account/logout.html | 0 errors | [Results](readme/html_validation/html_validation_logout.PNG)
+templates/allauth/account/register.html | 0 errors | [Results](readme/html_validation/html_validation_register.PNG)
+templates/allauth/account/password_change.html | 0 errors | [Results](readme/html_validation/html_validation_change_password.png)
+templates/allauth/account/password_reset.html | 0 errors | [Results](readme/html_validation/html_validation_forgot_password.PNG)
+templates/allauth/account/password_reset_done.html | 0 errors | [Results](readme/html_validation/html_validation_change_password_confirmed.png)
+templates/allauth/account/verification_sent.html | 0 errors | [Results](readme/html_validation/html_validation_verification_email_sent.png)
+<br>
 
 
