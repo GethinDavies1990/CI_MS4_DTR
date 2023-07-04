@@ -620,13 +620,111 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 <br><code>os.environ.setdefault('STRIPE_PUBLIC_KEY', 'YOUR_VALUE_GOES_HERE')</code>
 <br><code>os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')</code>
 6. Back in the Developers section of your stripe account click on Webhooks
-7. Create a webhook with the url of your website <url>/checkout/wh/, for example: https://ci-ms4-loverugby.herokuapp.com/checkout/wh/
+7. Create a webhook with the url of your website <url>/checkout/wh/, for example: https://taco-y-tequila-c6ff831b9a3a.herokuapp.com/checkout/wh/
 8. Select the payment_intent.payment_failed and payment_intent.succeeded as events to send
-<br>![Webhook](readme/misc/stripe_keys2.png)
 9. Note the key created for this webhook
 10. In your local environment(env.py) and heroku, create environment variable STRIPE_WH_SECRET with the secret values
 <code>os.environ.setdefault('STRIPE_WH_SECRET', 'YOUR_VALUE_GOES_HERE')</code>
 11. Feel free to test out the webhook and note the success/fail attempts for troubleshooting
+
+# Deployment
+There are a number of applications that need to be configured to run this application locally or on a cloud based service, for example Heroku
+
+## Amazon WebServices
+1. Create an account at aws.amazon.com
+2. Open the S3 application and create an S3 bucket named "ci-ms4-rugby-shop"
+3. Uncheck the "Block All Public access setting"
+4. In the Properties section, navigate to the "Static Website Hosting" section and click edit
+5. Enable the setting, and set the index.html and the error.html values
+<br>![AWS Static](readme/testing/s3-creation.png)
+6. In the Permissions section, click edit on the CORS configuration and set the below configuration
+<br>![AWS CORS](readme/testing/s3-cors.png)
+7. In the permissions section, click edit on the bucket policy and generate and set the below configuration(or similar to your settings)
+<br>![AWS Bucket Policy](readme/testing/s3-policy.png)
+8. In the permissions section, click edit on the Access control list(ACL)
+9. Set Read access for the Bucket ACL for Everyone(Public Access)
+10. The bucket is created, the next step is to open the IAM application to set up access
+11. Create a new user group named "manage-taco-y-tequila"
+12. Add the "AmazonS3FullAccess" policy permission for the user group
+13. Go to "Policies" and click "Create New Policy"
+14. Click "Import Managed Policy" and select "AmazonS3FullAccess" > Click 'Import'.
+15. In the JSON editor, update the policy "Resource" to the following
+<br><code>"Resource": [</code>
+<br><code>"arn:aws:s3:::taco-y-tequila",</code>
+<br><code>"arn:aws:s3:::taco-y-tequila/*"</code>
+<br><code>]</code>
+16. Give the policy a name and click "Create Policy"
+17. Add the newly created policy to the user group
+18. Go to Users and create a new user
+19. Add the user to the user group manage-taco-y-tequila
+20. Select "Programmatic access" for the access type
+21. Note the AWS_SECRET_ACCESS_KEY and AWS_ACCESS_KEY_ID variables, they are used in other parts of this README for local deployment and Heroku setup
+22. The user is now created with the correct user group and policy
+<br>![AWS Bucket Policy](readme/testing/s3-user-policy.png)
+23. Note the AWS code in settings.py. Note an environment variable called USE_AWS must be set to use these settings, otherwise it will use local storage
+```
+if 'USE_AWS' in os.environ:
+    # Cache Control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+    # Bucket config
+    AWS_STORAGE_BUCKET_NAME = 'taco-y-tequila'
+    AWS_S3_REGION_NAME = 'eu-north-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # overide static and media urls in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+24. These settings set up a cache policy, set the bucket name, and the environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY that you set in your aws account
+25. The configuration also requires the media/static folders that must be setup in the AWS S3 bucket to store the media and static files
+
+## Local Deployment
+To run this project locally, you will need to clone the repository
+1. Login to GitHub (https://wwww.github.com)
+2. Select the repository GethinDavies1990/CI_MS4_DTR
+3. Click the Code button and copy the HTTPS url, for example: https://github.com/GethinDavies1990/CI_MS4_DTR
+4. In your IDE, open a terminal and run the git clone command, for example
+
+    ```git clone https://github.com/GethinDavies1990/CI_MS4_DTR.git```
+
+5. The repository will now be cloned in your workspace
+6. Create an env.py file(do not commit this file to source control) in the root folder in your project, and add in the following code with the relevant key, value pairs, and ensure you enter the correct key values<br>
+<br><code>import os</code>
+<br><code>os.environ.setdefault("SECRET_KEY", TO BE ADDED BY USER)</code>
+<br><code>os.environ.setdefault("STRIPE_PUBLIC_KEY", TO BE ADDED BY USER)</code>
+<br><code>os.environ.setdefault("STRIPE_SECRET_KEY", TO BE ADDED BY USER)</code>
+<br><code>os.environ.setdefault("STRIPE_WH_SECRET", TO BE ADDED BY USER)</code>
+<br><code>os.environ.setdefault("AWS_ACCESS_KEY_ID", TO BE ADDED BY USER)</code>
+<br><code>os.environ.setdefault("AWS_SECRET_ACCESS_KEY", TO BE ADDED BY USER)</code>
+<br><code>os.environ.setdefault("EMAIL_HOST_USER", TO BE ADDED BY USER)</code>
+<br><code>os.environ.setdefault("EMAIL_HOST_PASS", TO BE ADDED BY USER)</code>
+<br><code>os.environ.setdefault("USE_AWS", TO BE ADDED BY USER)</code>
+<br><code>os.environ.setdefault("DATABASE_URL", TO BE ADDED BY USER)</code>
+7. Some values for the environment variables above are described in different sections of this readme
+8. Install the relevant packages as per the requirements.txt file
+9. In the settings.py ensure the connection is set to either the Heroku postgres database or the local sqllite database
+10. Ensure debug is set to true in the settings.py file for local development
+11. Add localhost/127.0.0.1 to the ALLOWED_HOSTS variable in settings.py
+12. Run "python3 manage.py showmigrations" to check the status of the migrations
+13. Run "python3 manage.py migrate" to migrate the database
+14. Run "python3 manage.py createsuperuser" to create a super/admin user
+15. Run "python3 manage.py loaddata categories.json" on the categories file in products/fixtures to create the categories
+16. Run "python3 manage.py loaddata products.json" on the products file in products/fixtures to create the products
+17. Run "python3 manage.py loaddata news.json" on the news file in news/fixtures to create the news items(optional)
+18. Start the application by running <code>python3 manage.py runserver</code>
+19. Open the application in a web browser, for example: http://127.0.0.1:8000/
 
 
 
