@@ -472,7 +472,6 @@ I used https://validator.w3.org/ to validate the html files
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
 bag/templates/bag/bag.html  | 0 errors | [Results](readme/html_validation/html_validation_bag.PNG)
-bag/templates/bag/bag.html (Empty)  | 0 errors | [Results](readme/html_validation/html_validation_bag_empty.PNG)
 checkout/templates/checkout/checkout.html | 0 errors | [Results](readme/html_validation/html_validation_checkout.PNG)
 checkout/templates/checkout/checkout_success.html | 0 errors | [Results](readme/html_validation/html_validation_checkout_success.png)
 favourites/templates/favourites/favourites.html | 0 errors | [Results](readme/html_validation/html_validation_favourites.PNG)
