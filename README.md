@@ -200,14 +200,14 @@ The user stories for the regular user eg: "shopper user" (a potential or existin
 - User Story 5.13: As an admin user I can delete a review a regular user has added
     - User Story 8.1: As an admin user I can add a product by clicking on the Product Management link in My Account. I must enter a name, category, price, sku, description, and image
 - User Story 8.2: As an admin user I can edit a product by clicking on the Edit button on the Products page for the product. I can update the name, category, price, sku, description, has Sizes(Unknown, Yes, No), Spice Rating, update an image and click the Edit Product button. Clicking cancel navigates the user to the product page
-- User Story 8.3: As an admin user I can delete a product by clicking on the Delete button on the product. A modal will appearing asking to confirm, and a message displayed once I confirm.
-- User Story 9.1: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
-- User Story 9.2: As an admin user I can view users orders in the django admin page and can search by order number, full name and filter by order number, full name and order date
-- User Story 9.3: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, spice rating, image
-- User Story 9.4: As an admin user I can view products in the django admin page and can view search and filter by code, category, name and price
-- User Story 9.5: As an admin user I can view users in the django admin page and can view their username, email address, first name, last name, staff status
-- User Story 9.6: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
-- User Story 9.7: As an admin user I can view categories in the django admin page and can view a category name and friendly name
+- User Story 8.4: As an admin user I can delete a product by clicking on the Delete button on the product. A modal will appearing asking to confirm, and a message displayed once I confirm.
+- User Story 8.5: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
+- User Story 8.6: As an admin user I can view users orders in the django admin page and can search by order number, full name and filter by order number, full name and order date
+- User Story 8.7: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, spice rating, image
+- User Story 8.8: As an admin user I can view products in the django admin page and can view search and filter by code, category, name and price
+- User Story 8.9: As an admin user I can view users in the django admin page and can view their username, email address, first name, last name, staff status
+- User Story 8.10: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
+- User Story 8.11 As an admin user I can view categories in the django admin page and can view a category name and friendly name
 
 ## Skeleton
 ### Wireframes
@@ -463,10 +463,25 @@ The website links in the footer are the same for all users
 - Categories
 <br>![Categories](readme/testing/admin-categories.png)
 
-- User Story 9.1: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
-- User Story 9.2: As an admin user I can view users orders in the django admin page and can search by order number, full name and filter by order number, full name and order date
-- User Story 9.3: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, spice rating, image
-- User Story 9.4: As an admin user I can view products in the django admin page and can view search and filter by code, category, name and price
-- User Story 9.5: As an admin user I can view users in the django admin page and can view their username, email address, first name, last name, staff status
-- User Story 9.6: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
-- User Story 9.7: As an admin user I can view categories in the django admin page and can view a category name and friendly name
+    - User Story 8.1: As an admin user I can add a product by clicking on the Product Management link in My Account. I must enter a name, category, price, sku, description, and image
+- User Story 8.2: As an admin user I can edit a product by clicking on the Edit button on the Products page for the product. I can update the name, category, price, sku, description, has Sizes(Unknown, Yes, No), Spice Rating, update an image and click the Edit Product button. Clicking cancel navigates the user to the product page
+- User Story 8.4: As an admin user I can delete a product by clicking on the Delete button on the product. A modal will appearing asking to confirm, and a message displayed once I confirm.
+- User Story 8.5: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
+- User Story 8.6: As an admin user I can view users orders in the django admin page and can search by order number, full name and filter by order number, full name and order date
+- User Story 8.7: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, spice rating, image
+- User Story 8.8: As an admin user I can view products in the django admin page and can view search and filter by code, category, name and price
+- User Story 8.9: As an admin user I can view users in the django admin page and can view their username, email address, first name, last name, staff status
+- User Story 8.10: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
+- User Story 8.11 As an admin user I can view categories in the django admin page and can view a category name and friendly name
+
+##  Features Left to Implement
+- I am content with what was implemented. The site is a feature rich site
+- However, here are some additional "nice to have" features and updates that could be added to the project
+
+Number | Update
+ ------------ | ------- |
+1 | chat app integration |
+2 | Improved searching and filtering on the products page, a side panel filter |
+3 | Add pagination |
+4 | The functionality to add and display multiple images per product |
+5 | Review section for the website |
