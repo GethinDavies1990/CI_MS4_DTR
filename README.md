@@ -726,6 +726,35 @@ To run this project locally, you will need to clone the repository
 18. Start the application by running <code>python3 manage.py runserver</code>
 19. Open the application in a web browser, for example: http://127.0.0.1:8000/
 
+## Heroku and Postgres Database
+To deploy this application to Heroku, run the following steps.
+1. Create an account at heroku.com
+2. Create an app, give it a name for example taco-y-tequila, and select a region
+3. Under resources search for postgres, and add a Postgres database to the app
+4. Note the DATABASE_URL, this can be set as an environment variable in Heroku and your local deployment(env.py)
+5. Install the plugins dj-database-url and psycopg2-binary.
+6. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
+7. Create a Procfile with the text: web: gunicorn rugby_shop.wsgi:application for example
+8. In the settings.py ensure the connection is to the Heroku postgres database
+9. Ensure debug is set to false in the settings.py file
+10. Add localhost/127.0.0.1, and taco-y-tequila-c6ff831b9a3a.herokuapp.com to the ALLOWED_HOSTS variable in settings.py
+11. Run "python3 manage.py showmigrations" to check the status of the migrations
+12. Run "python3 manage.py migrate" to migrate the database
+13. Run "python3 manage.py createsuperuser" to create a super/admin user
+14. Run "python3 manage.py loaddata categories.json" on the categories file in products/fixtures to create the categories
+15. Run "python3 manage.py loaddata products.json" on the products file in products/fixtures to create the products
+16. Install gunicorn and add it to the requirements.tx file using the command pip3 freeze > requirements.txt
+17. From the CLI login to Heroku using the command heroku git:remote -a taco-y-tequila
+18. Disable collectstatic in Heroku before any code is pushed using the command heroku config:set DISABLE_COLLECTSTATIC=1 -a taco-y-tequila
+19. Push the code to Heroku using the command git push heroku master
+20. Ensure the following environment variables are set in Heroku
+<br>![Heroku Env variables](readme/testing/heroku-config.png)
+21. Connect the app to GitHub, and enable automatic deploys from main
+<br>![Heroku Postgres](readme/misc/heroku_deployment.png)
+
+22. Click deploy to deploy your application to Heroku for the first time
+23. Click on the link provided to access the application
+24. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
 
 
 
