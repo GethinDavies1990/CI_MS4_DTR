@@ -348,4 +348,23 @@ Step 4 | The add product page is displayed | [Desktop](readme/testing/feature_5/
 Step 5 | The edit product page is displayed | [Desktop](readme/testing/feature_5/feature-5-step5-desktop.png)  | [Tablet](readme/testing/feature_5/feature-5-step5-tablet.png)  | [Mobile](readme/testing/feature_5/feature-5-step5-mobile.png)  | Passed |
 
 
+### Feature 6 Profile
+#### Description feature 6
+- User Story 6.1: As a regular user I can view my Default delivery information: Phone Number, Street Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country
+- User Story 6.2: As a regular user I can update my Default delivery information: Phone Number, Street Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country
+- User Story 6.3: As a regular user I can view my order history(Order Number, Date, Items and Order Total)
+- User Story 6.4: As a regular user I can click on an order number to view the order information (Order number, Order date/time, Full Name, Street Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country, Phone Number, Order Total, Deliver, Grand Total)
+
+#### User Stories Steps 1
+1. Click on the My Profile link under My Account
+2. Update one field in the default delivery information (Street Address 2)
+3. Click on an order number
+
+#### User Story Testing Results 1
+Step| Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 1 | The users default delivery information and order history is displayed | [Desktop](readme/testing/feature_6/feature-6-step1-desktop.png)  | [Tablet](readme/testing/feature_6/feature-6-step1-tablet.png)  | [Mobile](readme/testing/feature_6/feature-6-step1-mobile.png)  | Passed |
+Step 2 | The users default delivery information is updated and displayed (Street Address 2) | [Desktop](readme/testing/feature_6/feature-6-step2-desktop.png)  | [Tablet](readme/testing/feature_6/feature-6-step2-tablet.png)  | [Mobile](readme/testing/feature_6/feature-6-step2-mobile.png)  | Passed |
+Step 3 | The users order details is displayed | [Desktop](readme/testing/feature_6/feature-6-step3-desktop.png)  | [Tablet](readme/testing/feature_6/feature-6-step3-tablet.png)  | [Mobile](readme/testing/feature_6/feature-6-step3-mobile.png)  | Passed |
+
 
