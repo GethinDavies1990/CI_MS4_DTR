@@ -407,19 +407,61 @@ Step 4 | The user receives a success toast notify the order is confirmed | [Desk
 
 
 ### Feature 8 Admin
-#### Description feature 8
-- User Story 8.7: As an admin user I can view products in the django admin page and can view a products sku, name, category, has sizes, price, spice rating, image
-- User Story 8.8: As an admin user I can view products in the django admin page and can view search and filter by sku, category, name and price
-- User Story 8.9: As an admin user I can view users in the django admin page and can view their username, email address, first name, last name, staff status
-- User Story 8.10: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
-- User Story 8.11 As an admin user I can view categories in the django admin page and can view a category name and friendly name
 
-- User Story 13.1: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
+#### User Story 8.7
+- 8.7: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
 #### User Story Steps 8.7
 - Step 1: As an admin user login navigate to https://taco-y-tequila-c6ff831b9a3a.herokuapp.com/admin/checkout/order/
 #### User Story Testing Results 8.7
 Step| Result | Result  | Status
 ------------ | ------------ | ------------- | -------------
-Step 1 | The orders are displayed | [Result](readme/testing/13_1_order.PNG)  | Passed |
+Step 1 | The orders are displayed | [Result](readme/testing/feature_8/feature-8-8.7.png)  | Passed |
+
+#### User Story 8.8
+- User Story 8.8: As an admin user I can view products in the django admin page and can view search and filter by sku, category, name and price
+#### User Story Steps 8.8
+- Step 1: As an admin user login navigate to https://taco-y-tequila-c6ff831b9a3a.herokuapp.com/admin/products/product/
+#### User Story Testing Results 8.8
+Step| Result | Result  | Status
+------------ | ------------ | ------------- | -------------
+Step 1 | The orders are displayed | [Result](readme/testing/feature_8/feature-8-8.8.png)  | Passed |
+
+#### User Story 8.9
+- User Story 8.9: As an admin user I can view users in the django admin page and can view their username, email address, first name, last name, staff status
+#### User Story Steps 8.9
+- Step 1: As an admin user login navigate to https://taco-y-tequila-c6ff831b9a3a.herokuapp.com/admin/auth/user/
+#### User Story Testing Results 8.9
+Step| Result | Result  | Status
+------------ | ------------ | ------------- | -------------
+Step 1 | The orders are displayed | [Result](readme/testing/feature_8/feature-8-8.9.png)  | Passed |
+
+#### User Story 8.10
+- User Story 8.10: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
+#### User Story Steps 8.10
+- Step 1: As an admin user login navigate to https://taco-y-tequila-c6ff831b9a3a.herokuapp.com/admin/auth/user/
+#### User Story Testing Results 8.10
+Step| Result | Result  | Status
+------------ | ------------ | ------------- | -------------
+Step 1 | The orders are displayed | [Result](readme/testing/feature_8/feature-8-8.9.png)  | Passed |
+
+#### User Story 8.11
+- User Story 8.11: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
+#### User Story Steps 8.11
+- Step 1: As an admin user login navigate to https://taco-y-tequila-c6ff831b9a3a.herokuapp.com/admin/products/category/
+#### User Story Testing Results 8.11
+Step| Result | Result  | Status
+------------ | ------------ | ------------- | -------------
+Step 1 | The orders are displayed | [Result](readme/testing/feature_8/feature-8-8.11.png)  | Passed |
+
+
+# Bugs found during the testing phase
+
+Bug no. | Bug description |  Bug fix |
+------------ | ------------- | ------------- |
+1 | When manually testing adding of products, I couldn't add products with images | The fix was in my admin panel in my django application, I didn't have the correct permissions set for the user.
+2 | I noticed on testing some buttons were the default boot strap and not how I styled them | Overridden the styles in the base.css
+3 | The webhook handler is not firing when an order is successful | LOOKING INTO
+4 | A lot of responsive issues on mobile | added more media queries tt fix this
+
 
 
