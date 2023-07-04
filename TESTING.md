@@ -229,7 +229,7 @@ I made a very thorough check on responsiveness on all devices on the the google 
 <br>
 
 ### Feature 1 Navigation & Homepage
-#### User Stories feature 1
+#### Description feature 2
 - User Story 1.1: As an admin/regular user the navigation bar is displayed with a logo on all pages with a search box, My account and shopping bag icons on a desktop device
 - User Story 1.2: As an admin/regular user the navigation bar is displayed on all pages with a search box, My account and shopping bag icons on a mobile/tablet device
 - User Story 1.3: As a regular user not logged in, I see a Register/Login link under the My Account dropdown
@@ -283,7 +283,7 @@ Step| Result | Desktop | Tablet | Mobile | Status
 Step 1 | The homepage is displayed, Login and Register links are displayed under My Account | [Desktop](readme/testing/feature_2/feature-2-step2-desktop.png)  | [Tablet](readme/testing/feature_2/feature-2-step1-tablet.png)  | [Mobile](readme/testing/feature_2/feature-2-step1-mobile.png)  | Passed |
 
 ### Feature 3 Register
-#### Description feature 2
+#### Description feature 3
 - User Story 3.1: As a regular user I can register on the website by providing an email address, email address(confirmation), username, password, password confirmation
 - User Story 3.1: As a regular user I will receive an email to verify my account after registering
 - User Story 3.1: As a regular user I can log in to my account once I click on the verification link in the email I receive regarding my registration
@@ -292,12 +292,30 @@ Step 1 | The homepage is displayed, Login and Register links are displayed under
 1. As a regular user, navigate to the registration page, fill in email address, email address(confirmation), username, password, password confirmation and click Sign Up
 2. Open the email received
 3. Click on the verification link in the email received
-4. Confirm the email address for the account
-5. Sign in to the account
-6. Attempt to register with the same account and do not fill in all the mandatory fields: email address, email address(confirmation), username, password, password confirmation
 
 #### User Story Testing Results 1
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
-Step 1 | The homepage is displayed, Login and Register links are displayed under My Account | [Desktop](readme/testing/feature_2/feature-2-step2-desktop.png)  | [Tablet](readme/testing/feature_2/feature-2-step1-tablet.png)  | [Mobile](readme/testing/feature_2/feature-2-step1-mobile.png)  | Passed |
+Step 1 | User registers for an account | [Desktop](readme/testing/feature_4/feature-3-step1-desktop.png)  | [Tablet](readme/testing/feature_3/feature-3-step1-tablet.png)  | [Mobile](readme/testing/feature_3/feature-3-step1-mobile.png)  | Passed |
+Step 2 | User registers for an account | [Desktop](readme/testing/feature_3/feature-3-step2-desktop.png)  | [Tablet](readme/testing/feature_3/feature-3-step2-tablet.png)  | [Mobile](readme/testing/feature_3/feature-3-step2-mobile.png)  | Passed |
+Step 3 | User registers for an account | [Desktop](readme/testing/feature_3/feature-3-step3-desktop.png)  | [Tablet](readme/testing/feature_3/feature-3-step3-desktop.png)  | [Mobile](readme/testing/feature_3/feature-3-step3-desktop.png)  | Passed |
+
+### Feature 4 Login
+#### Description feature 4
+- User Story 4.1: As an admin/regular user I can log in to the website using my username or email address and password. Both fields are mandatory. Once correct, I will be navigated to the homepage and a message displayed
+- User Story 4.2: As an admin/regular user I can request a new password if I forget my current password. I will receive an email to reset my password. Once I reset I can log in
+
+#### User Stories Steps 1
+1. Attempt to log in to the website with an account that does not exist or an incorrect password
+2. Request a new password
+3. Login to the site with the correct account details
+
+#### User Story Testing Results 1
+Step| Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 1 | User registers for an account | [Desktop](readme/testing/feature_4/feature-4-step1-desktop.png)  | [Tablet](readme/testing/feature_4/feature-4-step1-tablet.png)  | [Mobile](readme/testing/feature_4/feature-4-step1-mobile.png)  | Passed |
+Step 2 | User registers for an account | [Desktop](readme/testing/feature_4/feature-4-step2-desktop.png)  | [Tablet](readme/testing/feature_4/feature-4-step2-desktop.png)  | [Mobile](readme/testing/feature_4/feature-4-step2-desktop.png)  | Passed |
+Step 3 | User registers for an account | [Desktop](readme/testing/feature_4/feature-4-step3-desktop.png)  | [Tablet](readme/testing/feature_4/feature-4-step3-tablet.png)  | [Mobile](readme/testing/feature_4/feature-4-step3-mobile.png)  | Passed |
+
+
 
