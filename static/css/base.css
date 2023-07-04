@@ -27,7 +27,7 @@ body {
 }
 
 .jumbotron {
-    background: url('/media/mexican-tacos-with-corn-tortilla-and-meat-on-woode-2023-03-08-20-42-28-utc.jpg') no-repeat center center fixed;
+    background: url('https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/jumbo-hero.webp') no-repeat center center fixed;
     background-size: cover;
     position: relative;
 }
