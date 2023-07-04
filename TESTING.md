@@ -313,9 +313,39 @@ Step 3 | User registers for an account | [Desktop](readme/testing/feature_3/feat
 #### User Story Testing Results 1
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
-Step 1 | User registers for an account | [Desktop](readme/testing/feature_4/feature-4-step1-desktop.png)  | [Tablet](readme/testing/feature_4/feature-4-step1-tablet.png)  | [Mobile](readme/testing/feature_4/feature-4-step1-mobile.png)  | Passed |
-Step 2 | User registers for an account | [Desktop](readme/testing/feature_4/feature-4-step2-desktop.png)  | [Tablet](readme/testing/feature_4/feature-4-step2-desktop.png)  | [Mobile](readme/testing/feature_4/feature-4-step2-desktop.png)  | Passed |
-Step 3 | User registers for an account | [Desktop](readme/testing/feature_4/feature-4-step3-desktop.png)  | [Tablet](readme/testing/feature_4/feature-4-step3-tablet.png)  | [Mobile](readme/testing/feature_4/feature-4-step3-mobile.png)  | Passed |
+Step 1 | A message is displayed to the user | [Desktop](readme/testing/feature_4/feature-4-step1-desktop.png)  | [Tablet](readme/testing/feature_4/feature-4-step1-tablet.png)  | [Mobile](readme/testing/feature_4/feature-4-step1-mobile.png)  | Passed |
+Step 2 | The user receives an email where they can reset their password | [Desktop](readme/testing/feature_4/feature-4-step2-desktop.png)  | [Tablet](readme/testing/feature_4/feature-4-step2-desktop.png)  | [Mobile](readme/testing/feature_4/feature-4-step2-desktop.png)  | Passed |
+Step 3 | The user can successfully log in | [Desktop](readme/testing/feature_4/feature-4-step3-desktop.png)  | [Tablet](readme/testing/feature_4/feature-4-step3-tablet.png)  | [Mobile](readme/testing/feature_4/feature-4-step3-mobile.png)  | Passed |
+
+### Feature 5 Login
+#### Description feature 5
+- User Story 5.1: As a regular user I can view the products page with product count and with each product image, title, spice rating, category the product is in.
+- User Story 5.2: As a regular user I can sort the products by Price(high to low, low to high), Spice Rating(high to low, low to high), Name(A-Z, Z-A), Category(A-Z, Z-A)
+- User Story 5.3: As a regular user if I click on a product I will be navigated to the product detail page
+- User Story 5.4: As a regular user I can view the product image, description, sku, spice rating, category
+- User Story 5.5: As a regular user I can click on the Keep Shopping button on the product detail page, and it will navigate the user to the products page
+- User Story 5.6: As a regular user I can set the product size(if applicable for the product) and quantity for a product (one plus)
+- User Story 5.10: As an admin user I can view the Add product page by clicking on the Product Management link.
+- User Story 5.11: As an admin user I can view the Edit product page by clicking on the Edit button on the product.
+- User Story 5.12: As an admin user I can click on a product, and I am navigated to the product detail page. I can edit or delete the product by clicking on the Edit or Delete links on the page
+- User Story 5.13: As an admin user I can delete a review a regular user has added
+
+#### User Stories Steps 1
+1. As a regular user login to the website and navigate to the products page
+2. Sort the products from Price(High to Low)
+3. Click on a product
+4. Add a product
+5. As an admin user login and click on the add product(Product Management)
+6. Click on the edit button on the products page or in the product detail page and edit the product
+
+#### User Story Testing Results 1
+Step| Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 1 | The products page is displayed | [Desktop](readme/testing/feature_5/feature-5-step1-desktop.png)  | [Tablet](readme/testing/feature_5/feature-5-step1-tablet.png)  | [Mobile](readme/testing/feature_5/feature-5-step1-mobile.png)  | Passed |
+Step 2 | The products are sorted High to Low | [Desktop](readme/testing/feature_5/feature-5-step2-desktop.png)  | [Tablet](readme/testing/feature_5/feature-5-step2-tablet.png)  | [Mobile](readme/testing/feature_5/feature-5-step2-mobile.png)  | Passed |
+Step 3 | The product detail is displayed | [Desktop](readme/testing/feature_5/feature-5-step3-desktop.png)  | [Tablet](readme/testing/feature_5/feature-5-step3-tablet.png)  | [Mobile](readme/testing/feature_5/feature-5-step3-mobile.png)  | Passed |
+Step 4 | The add product page is displayed | [Desktop](readme/testing/feature_5/feature-5-step4-desktop.png)  | [Tablet](readme/testing/feature_5/feature-5-step4-tablet.png)  | [Mobile](readme/testing/feature_5/feature-5-step4-mobile.png)  | Passed |
+Step 5 | The edit product page is displayed | [Desktop](readme/testing/feature_5/feature-5-step5-desktop.png)  | [Tablet](readme/testing/feature_5/feature-5-step5-tablet.png)  | [Mobile](readme/testing/feature_5/feature-5-step5-mobile.png)  | Passed |
 
 
 
