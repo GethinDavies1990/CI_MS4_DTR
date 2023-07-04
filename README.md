@@ -45,7 +45,7 @@ The primary goal of the website from a site users perspective is as follows:
 ### Website pages
 - I have structured the websote into over (INSERT NUMBER OF PAGES HERE), each with clear structure, information and purpose. I sued Bootstrap throughout, which gave consistent structure and responsive design.
 - Below are the main pages'/features
-- These pages are descrived in more detail in the user stories section. 
+- These pages are descrived in more detail in the user stories section.
 
 (INSERT TABLE OF PAGES HERE)
 
@@ -117,7 +117,7 @@ default_town_or_city, default_county, default_postcode and default_country
 ## Scope
 There is overlap in terms of user stories for the two types of users, and they are described below
 ### User Stories Potential or Existing Customer
-The user stories for the regular user eg: "shopper user" (a potential or existing customer) are described as follows: 
+The user stories for the regular user eg: "shopper user" (a potential or existing customer) are described as follows:
 - User Story 1.1: As an admin/regular user the navigation bar is displayed with a logo on all pages with a search box, My account and shopping bag icons on a desktop device
 - User Story 1.2: As an admin/regular user the navigation bar is displayed on all pages with a search box, My account and shopping bag icons on a mobile/tablet device
 - User Story 1.3: As a regular user not logged in, I see a Register/Login link under the My Account dropdown
@@ -170,7 +170,7 @@ The user stories for the regular user eg: "shopper user" (a potential or existin
 - User Story 7.17: As a regular user not logged in, I can add items to my bag and make a purchase
 
 ### User Stories Website Owner
-The user stories for the regular user eg: "shopper user" (a potential or existing customer) are described as follows: 
+The user stories for the regular user eg: "shopper user" (a potential or existing customer) are described as follows:
 - User Story 1.1: As an admin/regular user the navigation bar is displayed with a logo on all pages with a search box, My account and shopping bag icons on a desktop device
 - User Story 1.2: As an admin/regular user the navigation bar is displayed on all pages with a search box, My account and shopping bag icons on a mobile/tablet device
 - User Story 1.3: As a regular user not logged in, I see a Register/Login link under the My Account dropdown
@@ -195,7 +195,7 @@ The user stories for the regular user eg: "shopper user" (a potential or existin
 - User Story 4.1: As an admin/regular user I can log in to the website using my username or email address and password. Both fields are mandatory. Once correct, I will be navigated to the homepage and a message displayed
 - User Story 4.2: As an admin/regular user I can request a new password if I forget my current password. I will receive an email to reset my password. Once I reset I can log in
 - User Story 5.10: As an admin user I can view the Add product page by clicking on the Product Management link.
-- User Story 5.11: As an admin user I can view the Edit product page by clicking on the Edit button on the product. 
+- User Story 5.11: As an admin user I can view the Edit product page by clicking on the Edit button on the product.
 - User Story 5.12: As an admin user I can click on a product, and I am navigated to the product detail page. I can edit or delete the product by clicking on the Edit or Delete links on the page
 - User Story 5.13: As an admin user I can delete a review a regular user has added
     - User Story 8.1: As an admin user I can add a product by clicking on the Product Management link in My Account. I must enter a name, category, price, sku, description, and image
@@ -214,8 +214,8 @@ The user stories for the regular user eg: "shopper user" (a potential or existin
 Each wireframe image below contains three sub images, one for desktop, tablet and mobile
 Figma was used to create the wireframes
 
-Page | Wireframe | 
------------- | ------------- 
+Page | Wireframe |
+------------ | -------------
 bag/templates/bag/bag.html | [Desktop/Tablet/Mobile](readme/wireframes/bag.png)
 checkout/templates/checkout/checkout.html | [Desktop/Tablet/Mobile](readme/wireframes/checkout.png)
 checkout/templates/checkout/checkout_success.html | [Desktop/Tablet/Mobile](readme/wireframes/checkout_success.png)
@@ -375,3 +375,40 @@ The website links in the footer are the same for all users
 #### User Stories feature 4
 - User Story 4.1: As an admin/regular user I can log in to the website using my username or email address and password. Both fields are mandatory. Once correct, I will be navigated to the homepage and a message displayed
 - User Story 4.2: As an admin/regular user I can request a new password if I forget my current password. I will receive an email to reset my password. Once I reset I can log in
+
+### Feature 5 Products and Product Detail Pages
+#### Description feature 5
+- A user view the products page with product count and with each product image, title, category, price and spice rating
+<br>![Products Desktop](readme/testing/all-products-view.png)
+- The user can sort the products by Price(high to low, low to high), Spice Rating(high to low, low to high), Name(A-Z, Z-A), Category(A-Z, Z-A)
+- A product detail page displays all the product information (image, description, sku, spice rating, category)
+<br>![Products Detail 1](readme/testing/product-detail-view.png)
+
+#### User Stories feature 5
+- User Story 5.1: As a regular user I can view the products page with product count and with each product image, title, spice rating, category the product is in.
+- User Story 5.2: As a regular user I can sort the products by Price(high to low, low to high), Spice Rating(high to low, low to high), Name(A-Z, Z-A), Category(A-Z, Z-A)
+- User Story 5.3: As a regular user if I click on a product I will be navigated to the product detail page
+- User Story 5.4: As a regular user I can view the product image, description, sku, spice rating, category
+- User Story 5.5: As a regular user I can click on the Keep Shopping button on the product detail page, and it will navigate the user to the products page
+- User Story 5.6: As a regular user I can set the product size(if applicable for the product) and quantity for a product (one plus)
+- User Story 5.10: As an admin user I can view the Add product page by clicking on the Product Management link.
+- User Story 5.11: As an admin user I can view the Edit product page by clicking on the Edit button on the product.
+- User Story 5.12: As an admin user I can click on a product, and I am navigated to the product detail page. I can edit or delete the product by clicking on the Edit or Delete links on the page
+- User Story 5.13: As an admin user I can delete a review a regular user has added
+
+### Feature 6 Profile Page
+#### Description feature 6
+- A regular user can update their default delivery information as per the user stories below
+- A use must be logged in to see their profile page
+- This is the information that is displayed when the user is checking out an order
+- A user can view and update their Default delivery information
+<br>![Default delivery information](readme/testing/profile-delivery-information-saved.png)
+- The user can also view their past orders and click on an order to view the order details
+<br>![Order History](readme/testing/profile-order-history.png)
+- This data is consistent with the information they supplied when they made the order
+
+- User Story 6.1: As a regular user I can view my Default delivery information: Phone Number, Street Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country
+- User Story 6.2: As a regular user I can update my Default delivery information: Phone Number, Street Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country
+- User Story 6.3: As a regular user I can view my order history(Order Number, Date, Items and Order Total)
+- User Story 6.4: As a regular user I can click on an order number to view the order information (Order number, Order date/time, Full Name, Street Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country, Phone Number, Order Total, Deliver, Grand Total)
+- User Story 7.1: As a regular user I can click on a product, set the size(if applicable) and quantity, click Add to Bag and the product will be added to my bag, a message
