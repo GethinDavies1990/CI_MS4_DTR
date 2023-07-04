@@ -2,17 +2,17 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-<section class="jumbotron text-center">
+<section class="jumbotron text-center dark-green-block">
     <div class="container jumbotron-content">
-        <img src="/media/logo-1.png" class="jumbotron-logo" alt="taco y tequila logo">
+        <img src="/media/logo-4.png" class="jumbotron-logo" alt="taco y tequila logo" height="100">
         <h1 class="logo-font text-white">Taco y Tequila</h1>
         <p class="text-white">
             Discover Mexico's culinary essence at Taco Y Tequila! Indulge in vibrant flavors, savor mouthwatering tacos,
@@ -24,286 +24,69 @@
     </div>
 </section>
 
-<div class="album py-5 bg-light">
+<div class="album py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                            Thumbnail
-                        </text>
-                    </svg>
+                <div class="card mb-4 shadow-sm bg-red">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/media/cta-drink.webp"
+                        alt="drink">
                     <div class="card-body">
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit
-                            longer.
+                        <p>
+                            Sip, savor, and celebrate! Explore our exquisite tequilas and crafted drinks at Taco Y
+                            Tequila. Join us for a refreshing experience that will delight your senses. Cheers to
+                            unforgettable flavors!
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    View
-                                </button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    Edit
-                                </button>
+                                <a class="btn btn-sm btn-red text-white">
+                                    Shop Drinks
+                                </a>
                             </div>
-                            <small class="text-muted">9 mins</small>
+                            <i class="fa-solid fa-whiskey-glass"></i>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                            Thumbnail
-                        </text>
-                    </svg>
+                <div class="card mb-4 shadow-sm dark-green-block">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="250" src="/media/cta-food.webp"
+                        alt="drink">
                     <div class="card-body">
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit
-                            longer.
+                        <p class="text-white">
+                            Experience a fiesta of flavors at Taco Y Tequila! Indulge in our mouthwatering Mexican food,
+                            from sizzling tacos to sizzling fajitas. Every bite is a celebration of authentic tastes
+                            that will transport you to the heart of Mexico. Join us for a culinary adventure that will
+                            leave you craving more. ¡Buen provecho!
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    View
-                                </button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    Edit
-                                </button>
+                                <a href="{% url 'products' %}" class="btn btn-sm btn-outline">
+                                    Shop Food
+                                </a>
                             </div>
-                            <small class="text-muted">9 mins</small>
+                            <i class="fa-solid fa-fish"></i>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                            Thumbnail
-                        </text>
-                    </svg>
+                <div class="card mb-4 shadow-sm bg-red">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="/media/cta-event.webp"
+                        alt="events">
                     <div class="card-body">
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit
-                            longer.
+                        <p>
+                            Spice up your next event with the Taco Y Tequila food truck! Our delectable Mexican cuisine
+                            on wheels will bring the fiesta to you. Book us now and treat your guests to a tantalizing
+                            experience they won't forget!
                         </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    View
-                                </button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    Edit
-                                </button>
+                                <a class="btn btn-sm btn-red text-white">
+                                    Book Event
+                                </a>
                             </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                            Thumbnail
-                        </text>
-                    </svg>
-                    <div class="card-body">
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit
-                            longer.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    View
-                                </button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    Edit
-                                </button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                            Thumbnail
-                        </text>
-                    </svg>
-                    <div class="card-body">
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit
-                            longer.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    View
-                                </button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    Edit
-                                </button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                            Thumbnail
-                        </text>
-                    </svg>
-                    <div class="card-body">
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit
-                            longer.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    View
-                                </button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    Edit
-                                </button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                            Thumbnail
-                        </text>
-                    </svg>
-                    <div class="card-body">
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit
-                            longer.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    View
-                                </button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    Edit
-                                </button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                            Thumbnail
-                        </text>
-                    </svg>
-                    <div class="card-body">
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit
-                            longer.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    View
-                                </button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    Edit
-                                </button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"></rect>
-                        <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                            Thumbnail
-                        </text>
-                    </svg>
-                    <div class="card-body">
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit
-                            longer.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    View
-                                </button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">
-                                    Edit
-                                </button>
-                            </div>
-                            <small class="text-muted">9 mins</small>
+                            <i class="fa-solid fa-truck"></i>
                         </div>
                     </div>
                 </div>

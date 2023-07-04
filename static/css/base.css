@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--main-color);
+    background-color: #fff;
 }
 
 /* NavBar */
@@ -48,7 +48,7 @@ body {
 }
 
 .jumbotron-logo {
-    height: 100px;
+    height: 120px;
 }
 
 .logo {
