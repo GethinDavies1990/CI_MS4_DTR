@@ -3,6 +3,8 @@ The testing approach(described in detail in this testing readme) is as follows:
 1. Automated unit testing using the Django unit test framework
 2. Manual testing using emulators and real devices
 
+Please Note- During the testing phase I used a google chrome extension called GOFullPage, whilst testing, the content on the page was displayed how i envisioned, but when taking the full page screenshot the image overlapped some content (on the screenshot only)
+
 ## Unit testing information
 - I wrote a number of unit tests(INSERT NUMBER HERE) using the Django unit test framework
 - These test cases are structured in a number of suites(INSERT NUMBERE HERE)
@@ -366,5 +368,58 @@ Step| Result | Desktop | Tablet | Mobile | Status
 Step 1 | The users default delivery information and order history is displayed | [Desktop](readme/testing/feature_6/feature-6-step1-desktop.png)  | [Tablet](readme/testing/feature_6/feature-6-step1-tablet.png)  | [Mobile](readme/testing/feature_6/feature-6-step1-mobile.png)  | Passed |
 Step 2 | The users default delivery information is updated and displayed (Street Address 2) | [Desktop](readme/testing/feature_6/feature-6-step2-desktop.png)  | [Tablet](readme/testing/feature_6/feature-6-step2-tablet.png)  | [Mobile](readme/testing/feature_6/feature-6-step2-mobile.png)  | Passed |
 Step 3 | The users order details is displayed | [Desktop](readme/testing/feature_6/feature-6-step3-desktop.png)  | [Tablet](readme/testing/feature_6/feature-6-step3-tablet.png)  | [Mobile](readme/testing/feature_6/feature-6-step3-mobile.png)  | Passed |
+
+
+### Feature 7 Bag And checkout
+#### Description feature 7
+- User Story 7.1: As a regular user I can click on a product, set the size(if applicable) and quantity, click Add to Bag and the product will be added to my bag, a message displayed, and a toast will be displayed with the bag contents
+- User Story 7.2: As a regular user I can click on the bag icon, I will be brought to my bag. If there are no items in the bag, a message will be displayed
+- User Story 7.3: As a regular user I can click on the bag icon, I will be brought to my bag. If there are items, the product image, detail, price, quantity, subtotal will be displayed for the item. The bag total, delivery(if applicable), grand total would be displayed
+- User Story 7.4: As a regular user I can update the quantity or remove an item from my shopping bag
+- User Story 7.5: As a regular user I can click on the Secure Checkout button on the bag page or toast message, and I will be brought to the Checkout page
+- User Story 7.6: As a regular user on the checkout page I can set my details(Full Name, email address, both mandatory) and Delivery Information(Phone Number(mandatory), Street Address 1(mandatory), Street Address 2, Town or City(mandatory, County, State or Locality, Postal Code and Country(mandatory), which is populated from my profile if filled in
+- User Story 7.7: As a regular user on the checkout page I can view the order summary(item image, title, size, quantity, subtotal, order total, delivery, grand total)
+- User Story 7.8: As a regular user on the checkout page if the order total is greater than 75 Pounds there is no delivery charge
+- User Story 7.9: As a regular user on the checkout page if the order total is less than 75 pounds, there is delivery charge(5% of the order total) A message is displayed to the user on the toast message of what they need to add to the bag to avail of no delivery charge
+- User Story 7.10: As a regular user on the checkout page if I click "Save this delivery information to my profile", the details entered will be saved on the users profile
+- User Story 7.11: As a regular user on the checkout page I can enter a credit card number(16 digits), expiry date(2 digits/2digits) and a postal code(up to 5 digits), these fields are mandatory
+- User Story 7.12: As a regular user on the checkout page if I click the Keep Shopping button I will be navigated to the products page
+- User Story 7.13: As a regular user on the checkout page if I click the Complete Order button, and the transaction is not successful, a message will be displayed
+- User Story 7.14: As a regular user on the checkout page if I click the Complete Order button, and the transaction is successful, the user will be navigated to a checkout success page, and an email is sent to the user
+- User Story 7.15: As a regular user on the checkout page if I click the Complete Order button, and the transaction is successful, the order is saved to my order history in My profile page
+- User Story 7.16: As a regular user on the checkout success page, the Order details will be displayed (Order number, Order date/time, Full NameStreet Address 1, Street Address 2, Town or City, County, State or Locality, Postal Code and Country, Phone Number, Order Total, Deliver, Grand Total) and a link to the sales item page is displayed
+- User Story 7.17: As a regular user not logged in, I can add items to my bag and make a purchase
+
+#### User Stories Steps 1
+1. As a regular user add some items to your bag, so the order is less than 99 euros
+2. Empty the bag
+3. Add the items back into the bag, and Update the quantity on one item by one, so the order goes above 75 pound
+4. Checkout the order
+
+
+#### User Story Testing Results 1
+Step| Result | Desktop | Tablet | Mobile | Status
+------------ | ------------ | ------------- | ------------- | ------------- | -------------
+Step 1 | The items are added to the bag, and there is a delivery charge(5%) and message displayed | [Desktop](readme/testing/feature_7/feature-7-step1-desktop.png)  | [Tablet](readme/testing/feature_7/feature-7-step1-tablet.png)  | [Mobile](readme/testing/feature_7/feature-7-step1-mobile.png)  | Passed |
+Step 2 | A message "Your bag is empty" is displayed with a button to go shopping | [Desktop](readme/testing/feature_7/feature-7-step2-desktop.png)  | [Tablet](readme/testing/feature_7/feature-7-step2-tablet.png)  | [Mobile](readme/testing/feature_7/feature-7-step2-mobile.png)  | Passed |
+Step 3 | The items are added to the bag, and there is no delivery charge | [Desktop](readme/testing/feature_7/feature-7-step3-desktop.png)  | [Tablet](readme/testing/feature_7/feature-7-step3-tablet.png)  | [Mobile](readme/testing/feature_7/feature-7-step3-mobile.png)| Passed |
+Step 4 | The user receives a success toast notify the order is confirmed | [Desktop](readme/testing/feature_7/feature-7-step4-desktop.png)  | [Tablet](readme/testing/feature_7/feature-7-step4-tablet.png)  | [Mobile](readme/testing/feature_7/feature-7-step4-mobile.png)  | Passed |
+
+
+### Feature 8 Admin
+#### Description feature 8
+- User Story 8.7: As an admin user I can view products in the django admin page and can view a products sku, name, category, has sizes, price, spice rating, image
+- User Story 8.8: As an admin user I can view products in the django admin page and can view search and filter by sku, category, name and price
+- User Story 8.9: As an admin user I can view users in the django admin page and can view their username, email address, first name, last name, staff status
+- User Story 8.10: As an admin user I can view users in the django admin page and can search by username and email address and  filter by staff status, superuser status and active status
+- User Story 8.11 As an admin user I can view categories in the django admin page and can view a category name and friendly name
+
+- User Story 13.1: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
+#### User Story Steps 8.7
+- Step 1: As an admin user login navigate to https://taco-y-tequila-c6ff831b9a3a.herokuapp.com/admin/checkout/order/
+#### User Story Testing Results 8.7
+Step| Result | Result  | Status
+------------ | ------------ | ------------- | -------------
+Step 1 | The orders are displayed | [Result](readme/testing/13_1_order.PNG)  | Passed |
 
 

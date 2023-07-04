@@ -531,9 +531,6 @@ The website links in the footer are the same for all users
 - Categories
 <br>![Categories](readme/testing/admin-categories.png)
 
-    - User Story 8.1: As an admin user I can add a product by clicking on the Product Management link in My Account. I must enter a name, category, price, sku, description, and image
-- User Story 8.2: As an admin user I can edit a product by clicking on the Edit button on the Products page for the product. I can update the name, category, price, sku, description, has Sizes(Unknown, Yes, No), Spice Rating, update an image and click the Edit Product button. Clicking cancel navigates the user to the product page
-- User Story 8.4: As an admin user I can delete a product by clicking on the Delete button on the product. A modal will appearing asking to confirm, and a message displayed once I confirm.
 - User Story 8.5: As an admin user I can view users orders in the django admin page and can view order number, date, full name, order total, delivery cost, grand total
 - User Story 8.6: As an admin user I can view users orders in the django admin page and can search by order number, full name and filter by order number, full name and order date
 - User Story 8.7: As an admin user I can view products in the django admin page and can view a products code, name, category, has sizes, price, presale price, spice rating, image
