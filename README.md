@@ -5,7 +5,7 @@ Taco y Tequila is mexican website, for users to purchase meal kits and also some
     - An admin(administrator) user account
     - A regular(shopper) user account
     - When making a payment as a regular user, a test credit card of 4242424242424242 has been set up for the card number
-    - For the expiry date, cvc and postal code any series number(s) can be used(once they meet the mimimum values)
+    - For the expiry date, cvc and postal code any series number(s) can be used(once they meet the minimum values)
 <br>
 
 ![Responsive site example](readme/responsive/responsive.PNG)
@@ -384,7 +384,7 @@ The website links in the footer are the same for all users
 <br>![404](readme/testing/404_desktop.PNG)
 
 
-
+### Feature 1 Navigation & Homepage
 #### User Stories feature 1
 - User Story 1.1: As an admin/regular user the navigation bar is displayed with a logo on all pages with a search box, My account and shopping bag icons on a desktop device
 - User Story 1.2: As an admin/regular user the navigation bar is displayed on all pages with a search box, My account and shopping bag icons on a mobile/tablet device
@@ -487,7 +487,6 @@ The website links in the footer are the same for all users
 #### Description feature 7
 - A user can add items to a bag, if the bag is empty a message is displayed
 - A user can update the quantity or remove an item from their shopping bag
-<br>![Bag Empty](readme/testing/bag-empty)
 - An order over 75 pounds means free delivery. An order less than 75 incurs a 5% delivery charge
 <br>![Bag 1](readme/testing/bag-delivery-charge.png)
 <br>![Bag 1](readme/testing/bag-free-delivery.png)
