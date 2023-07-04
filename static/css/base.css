@@ -26,15 +26,30 @@ body {
     height: 10vh;
 }
 
-.hero-background {
-    background: url('/media/hero.webp') no-repeat center center fixed;
+.jumbotron {
+    background: url('/media/mexican-tacos-with-corn-tortilla-and-meat-on-woode-2023-03-08-20-42-28-utc.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
-    opacity: 0.8;
+    position: relative;
 }
 
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron-content {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron-logo {
+    height: 100px;
+}
 
 .logo {
     height: 80px;
