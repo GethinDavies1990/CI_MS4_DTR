@@ -1,24 +1,39 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.contrib import admin
+
+# Internal:
 from .models import Product, Category
 
-# Register your models here.
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 class ProductAdmin(admin.ModelAdmin):
+    """
+    Admin class for the Product model
+    """
+
     list_display = (
-        'sku',
-        'name',
-        'category',
-        'price',
-        'spicerating',
-        'image',
+        "sku",
+        "name",
+        "category",
+        "price",
+        "spicerating",
+        "image",
     )
 
-    ordering = ('sku', )
+    ordering = ("sku",)
+
 
 class CategoryAdmin(admin.ModelAdmin):
+    """
+    Admin class for the Category model.
+    """
+
     list_display = (
-        'friendly_name',
-        'name',
+        "friendly_name",
+        "name",
     )
 
 
