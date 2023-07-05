@@ -37,6 +37,12 @@
                                 <div class="card-footer pt-0 border-0 text-left">
                                     {{ team.about }}
                                 </div>
+                                {% if request.user.is_superuser %}
+                                <small class="ml-3">
+                                    <a href="{% url 'edit_team_member' team.id %}">Edit</a> |
+                                    <a class="text-danger" href="{% url 'delete_team_member' team.id %}">Delete</a>
+                                </small>
+                            {% endif %}
                             </div>
                             {% if forloop.counter|divisibleby:1 %}
                             <div class="col-12 d-sm-none mb-5">
