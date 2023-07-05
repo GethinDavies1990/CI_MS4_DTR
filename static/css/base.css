@@ -280,6 +280,7 @@ input[name='q']::placeholder {
 .product-card-block-blue {
     background-color: var(--block-main);
     width: 95%;
+    color: var(--text-main);
 }
 
 /* Allauth form */

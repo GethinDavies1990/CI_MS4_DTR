@@ -33,7 +33,7 @@
                         <div class="product-card-block product-card-block-blue">
                         {% if product.category %}
                             <p class="small mt-1 mb-0">
-                                <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-white mt-1 mb-1">
+                                <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-main mt-1 mb-1">
                                     <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                 </a>
                             </p>
