@@ -139,7 +139,9 @@ WSGI_APPLICATION = "taco_y_tequila.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 if "DATABASE_URL" in os.environ:
-    DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
+    DATABASES = {
+        "default": dj_database_url.parse(
+            os.environ.get("DATABASE_URL"))}
 else:
     DATABASES = {
         "default": {

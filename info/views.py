@@ -48,8 +48,8 @@ def add_team_member(request):
             return redirect(reverse("meet_the_team"))
         else:
             messages.error(
-                request, "Failed to add Team member. Please ensure the form is valid"
-            )
+                request,
+                "Failed to add Team member. Please ensure the form is valid")
     else:
         form = TeamsForm()
 

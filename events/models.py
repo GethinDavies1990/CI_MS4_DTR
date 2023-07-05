@@ -33,7 +33,10 @@ class Events(models.Model):
         max_length=50, choices=SERVICE_CHOICES, default="Fajita Party"
     )
     day = models.DateField(default=datetime.now)
-    time = models.CharField(max_length=10, choices=TIME_CHOICES, default="5.30 PM")
+    time = models.CharField(
+        max_length=10,
+        choices=TIME_CHOICES,
+        default="5.30 PM")
     time_ordered = models.DateTimeField(default=datetime.now, blank=True)
 
     def __str__(self):

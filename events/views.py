@@ -27,7 +27,7 @@ def book_event(request):
     if request.method == "POST":
         event_type = request.POST.get("event_type")
         day = request.POST.get("day")
-        if event_type == None:
+        if event_type is None:
             messages.warning(request, "Please select an event type!")
             return redirect("book_event")
 
@@ -66,7 +66,7 @@ def event_booked(request):
             time = request.POST.get("time")
             date = day_to_weekday(day)
 
-            if event_type != None:
+            if event_type is not None:
                 if day <= max_date and day >= min_date:
                     if (
                         date == "Thursday"
@@ -75,7 +75,8 @@ def event_booked(request):
                         or date == "Sunday"
                     ):
                         if Events.objects.filter(day=day).count() < 11:
-                            if Events.objects.filter(day=day, time=time).count() < 1:
+                            if Events.objects.filter(
+                                    day=day, time=time).count() < 1:
                                 EventsForm = Events.objects.get_or_create(
                                     user=user,
                                     event_type=event_type,
@@ -86,17 +87,16 @@ def event_booked(request):
                                 return redirect("home")
                             else:
                                 messages.warning(
-                                    request,
-                                    "The Selected Time Has Been Reserved Before!",
-                                )
+                                    request, "The Selected Time Has Been Reserved Before!", )
                         else:
-                            messages.warning(request, "The Selected Day Is Full!")
+                            messages.warning(
+                                request, "The Selected Day Is Full!")
                     else:
-                        messages.warning(request, "The Selected Date Is Incorrect")
+                        messages.warning(
+                            request, "The Selected Date Is Incorrect")
                 else:
                     messages.warning(
-                        request, "The Selected Date Isn't In The Correct Time Period!"
-                    )
+                        request, "The Selected Date Isn't In The Correct Time Period!")
             else:
                 messages.warning(request, "Please Select A event_type!")
 
