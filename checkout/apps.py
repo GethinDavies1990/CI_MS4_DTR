@@ -16,4 +16,11 @@ class CheckoutConfig(AppConfig):
     name = "checkout"
 
     def ready(self):
+        """
+        import checkout signals library
+        Args:
+            N/A
+        Returns:
+            N/A
+        """
         import checkout.signals

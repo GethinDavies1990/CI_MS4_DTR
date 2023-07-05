@@ -1,7 +1,8 @@
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, \
+    HttpResponse, get_object_or_404
 from django.contrib import messages
 
 # Internal:
@@ -43,8 +44,11 @@ def add_to_bag(request, item_id):
                     request, f"Added {size.upper()}{product.name} to your bag"
                 )
         else:
-            bag[item_id] = {"items_by_size": {size: quantity}}
-            messages.success(request, f"Added {size.upper()}{product.name} to your bag")
+            bag[item_id] = {
+                "items_by_size": {size: quantity}}
+            messages.success(
+                request, f"Added {size.upper()}{product.name} to your bag"
+            )
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
@@ -74,7 +78,8 @@ def adjust_bag(request, item_id):
             bag[item_id]["items_by_size"][size] = quantity
             messages.success(
                 request,
-                f'Updated {size.upper()}{product.name} quantity to {bag[item_id]["items_by_size"][size]}',
+                f'Updated {size.upper()}{product.name}'
+                f'quantity to {bag[item_id]["items_by_size"][size]}'
             )
         else:
             del bag[item_id]["items_by_size"][size]
@@ -122,5 +127,5 @@ def remove_from_bag(request, item_id):
         return HttpResponse(status=200)
 
     except Exception as e:
-        messages.erro(request, f"Error removing item: {e}")
+        messages.error(request, f"Error removing item: {e}")
         return HttpResponse(status=500)
