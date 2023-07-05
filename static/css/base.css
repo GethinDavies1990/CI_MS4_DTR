@@ -283,6 +283,12 @@ input[name='q']::placeholder {
 }
 
 /* Allauth form */
+
+.allauth-form-inner-content {
+margin-top: 70px;
+margin-bottom: 50px;
+}
+
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
     color: #6c757d;
@@ -304,8 +310,9 @@ input[name='q']::placeholder {
 /* Footer */
 
 .footer {
-    padding-top: 20px;
     width: 100%;
+    margin-top: 50px;
+    bottom: 0;
 }
 
 footer > .text-small {
