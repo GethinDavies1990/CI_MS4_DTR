@@ -307,7 +307,7 @@ I have gone for a simple and minimal design for the website, with 2 shades of gr
 <br>
 ```
 :root {
-    --main-color: #cce293; <img valign='middle' alt='green' src='https://readme-swatches.vercel.app/cce293'/>
+    --main-color: #cce293;
     --main-color-sec: #40724e;
     --text-main: #0C1829;
     --block-main: #22A699;
@@ -642,6 +642,8 @@ Number | Update
   - For checking the accessibility on the colors before designing
 - Color Hunt (https://colorhunt.co/)
   - For finding color mixes
+- GitHub Projects
+  - For tracking progress on my project and also used it as a bug tracking tool.
 
 # Testing
 The testing information and results for this project are documented in [TESTING.md](TESTING.md)
