@@ -1,16 +1,20 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.contrib import admin
+
+# Internal:
 from .models import Events
 
-# Register your models here.
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 class EventsAdmin(admin.ModelAdmin):
-    list_display = (
-        'user',
-        'event_type',
-        'day',
-        'time',
-        'time_ordered'
-    )
+    """
+    Admin class for the Events model
+    """
+
+    list_display = ("user", "event_type", "day", "time", "time_ordered")
 
 
 admin.site.register(Events, EventsAdmin)

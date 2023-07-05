@@ -1,6 +1,16 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.apps import AppConfig
+
+# Internal:
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 class EventsConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'events'
+    """
+    A class for the events configuration
+    """
+
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "events"
