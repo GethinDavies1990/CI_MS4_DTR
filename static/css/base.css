@@ -291,6 +291,11 @@ input[name='q']::placeholder {
     color: var(--text-main);
 }
 
+.product-card h2,
+.product-card h3 {
+    font-size: 1.2rem;
+}
+
 /* Allauth form */
 
 .allauth-form-inner-content {
