@@ -4,52 +4,60 @@
 <html lang="en">
 	<head>
 		{% block meta %}
-			<meta http-equiv="X-UA-compatible" content="ie=edge">
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-compatible" content="ie=edge">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		{% endblock %}
 
 		{% block extra_meta %}
-			<meta name="description" content="Welcome to Taco y Tequila, a Mexican restaurant that offers delicious authentic cuisine. We specialize in catering for events and also provide meal kits for delivery. Discover the rich flavors of Mexico with our diverse menu and enjoy an unforgettable dining experience.">
-			<meta name="keywords" content="Taco y Tequila, Mexican restaurant, catering, event catering, meal kits, authentic cuisine, Mexican flavors, dining experience">
-			<meta name="author" content="Gethin Davies">
+		<meta name="description"
+			content="Welcome to Taco y Tequila, a Mexican restaurant that offers delicious authentic cuisine. We specialize in catering for events and also provide meal kits for delivery. Discover the rich flavors of Mexico with our diverse menu and enjoy an unforgettable dining experience.">
+		<meta name="keywords"
+			content="Taco y Tequila, Mexican restaurant, catering, event catering, meal kits, authentic cuisine, Mexican flavors, dining experience">
+		<meta name="author" content="Gethin Davies">
 		{% endblock %}
 
 		{% block corecss %}
-			<!-- Bootstrap CSS -->
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-			<!-- Google Fonts -->
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Paytone+One&display=swap" rel="stylesheet">
-			<!-- Custom CSS -->
-			<link rel="stylesheet" href="{% static 'css/base.css' %}">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Paytone+One&display=swap"
+			rel="stylesheet">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="{% static 'css/base.css' %}">
 		{% endblock %}
 
 		{% block extra_css %}
 		{% endblock %}
 
 		{% block corejs %}
-			<!--Font Awesome  -->
-			<script src="https://kit.fontawesome.com/66ae56075e.js" crossorigin="anonymous"></script>
-			<!-- Jquery -->
-			<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-			<!-- Booststrap JS -->
-        	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-			<!-- Stripe -->
-			<script src="https://js.stripe.com/v3/"></script>
-			<!-- Sweet Alert -->
-			<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-			<!-- EmailJS -->
-			<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<!--Font Awesome  -->
+		<script src="https://kit.fontawesome.com/66ae56075e.js" crossorigin="anonymous"></script>
+		<!-- Jquery -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<!-- Booststrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"></script>
+		<!-- Stripe -->
+		<script src="https://js.stripe.com/v3/"></script>
+		<!-- Sweet Alert -->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<!-- EmailJS -->
+		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 		{% endblock %}
 
 		{% block extra_js %}
 		{% endblock %}
 
 		<link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon">
-
 		<title>Taco y Tequila {% block extra_title %}{% endblock %}</title>
 	</head>
 	<body>
@@ -57,16 +65,19 @@
 			<div id="topnav" class="row top-nav pt-lg-2 d-none d-lg-flex">
 				<div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
 					<a href="{% url 'home' %}" class="nav-link main-logo-link">
-						<img src="https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/logo-3.webp" alt="taco-y-tequila logo" class="my-0 logo" height="75" width="80">
+						<img src="https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/logo-3.webp"
+							alt="taco-y-tequila logo" class="my-0 logo" height="75" width="80">
 					</a>
 				</div>
 				<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
 					<form method="GET" action="{% url 'products' %}">
 						<div class="input-group w-100">
 							<label for="search" class="hidden">Search:</label>
-							<input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site" id="search">
+							<input class="form-control border border-black rounded-0" type="text" name="q"
+								placeholder="Search our site" id="search">
 							<div class="input-group-append">
-								<button class="form-control btn btn-red border border-black rounded-0" type="submit" aria-label="Search">
+								<button class="form-control btn btn-red border border-black rounded-0" type="submit"
+									aria-label="Search">
 									<span class="icon-dark">
 										<i class="fas fa-search"></i>
 									</span>
@@ -78,7 +89,8 @@
 				<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
 					<ul class="list-inline list-unstyled text-center text-lg-right my-0">
 						<li class="list-inline-item dropdown">
-							<a class="text-main nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="text-main nav-link" href="#" id="user-options" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">
 								<div class="text-center">
 									<div><i class=" icon-dark fas fa-user fa-lg"></i></div>
 									<p class="my-0 text-main">My Account</p>
@@ -86,26 +98,27 @@
 							</a>
 							<div class="dropdown-menu border-0" aria-labelledby="user-options">
 								{% if request.user.is_authenticated %}
-									{% if request.user.is_superuser %}
-										<a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-									{% endif %}
-									<a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-									<a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+								{% if request.user.is_superuser %}
+								<a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+								{% endif %}
+								<a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+								<a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
 								{% else %}
-									<a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-									<a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+								<a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+								<a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
 								{% endif %}
 							</div>
 						</li>
 						<li class="list-inline-item">
-							<a class="{% if grand_total %}text-info font-weight-bold{% else %}text-main{% endif %} nav-link" href="{% url 'view_bag' %}">
+							<a class="{% if grand_total %}text-info font-weight-bold{% else %}text-main{% endif %} nav-link"
+								href="{% url 'view_bag' %}">
 								<div class="text-center">
 									<div><i class="icon-dark fas fa-shopping-bag fa-lg"></i></div>
 									<p class="my-0">
 										{% if grand_total %}
-											£{{ grand_total|floatformat:2 }}
+										£{{ grand_total|floatformat:2 }}
 										{% else %}
-											£0.00
+										£0.00
 										{% endif %}
 									</p>
 								</div>
@@ -116,7 +129,8 @@
 			</div>
 			<div class="row bg-red">
 				<nav class="navbar navbar-expand-lg navbar-light w-100">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+						aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					{% include 'includes/mobile-top-header.html' %}
@@ -125,32 +139,30 @@
 			</div>
 			<div id="deliver-banner" class="row text-center">
 				<div class="col bg-main">
-					<h4 class="logo-font my-1 text-main">Free delivery on orders over £{{ free_delivery_threshold }}</h4>
+					<h4 class="logo-font my-1 text-main">Free delivery on orders over £{{ free_delivery_threshold }}
+					</h4>
 				</div>
 			</div>
-
 		</header>
-
 		{% if messages %}
-			<div class="message-container">
-				{% for message in messages %}
-					{% with message.level as level %}
-						{% if level == 40 %}
-							{% include 'includes/toasts/toast_error.html' %}
-						{% elif level == 30 %}
-							{% include 'includes/toasts/toast_warning.html' %}
-						{% elif level == 25 %}
-							{% include 'includes/toasts/toast_success.html' %}
-						{% else %}
-							{% include 'includes/toasts/toast_info.html' %}
-						{% endif %}
-					{% endwith %}
-				{% endfor %}
-			</div>
+		<div class="message-container">
+			{% for message in messages %}
+			{% with message.level as level %}
+			{% if level == 40 %}
+			{% include 'includes/toasts/toast_error.html' %}
+			{% elif level == 30 %}
+			{% include 'includes/toasts/toast_warning.html' %}
+			{% elif level == 25 %}
+			{% include 'includes/toasts/toast_success.html' %}
+			{% else %}
+			{% include 'includes/toasts/toast_info.html' %}
+			{% endif %}
+			{% endwith %}
+			{% endfor %}
+		</div>
 		{% endif %}
 
 		{% block page_header %}
-
 		{% endblock %}
 
 		{% block content %}
@@ -163,5 +175,4 @@
 		<script src="{% static 'js/send_email.js' %}"></script>
 		{% endblock %}
 	</body>
-
 </html>
