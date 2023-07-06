@@ -24,14 +24,18 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views import defaults as default_views
 from django.conf.urls import handler404
+from django.conf.urls import handler500
 from .views import page_not_found
 
 
 # Internal:
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
+# Error Page Handlers
 handler404 = 'taco_y_tequila.views.page_not_found'
+handler500 = 'taco_y_tequila.views.server_error'
+handler400 = 'taco_y_tequila.views.bad_request'
+handler403 = 'taco_y_tequila.views.forbidden'
 
 
 urlpatterns = [
@@ -45,5 +49,3 @@ urlpatterns = [
     path("info/", include("info.urls")),
     path("", include("events.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-
