@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--main-color);
 }
 
 /* NavBar */
@@ -310,6 +310,14 @@ min-height: 40vh;
 }
 
 /* Footer */
+
+.footer-div {
+    background-color: var(--main-color);
+    min-height: 50vh;
+    margin-top: 50px;
+    bottom: 0;
+    left: 0;
+}
 
 footer > .text-small {
     font-size: 0.9rem;
