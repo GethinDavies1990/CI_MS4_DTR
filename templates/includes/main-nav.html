@@ -37,8 +37,8 @@
             <div class="dropdown-menu border-0" aria-labelledby="drinks-link">
                 <a href="{% url 'products' %}?category=drinks_tequila" class="dropdown-item">Tequila</a>
                 <a href="{% url 'products' %}?category=drinks_softdrinks" class="dropdown-item">Soft Drinks</a>
-                <a href="{% url 'products' %}?category=drinks_beers" class="dropdown-item">Beers</a>
-                <a href="{% url 'products' %}?category=drinks_tequila,drinks_softdrinks,drinks_beers" class="dropdown-item">All Drinks</a>
+                <a href="{% url 'products' %}?category=drinks_beer" class="dropdown-item">Beers</a>
+                <a href="{% url 'products' %}?category=drinks_tequila,drinks_softdrinks,drinks_beer" class="dropdown-item">All Drinks</a>
             </div>
         </li>
 
@@ -47,8 +47,8 @@
                 Sauces &amp; Spices
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="spices-sauces-link">
-                <a href="{% url 'products' %}?sauces" class="dropdown-item">Sauces</a>
-                <a href="{% url 'products' %}?spices" class="dropdown-item">Spices</a>
+                <a href="{% url 'products' %}?category=sauces" class="dropdown-item">Sauces</a>
+                <a href="{% url 'products' %}?category=spices" class="dropdown-item">Spices</a>
             </div>
         </li>
 
