@@ -1,6 +1,13 @@
 {
     "cSpell.words": [
-        "Dynow"
+        "Booststrap",
+        "corecss",
+        "corejs",
+        "Dynow",
+        "forloop",
+        "Gethin",
+        "postloadjs",
+        "spicerating"
     ],
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
