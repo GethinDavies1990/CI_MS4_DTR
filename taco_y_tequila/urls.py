@@ -22,9 +22,18 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views import defaults as default_views
+from django.conf.urls import handler404
+from .views import page_not_found
+
 
 # Internal:
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+handler404 = 'taco_y_tequila.views.page_not_found'
+
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("allauth.urls")),
@@ -36,3 +45,5 @@ urlpatterns = [
     path("info/", include("info.urls")),
     path("", include("events.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
