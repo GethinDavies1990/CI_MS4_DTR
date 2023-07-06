@@ -22,7 +22,7 @@ class StripeWH_Handler:
 
     def __init__(self, request):
         """
-        Initilisation of handler
+        Initialization of handler
         Args:
             request (object): Request object
         Returns:
@@ -77,6 +77,11 @@ class StripeWH_Handler:
         pid = intent.id
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
+
+        # Get the Charge object
+        stripe_charge = stripe.Charge.retrieve(
+        intent.latest_charge
+        )
 
         billing_details = stripe_charge.billing_details
         shipping_details = intent.shipping
