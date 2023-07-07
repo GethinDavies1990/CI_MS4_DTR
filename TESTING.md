@@ -503,7 +503,7 @@ I used https://jigsaw.w3.org/css-validator/ to validate the css(style.css)
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
             src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!" />
+            alt="Valid CSS!">
     </a>
 </p>
 
