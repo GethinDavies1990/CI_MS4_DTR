@@ -31,16 +31,16 @@
                                     alt="{{ team.full_name }}">
                                 {% endif %}
                                 <div class="card-body pb-0 product-card">
-                                    <h3 class="mb-2 logo-font">{{ team.full_name }}</h3>
-                                    <h4 class="mb-2 logo-font">{{ team.role }}</h4>
+                                    <h2 class="mb-2 logo-font">{{ team.full_name }}</h2>
+                                    <h3 class="mb-2 logo-font">{{ team.role }}</h3>
                                 </div>
                                 <div class="card-footer pt-0 border-0 text-left">
                                     {{ team.about }}
                                 </div>
                                 {% if request.user.is_superuser %}
                                 <small class="ml-3">
-                                    <a href="{% url 'edit_team_member' team.id %}">Edit</a> |
-                                    <a class="text-danger" href="{% url 'delete_team_member' team.id %}">Delete</a>
+                                    <a href="{% url 'edit_team_member' team.id %}" class="edit-button">Edit</a> |
+                                    <a class="delete-button" href="{% url 'delete_team_member' team.id %}">Delete</a>
                                 </small>
                             {% endif %}
                             </div>
