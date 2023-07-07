@@ -559,5 +559,43 @@ taco_y_tequila/urls | No errors/warnings [Results](readme/validation/pep8_valida
 taco_y_tequila/views | No errors/warnings [Results](readme/validation/pep8_validation/taco_y_tequila_views.png)
 taco_y_tequila/wsgi | No errors/warnings [Results](readme/validation/pep8_validation/taco_y_tequila_wsgi.png)
 custom_storages.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_views.png)
-manage.py | No errors/warnings
+
+## Chrome Dev tools Lighthouse
+
+- I used Lighthouse (https://developers.google.com/web/tools/lighthouse) to test the performance, seo, best practices and accessibility of the site
+- Overall the results are very good for the 4 values: Performance, Accessibility, Best Practices and SEO
+
+### Desktop
+Page  | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%)
+------------  | ------------ | ------------- | ------------- | -------------
+bag/templates/bag/bag.html | 91 | 100 | 83 | 100 |
+checkout/templates/checkout/checkout.html | 82 | 100 | 80 | 100 |
+checkout/templates/checkout/checkout_success.html | 95 | 100 | 87 | 100 ||
+home/templates/home/index.html | 91 | 100 | 87 | 100 ||
+products/templates/products/add_product.html | 94 | 92 | 87 | 100 |
+products/templates/products/edit_product.html | 97 | 92 | 87 | 100 |
+products/templates/products/product_detail.html | 96 | 100 | 80 | 100 |
+products/templates/products/products.html  | 96 | 100 | 87 | 100 |
+profile/templates/profile/profile.html | 97 | 100 | 87 | 100 |
+profile/templates/profile/order_history.html | 95 | 100 | 87 | 100 |
+templates/allauth/account/login.html | 94 | 100 |87 | 100 |
+templates/allauth/account/logout.html | 93 | 100 | 87 | 100 |
+templates/allauth/account/register.html | 98| 100 | 87 | 100 |
+
+### Mobile
+Page  | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%)
+------------  | ------------ | ------------- | ------------- | -------------
+bag/templates/bag/bag.html | 60 | 93 | 87 | 100 |
+checkout/templates/checkout/checkout.html | 65 | 98 | 87 | 100 |
+checkout/templates/checkout/checkout_success.html | 67 | 97 | 87 | 100 |
+home/templates/home/index.html | 62 | 97 | 87 | 100 |
+products/templates/products/add_product.html | 77 | 89 | 87 | 100 |
+products/templates/products/edit_product.html | 79 | 89 | 87 | 100 |
+products/templates/products/product_detail.html | 70 | 98 | 80 | 100 |
+products/templates/products/products.html  | 76 | 97 | 87 | 92 |
+profile/templates/profile/profile.html | 76 | 98 | 87 | 100 |
+profile/templates/profile/order_history.html | 70 | 97 | 87 | 100 |
+templates/allauth/account/login.html | 78 | 97 | 87 | 98 |
+templates/allauth/account/logout.html | 74 | 97 | 87 | 100 |
+templates/allauth/account/register.html | 73 | 97 | 87 | 100 |
 
