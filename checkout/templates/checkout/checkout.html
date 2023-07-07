@@ -76,26 +76,26 @@
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
-                        <label class="visually-hidden">Full Name</label>
+                        <label class="visually-hidden" for="id_full_name">Full Name</label>
                         {{ order_form.full_name | as_crispy_field }}
-                        <label class="visually-hidden">Email</label>
+                        <label class="visually-hidden" for="id_email">Email</label>
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
                     <fieldset class="rounded px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
-                        <label class="visually-hidden">Phone Number</label>
+                        <label class="visually-hidden" for="id_phone_number">Phone Number</label>
                         {{ order_form.phone_number | as_crispy_field }}
-                        <label class="visually-hidden">Street Address 1r</label>
+                        <label class="visually-hidden" for="id_street_address1">Street Address 1r</label>
                         {{ order_form.street_address1 | as_crispy_field }}
-                        <label class="visually-hidden">Street Address 2</label>
+                        <label class="visually-hidden" for="id_street_address2">Street Address 2</label>
                         {{ order_form.street_address2 | as_crispy_field }}
-                        <label class="visually-hidden">Town or City</label>
+                        <label class="visually-hidden" for="id_town_or_city">Town or City</label>
                         {{ order_form.town_or_city | as_crispy_field }}
-                        <label class="visually-hidden">County</label>
+                        <label class="visually-hidden" for="id_county">County</label>
                         {{ order_form.county | as_crispy_field }}
-                        <label class="visually-hidden">Post Code</label>
+                        <label class="visually-hidden" for="id_post_code">Post Code</label>
                         {{ order_form.postcode | as_crispy_field }}
-                        <label class="visually-hidden">Country</label>
+                        <label class="visually-hidden" for="id_country">Country</label>
                         {{ order_form.country | as_crispy_field }}
                         <div class="form-check form-check-inline float-right mr-0">
 							{% if user.is_authenticated %}
