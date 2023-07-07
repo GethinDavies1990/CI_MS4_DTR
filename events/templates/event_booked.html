@@ -26,8 +26,8 @@
                             <!--input time-->
                             <h2 class="mt-4 logo-font">Time:</h2>
                             <div>
-                                <label for="id_day" class="visually-hidden">Select Time:</label>
-                                <select class="form-select fs-3" name="time">
+                                <label for="id_time" class="visually-hidden">Select Time:</label>
+                                <select class="form-select fs-3" name="time" id="id_time">
                                     {% for time in times %}
                                     <option value="{{time}}">{{ time }}</option>
                                     {% endfor %}
