@@ -26,13 +26,13 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-6 order-lg-last mb-5">
-                <p class="text-muted">Order Summary ({{ product_count }})</p>
+                <p class="text-main">Order Summary ({{ product_count }})</p>
                 <div class="row">
                     <div class="col-7 offset-2">
-                        <p class="mb-1 mt-0 small text-muted">Item</p>
+                        <p class="mb-1 mt-0 small text-main">Item</p>
                     </div>
                     <div class="col-3 text-right">
-                        <p class="mb-1 mt-0 small text-muted">Subtotal</p>
+                        <p class="mb-1 mt-0 small text-main">Subtotal</p>
                     </div>
                 </div>
                 {% for item in bag_items %}
@@ -49,10 +49,10 @@
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                             <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                            <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                            <p class="my-0 small text-main">Qty: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
-                            <p class="my-0 small text-muted">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            <p class="my-0 small text-main">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </div>
                     </div>
                 {% endfor %}
@@ -71,22 +71,31 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <p class="text-muted">Please fill out the form below to complete your order</p>
+                <p class="text-main">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+                        <label class="visually-hidden">Full Name</label>
                         {{ order_form.full_name | as_crispy_field }}
+                        <label class="visually-hidden">Email</label>
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
                     <fieldset class="rounded px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
+                        <label class="visually-hidden">Phone Number</label>
                         {{ order_form.phone_number | as_crispy_field }}
+                        <label class="visually-hidden">Street Address 1r</label>
                         {{ order_form.street_address1 | as_crispy_field }}
+                        <label class="visually-hidden">Street Address 2</label>
                         {{ order_form.street_address2 | as_crispy_field }}
+                        <label class="visually-hidden">Town or City</label>
                         {{ order_form.town_or_city | as_crispy_field }}
+                        <label class="visually-hidden">County</label>
                         {{ order_form.county | as_crispy_field }}
+                        <label class="visually-hidden">Post Code</label>
                         {{ order_form.postcode | as_crispy_field }}
+                        <label class="visually-hidden">Country</label>
                         {{ order_form.country | as_crispy_field }}
                         <div class="form-check form-check-inline float-right mr-0">
 							{% if user.is_authenticated %}
@@ -133,11 +142,11 @@
         </div>
     </div>
     <div id="loading-overlay">
-        <h1 class="text-light logo-font loading-spinner">
+        <p class="text-light logo-font loading-spinner">
             <span class="icon">
                 <i class="fas fa-3x fa-sync-alt fa-spin"></i>
             </span>
-        </h1>
+        </p>
     </div>
 {% endblock %}
 

@@ -605,7 +605,6 @@ templates/allauth/account/register.html | 73 | 97 | 87 | 100 |
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
 bag/templates/bag/bag.html  | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_bag.PNG)
-bag/templates/bag/bag.html (Empty)  | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_bag_empty.PNG)
 checkout/templates/checkout/checkout.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_checkout_success.png)
 checkout/templates/checkout/checkout_success.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_checkout.png)
 home/templates/home/index.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_index.PNG)
