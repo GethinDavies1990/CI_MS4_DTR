@@ -27,9 +27,15 @@
                     {% csrf_token %}
                     {% for field in form %}
                         {% if field.name != 'image' %}
-                            {{ field | as_crispy_field }}
+                            <div class="form-group">
+                                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                {{ field | as_crispy_field }}
+                            </div>
                         {% else %}
-                            {{ field }}
+                            <div class="form-group">
+                                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                {{ field }}
+                            </div>
                         {% endif %}
                     {% endfor %}
                     <div class="text-right">
@@ -39,5 +45,5 @@
                 </form>
             </div>
         </div>
-    </div>
+
 {% endblock %}
