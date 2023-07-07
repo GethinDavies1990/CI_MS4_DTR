@@ -87,7 +87,8 @@ def event_booked(request):
                                 return redirect("home")
                             else:
                                 messages.warning(
-                                    request, "The Selected Time Has Been Reserved Before!", )
+                                    request, "The Selected"
+                                    "Time Has Been Reserved Before!", )
                         else:
                             messages.warning(
                                 request, "The Selected Day Is Full!")
@@ -96,7 +97,8 @@ def event_booked(request):
                             request, "The Selected Date Is Incorrect")
                 else:
                     messages.warning(
-                        request, "The Selected Date Isn't In The Correct Time Period!")
+                        request, "The Selected Date"
+                        "Isn't In The Correct Time Period!")
             else:
                 messages.warning(request, "Please Select A event_type!")
 

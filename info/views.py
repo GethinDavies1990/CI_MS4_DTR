@@ -78,7 +78,8 @@ def edit_team_member(request, teams_id):
         else:
             messages.error(
                 request,
-                "Failed to update team member. Please ensure the form is valid.",
+                "Failed to update team member."
+                "Please ensure the form is valid.",
             )
     else:
         form = TeamsForm(instance=teams)

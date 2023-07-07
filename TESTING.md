@@ -497,4 +497,49 @@ templates/allauth/account/password_reset_done.html | 0 errors | [Results](readme
 templates/allauth/account/verification_sent.html | 0 errors | [Results](readme/html_validation/html_validation_verification_email_sent.png)
 <br>
 
+## Python Validation - Code Institute
+- One of the main errors on several files was to ensure the character count was less than 80 characters, these were present in the files I had not much control over, Stripe etc.
+
+Page | Result
+------------ | -------------
+bag/apps.py | No errors/warnings | [Results](readme/validation/pep8_validation/bag_apps.png)
+bag/contexts.py | No errors/warnings | [Results](readme/validation/pep8_validation/bag_contexts.png)
+bag/urls.py | No errors/warnings | [Results](readme/validation/pep8_validation/bag_urls.png)
+bag/views.py | No errors/warnings | [Results](readme/validation/pep8_validation/bag_views.png)
+checkout/admin.py | No errors/warnings | [Results](readme/validation/pep8_validation/checkout_admin.png)
+checkout/apps.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_apps.png)
+checkout/forms.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_forms.png)
+checkout/models.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_models.png)
+checkout/signals.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_signals.png)
+checkout/urls.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_urls.png)
+checkout/views.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_views.png)
+checkout/webhook_handler.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_webhook_handler.png)
+checkout/webhooks.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_webhooks.png)
+home/apps.py | No errors/warnings [Results](readme/validation/pep8_validation/home_apps.png)
+home/urls.py | No errors/warnings [Results](readme/validation/pep8_validation/home_urls.png)
+home/views.py | No errors/warnings [Results](readme/validation/pep8_validation/home_views.png)
+products/admin.py | No errors/warnings [Results](readme/validation/pep8_validation/products_admin.png)
+products/apps.py | No errors/warnings [Results](readme/validation/pep8_validation/products_apps.png)
+products/forms.py | No errors/warnings [Results](readme/validation/pep8_validation/products_forms.png)
+products/models.py | No errors/warnings [Results](readme/validation/pep8_validation/products_models.png)
+products/urls.py | No errors/warnings [Results](readme/validation/pep8_validation/products_urls.png)
+products/views.py | No errors/warnings [Results](readme/validation/pep8_validation/products_views.png)
+products/widgets.py | No errors/warnings [Results](readme/validation/pep8_validation/products_widgets.png)
+profiles/apps.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_apps.png)
+profiles/forms.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_forms.png)
+profiles/models.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_models.png)
+profiles/urls.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_urls.png)
+profiles/views.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_views.png)
+events/admin | No errors/warnings [Results](readme/validation/pep8_validation/events_admin.png)
+events/models | No errors/warnings [Results](readme/validation/pep8_validation/events_models.png)
+events/apps | No errors/warnings [Results](readme/validation/pep8_validation/events_apps.png)
+events/urls | No errors/warnings [Results](readme/validation/pep8_validation/events_urls.png)
+events/views | No errors/warnings [Results](readme/validation/pep8_validation/events_views.png)
+taco_y_tequila/asgi | No errors/warnings [Results](readme/validation/pep8_validation/taco_y_tequila_asgi.png)
+taco_y_tequila/settings | No errors/warnings [Results](readme/validation/pep8_validation/taco_y_tequila_settings.png)
+taco_y_tequila/urls | No errors/warnings [Results](readme/validation/pep8_validation/taco_y_tequila_urls.png)
+taco_y_tequila/views | No errors/warnings [Results](readme/validation/pep8_validation/taco_y_tequila_views.png)
+taco_y_tequila/wsgi | No errors/warnings [Results](readme/validation/pep8_validation/taco_y_tequila_wsgi.png)
+custom_storages.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_views.png)
+manage.py | No errors/warnings
 
