@@ -604,23 +604,23 @@ templates/allauth/account/register.html | 73 | 97 | 87 | 100 |
 
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
-bag/templates/bag/bag.html  | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
+<!-- bag/templates/bag/bag.html  | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 bag/templates/bag/bag.html (empty) | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-checkout/templates/checkout/checkout.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-checkout/templates/checkout/checkout_success.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-home/templates/home/index.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-products/templates/products/add_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-products/templates/products/edit_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-products/templates/products/product_detail.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-products/templates/products/products.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-products/templates/products/sale_items.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-profile/templates/profile/profile.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-profile/templates/profile/order_history.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-templates/allauth/account/login.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-templates/allauth/account/logout.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-templates/allauth/account/register.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-templates/allauth/account/password_change.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-templates/allauth/account/password_reset.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-templates/allauth/account/password_change_done.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-templates/allauth/account/verification_sent.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png))
-templates/allauth/account/verification_email_required.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
+<!-- checkout/templates/checkout/checkout.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- checkout/templates/checkout/checkout_success.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- home/templates/home/index.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- products/templates/products/add_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- products/templates/products/edit_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- products/templates/products/product_detail.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- products/templates/products/products.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- products/templates/products/sale_items.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- profile/templates/profile/profile.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- profile/templates/profile/order_history.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- templates/allauth/account/login.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- templates/allauth/account/logout.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- templates/allauth/account/register.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- templates/allauth/account/password_change.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- templates/allauth/account/password_reset.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- templates/allauth/account/password_change_done.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+<!-- templates/allauth/account/verification_sent.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)) -->
+<!-- templates/allauth/account/verification_email_required.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
