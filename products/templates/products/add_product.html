@@ -28,12 +28,10 @@
                     {% for field in form %}
                         {% if field.name != 'image' %}
                             <div class="form-group">
-                                <label for="{{ field.id_for_label }}" class="visually-hidden">{{ field.label }}</label>
                                 {{ field | as_crispy_field }}
                             </div>
                         {% else %}
                             <div class="form-group">
-                                <label for="{{ field.id_for_label }}" class="visually-hidden">{{ field.label }}</label>
                                 {{ field }}
                             </div>
                         {% endif %}
@@ -44,6 +42,7 @@
                     </div>
                 </form>
             </div>
+        </div>
         </div>
 
 {% endblock %}
