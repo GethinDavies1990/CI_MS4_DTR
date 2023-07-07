@@ -38,10 +38,10 @@
                                     {{ team.about }}
                                 </div>
                                 {% if request.user.is_superuser %}
-                                <small class="ml-3">
+                                <p class="ml-3">
                                     <a href="{% url 'edit_team_member' team.id %}" class="edit-button">Edit</a> |
                                     <a class="delete-button" href="{% url 'delete_team_member' team.id %}">Delete</a>
-                                </small>
+                                </p>
                             {% endif %}
                             </div>
                             {% if forloop.counter|divisibleby:1 %}
