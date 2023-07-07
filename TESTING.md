@@ -568,9 +568,9 @@ custom_storages.py | No errors/warnings [Results](readme/validation/pep8_validat
 ### Desktop
 Page  | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%)
 ------------  | ------------ | ------------- | ------------- | -------------
-bag/templates/bag/bag.html | 91 | 100 | 83 | 100 |
-checkout/templates/checkout/checkout.html | 82 | 100 | 80 | 100 |
-checkout/templates/checkout/checkout_success.html | 95 | 100 | 87 | 100 ||
+bag/templates/bag/bag.html | 94 | 100 | 92 | 100 |
+checkout/templates/checkout/checkout.html | 89 | 96 | 92 | 100 |
+checkout/templates/checkout/checkout_success.html | 95 | 97 | 92 | 100 |
 home/templates/home/index.html | 91 | 100 | 87 | 100 ||
 products/templates/products/add_product.html | 94 | 92 | 87 | 100 |
 products/templates/products/edit_product.html | 97 | 92 | 87 | 100 |
@@ -599,3 +599,28 @@ templates/allauth/account/login.html | 78 | 97 | 87 | 98 |
 templates/allauth/account/logout.html | 74 | 97 | 87 | 100 |
 templates/allauth/account/register.html | 73 | 97 | 87 | 100 |
 
+## Wave Accessibility
+- Wave accessibility(https://wave.webaim.org/) was used to test the websites accessibility
+
+Page | Result | Test Detail/Screenshot
+------------ | ------------- | -------------
+bag/templates/bag/bag.html  | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_bag.PNG)
+bag/templates/bag/bag.html (Empty)  | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_bag_empty.PNG)
+checkout/templates/checkout/checkout.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_checkout_success.png)
+checkout/templates/checkout/checkout_success.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_checkout.png)
+home/templates/home/index.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_index.PNG)
+products/templates/products/add_product.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_add_product.PNG)
+products/templates/products/edit_product.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_edit_product.PNG)
+products/templates/products/product_detail.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_product_detail.PNG)
+products/templates/products/products.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_products.PNG)
+products/templates/products/sale_items.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_sale_items.PNG)
+profile/templates/profile/profile.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_profile.PNG)
+profile/templates/profile/order_history.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_order_history.PNG)
+templates/allauth/account/login.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_login.PNG)
+templates/allauth/account/logout.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_logout.PNG)
+templates/allauth/account/register.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_register.PNG)
+templates/allauth/account/password_change.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_change_password.png)
+templates/allauth/account/password_reset.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_password_forgot.PNG)
+templates/allauth/account/password_change_done.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_change_password_confirmed.png)
+templates/allauth/account/verification_sent.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_verification_email_confirmation.png))
+templates/allauth/account/verification_email_required.html | 0 errors and 0 contrast errors| [Results](readme/wave_validation/wave_verification_email_sent.png)
