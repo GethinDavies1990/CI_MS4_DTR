@@ -497,6 +497,35 @@ templates/allauth/account/password_reset_done.html | 0 errors | [Results](readme
 templates/allauth/account/verification_sent.html | 0 errors | [Results](readme/html_validation/html_validation_verification_email_sent.png)
 <br>
 
+## CSS Validation Service
+I used https://jigsaw.w3.org/css-validator/ to validate the css(style.css)
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+<br>
+
+Page | Result | Test Detail/Screenshot
+------------ | ------------- | -------------
+static/css/base.css | Passed, No errors found | [Results](readme/validation/css_validation/base.png)
+checkout/static/checkout/css/checkout.css | Passed, No errors found | [Results](readme/validation/css_validation/checkout.png)
+
+## JSHint
+- JSHint(https://jshint.com/) was used to analyse the Javascript files
+
+Page | Result | Test Detail/Screenshot
+------------ | ------------- | -------------
+checkout/static/checkout/stripe_element.js | 0 errors and 0 warnings | [Results](readme/validation/jshint/stripe.png)
+products/static/products/products.js | 0 errors and 0 warnings | [Results](readme/validation/jshint/products.png)
+static/js/toast.js | 0 errors and 0 warnings | [Results](readme/validation/jshint/toast.png)
+static/js/send_email.js | 0 errors and 0 warnings | [Results](readme/validation/jshint/send_email.png)
+
+<br>
+
 ## Python Validation - Code Institute
 - One of the main errors on several files was to ensure the character count was less than 80 characters, these were present in the files I had not much control over, Stripe etc.
 
