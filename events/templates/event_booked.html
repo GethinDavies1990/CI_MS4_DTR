@@ -24,8 +24,9 @@
                         <form method="post" action="{% url 'event_booked' %}" class="me-2 ms-2 col-6" required>
                             {% csrf_token %}
                             <!--input time-->
-                            <h3 class="mt-4 logo-font">Time:</h3>
+                            <h2 class="mt-4 logo-font">Time:</h2>
                             <div>
+                                <label for="id_day" class="visually-hidden">Select Time:</label>
                                 <select class="form-select fs-3" name="time">
                                     {% for time in times %}
                                     <option value="{{time}}">{{ time }}</option>
