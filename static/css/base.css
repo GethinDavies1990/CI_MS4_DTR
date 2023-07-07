@@ -134,14 +134,18 @@ body {
 }
 
 .btn-red {
-    padding: 2px;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 3px;
     background: var(--main-color-sec);
     color: white;
 }
 
 .edit-btn {
-    padding: 2px;
-    background-color: var(--main-color);
+    margin: 2px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: var(--main-color-sec);
     color: var(--text-main);
 }
 
