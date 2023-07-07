@@ -39,8 +39,8 @@
                                 </div>
                                 {% if request.user.is_superuser %}
                                 <p class="ml-3">
-                                    <a href="{% url 'edit_team_member' team.id %}" class="edit-button">Edit</a> |
-                                    <a class="delete-button" href="{% url 'delete_team_member' team.id %}">Delete</a>
+                                    <a href="{% url 'edit_team_member' team.id %}" class="edit-btn">Edit</a> |
+                                    <a class="delete-btn" href="{% url 'delete_team_member' team.id %}">Delete</a>
                                 </p>
                             {% endif %}
                             </div>
