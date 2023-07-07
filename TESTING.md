@@ -612,11 +612,10 @@ home/templates/home/index.html | 0 errors and 0 contrast errors| [Results](readm
 <!-- products/templates/products/add_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 <!-- products/templates/products/edit_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 <!-- products/templates/products/product_detail.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
-<!-- products/templates/products/products.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
-<!-- products/templates/products/sale_items.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+products/templates/products/products.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/products.png)
 <!-- profile/templates/profile/profile.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
-<!-- profile/templates/profile/order_history.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
-info/templates/how_we_started.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/how_we_started.png)
+profile/templates/profile/order_history.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
+info/templates/how_we_started.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/order_history.png)
 info/templates/meet_the_team.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/meet_the_team.png)
 events/templates/book_event.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/book_event.png)
 events/templates/book_event.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/event_booked.png)
