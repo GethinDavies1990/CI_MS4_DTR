@@ -4,20 +4,20 @@
         <div class="input-group input-group-{{ item.item_id }}">
             <div class="input-group-prepend">
                 <label for="decrement-qty_{{ item.item_id }}" class="visually-hidden">decrease qty</label>
-                <button class="decrement-qty btn btn-sm btn-red rounded-0"
-                    data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}" aria-label="decrease quantity">
+                <button class="decrement-qty btn btn-sm btn-red rounded-0" data-item_id="{{ item.item_id }}"
+                    id="decrement-qty_{{ item.item_id }}" aria-label="decrease quantity">
                     <span>
                         <i class="fas fa-minus fa-sm"></i>
                     </span>
                 </button>
             </div>
-            <input class="form-control form-control-sm qty_input" type="number"
-                name="quantity" value="{{ item.quantity }}" min="1" max="99"
-                data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+            <input class="form-control form-control-sm qty_input" type="number" name="quantity"
+                value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}"
+                id="id_qty_{{ item.item_id }}">
             <div class="input-group-append">
                 <label for="increment-qty_{{ item.item_id }}" class="visually-hidden">increase qty</label>
-                <button class="increment-qty btn btn-sm btn-red rounded-0"
-                    data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}" aria-label="increase quantity">
+                <button class="increment-qty btn btn-sm btn-red rounded-0" data-item_id="{{ item.item_id }}"
+                    id="increment-qty_{{ item.item_id }}" aria-label="increase quantity">
                     <span>
                         <i class="fas fa-plus fa-sm"></i>
                     </span>
@@ -29,6 +29,6 @@
         </div>
     </div>
 </form>
-<a class="font-weight-bold update-link dark-green-block">Update</a>
-<a class="font-weight-bold remove-item dark-green-block float-right" id="remove_{{ item.item_id }}"
+<a class="font-weight-bold update-link dark-green-text">Update</a>
+<a class="font-weight-bold remove-item red-text float-right" id="remove_{{ item.item_id }}"
     data-product_size="{{ item.size }}">Remove</a>
