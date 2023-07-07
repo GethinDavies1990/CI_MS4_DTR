@@ -81,8 +81,16 @@ body {
     color: var(--main-color-sec);
 }
 
+.dark-green-text:hover {
+    color: var(--main-color);
+}
+
 .red-text {
     color: var(--red);
+}
+
+.red-text:hover {
+    color: var(--main-color-sec)
 }
 
 /* Hidden Items */
