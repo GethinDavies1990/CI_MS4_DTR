@@ -608,7 +608,7 @@ Page | Result | Test Detail/Screenshot
 bag/templates/bag/bag.html (empty) | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
 <!-- checkout/templates/checkout/checkout.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 <!-- checkout/templates/checkout/checkout_success.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
-<!-- home/templates/home/index.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+home/templates/home/index.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/index.png)
 <!-- products/templates/products/add_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 <!-- products/templates/products/edit_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 <!-- products/templates/products/product_detail.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
@@ -617,6 +617,8 @@ bag/templates/bag/bag.html (empty) | 0 errors and 0 contrast errors| [Results](r
 <!-- profile/templates/profile/profile.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 <!-- profile/templates/profile/order_history.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 info/templates/how_we_started.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/how_we_started.png)
+events/templates/book_event.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/book_event.png)
+events/templates/book_event.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/event_booked.png)
 <!-- templates/allauth/account/login.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 <!-- templates/allauth/account/logout.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 <!-- templates/allauth/account/register.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
