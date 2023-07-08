@@ -113,11 +113,28 @@ The primary goal of the website from a site users perspective is as follows:
 
 ## Structure
 ### Website pages
-- I have structured the websote into over (INSERT NUMBER OF PAGES HERE), each with clear structure, information and purpose. I sued Bootstrap throughout, which gave consistent structure and responsive design.
+- I have structured the website into 16 pages, each with clear structure, information and purpose. I sued Bootstrap throughout, which gave consistent structure and responsive design.
 - Below are the main pages'/features
-- These pages are descrived in more detail in the user stories section.
+- These pages are described in more detail in the user stories section.
 
-(INSERT TABLE OF PAGES HERE)
+Page            |Description
+:-------------         |:-------------
+Home     |The homepage consists of a hero image, and 3 Call to Action images to 3 categories
+Products           | The products page displays 4 products in a row, I decided against pagination and opted for an infinite scroll
+Product Detail           | The product detail page displays the product image, description, price, spice rating, category, add to bag buttons
+Product Management(Add Product)     | A product can be added to the website
+Product Management(Edit Product)     | A product can be edited to the website
+Product Management(Delete Product)     | A product can be deleted from the website. This is a modal triggered by a delete button
+Events     | A user can have book an event at the restaurant
+meet the team | A meet the team section which is made with crud functionality
+My Profile             |The users profile(delivery information) and previous orders is displayed
+Order History         | A order history page per order details the order information and price
+Log out               | A logout button is provided under the My Account link to logout
+Register               | A user can register an account on the site with a valid email address
+Log in               | A user can login with a valid username and password
+Bag | A user can add products to a shopping bag which contains each item in the order and an overall price/delivery if applicable
+Checkout | A user can enter their delivery details and credit card information to checkout an order
+Checkout success | Once an order is successful, the user can view the checkout success
 
 
 ### Code Structure
@@ -340,7 +357,7 @@ The Paytone One is the main font used throughout the whole website with Sans Ser
 ![Font - Comfortaa](readme/misc/font-comfortaa.png)
 
 # Features
-The website has twenty distinct features, and they are described below
+The website has seventeen distinct features, and they are described below
 What is important to detail is what pages are accessible by the three types of users
 1. A user not logged into the site
 2. A regular(shopper) user logged into the site
@@ -354,6 +371,9 @@ Product Detail           |&#9989;        |&#9989;          |&#9989; |
 Product Management(Add Product)     |&#10060;       |&#10060;         |&#9989; |
 Product Management(Edit Product)     |&#10060;       |&#10060;         |&#9989; |
 Product Management(Delete Product)     |&#10060;       |&#10060;         |&#9989; |
+Staff Management(Delete Staff Member)     |&#10060;       |&#10060;         |&#9989; |
+Staff Management(Add Staff Member)     |&#10060;       |&#10060;         |&#9989; |
+Staff Management(Edit Staff Member)     |&#10060;       |&#10060;         |&#9989; |
 My Profile             |&#10060;       |&#9989;          |&#9989; |
 Order History         |&#10060;       |&#9989;          |&#9989; |
 Log out               |&#10060;       |&#9989;          |&#9989; |
