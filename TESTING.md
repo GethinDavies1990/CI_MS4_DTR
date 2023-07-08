@@ -619,7 +619,7 @@ info/templates/how_we_started.html | 0 errors and 0 contrast errors| [Results](r
 info/templates/meet_the_team.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/meet_the_team.png)
 events/templates/book_event.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/book_event.png)
 events/templates/book_event.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/event_booked.png)
-<!-- templates/allauth/account/login.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+templates/allauth/account/login.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/sign_in.png)
 templates/allauth/account/logout.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/sign_out.png)
 <!-- templates/allauth/account/register.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 <!-- templates/allauth/account/password_change.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
