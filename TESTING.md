@@ -611,7 +611,7 @@ bag/templates/bag/bag.html (empty) | 0 errors and 0 contrast errors| [Results](r
 home/templates/home/index.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/index.png)
 <!-- products/templates/products/add_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 <!-- products/templates/products/edit_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
-<!-- products/templates/products/product_detail.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+products/templates/products/product_detail.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/product_detail.png)
 products/templates/products/products.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/products.png)
 <!-- profile/templates/profile/profile.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 profile/templates/profile/order_history.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
