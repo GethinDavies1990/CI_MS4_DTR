@@ -5,6 +5,7 @@ from django import forms
 
 # Internal:
 from .models import Teams
+from products.widgets import CustomClearableFileInput
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -22,7 +23,9 @@ class TeamsForm(forms.ModelForm):
         model = Teams
         fields = "__all__"
 
-    image = forms.ImageField(label="Image", required=False)
+    image = forms.ImageField(
+        label="Image", required=False, widget=CustomClearableFileInput
+    )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
