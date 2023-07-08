@@ -498,9 +498,8 @@ checkout/templates/checkout/checkout.html | 0 errors and 0 contrast errors| [Res
 checkout/templates/checkout/checkout_success.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/checkout_success.png)
 home/templates/home/index.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/index.png)
 products/templates/products/add_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/add_product.png)
-<!-- products/templates/products/edit_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+products/templates/products/edit_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/edit_product.png)
 products/templates/products/product_detail.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/product_detail.png)
-products/templates/products/products.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/products.png)
 profile/templates/profile/profile.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/profile.png)
 profile/templates/profile/order_history.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
 info/templates/how_we_started.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/order_history.png)
