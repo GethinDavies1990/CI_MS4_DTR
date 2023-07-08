@@ -606,7 +606,7 @@ Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
 <!-- bag/templates/bag/bag.html  | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 bag/templates/bag/bag.html (empty) | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
-<!-- checkout/templates/checkout/checkout.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+checkout/templates/checkout/checkout.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/checkout.png)
 <!-- checkout/templates/checkout/checkout_success.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 home/templates/home/index.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/index.png)
 <!-- products/templates/products/add_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->

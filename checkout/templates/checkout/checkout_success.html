@@ -54,7 +54,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <small class="text-main">Order Details:</small>
+                            <small class="text-ma">Order Details:</small>
                         </div>
                     </div>
 
@@ -73,7 +73,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <small class="text-main">Delivering To:</small>
+                            <small class="text-muted">Delivering To:</small>
                         </div>
                     </div>
 
@@ -157,7 +157,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <small class="text-main">Billing Info:</small>
+                            <small class="text-muted">Billing Info:</small>
                         </div>
                     </div>
 
@@ -193,19 +193,19 @@
         <div class="row">
 			<div class="col-12 col-lg-7 text-right">
                 {% if from_profile %}
-                    <a href="{% url 'profile' %}" class="btn btn-red btn-rounded-0 my-2">
+                    <a href="{% url 'profile' %}" class="btn btn-green btn-rounded-0 my-2">
                         <span class="icon mr-2">
 				    		<i class="fas fa-angle-left"></i>
 				    	</span>
 				    	<span class="text-uppercase">Back to profile</span>
                     </a>
                 {% else %}
-				    <a href="{% url 'book_event' %}" class="btn btn-black rounded-0 my-2">
+				    <p class="text-main">
 				    	<span class="icon mr-2">
 				    		<i class="fa-solid fa-utensils"></i>
 				    	</span>
 				    	<span class="text-uppercase">Now check out our events, and book us for a special occasion</span>
-				    </a>
+				    </p>
                 {% endif %}
 			</div>
 		</div>
