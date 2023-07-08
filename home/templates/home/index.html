@@ -2,99 +2,98 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
     </div>
-</div>
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
-<section class="jumbotron text-center dark-green-block">
-    <div class="container jumbotron-content">
-        <img src="https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/logo-whi.png" class="jumbotron-logo"
-            alt="taco y tequila logo" height="90" width="90">
-        <h1 class="logo-font text-white">Taco y Tequila</h1>
-        <p class="text-white">
-            Discover Mexico's culinary essence at Taco Y Tequila! Indulge in vibrant flavors, savor mouthwatering tacos,
-            and sip exquisite tequilas. Bienvenidos to an unforgettable dining experience. ¡Viva Taco Y Tequila!
-        </p>
-        <p>
-            <a href="{% url 'products' %}" class="btn btn-green rounded-0 my-2 logo-font">Explore Some Spice</a>
-        </p>
-    </div>
-</section>
-<div class="album py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm bg-red">
-                    <img class="bd-placeholder-img card-img-top" width="475" height="255"
-                        src="https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/cta-drink.webp" alt="drink">
-                    <div class="card-body">
-                        <p>
-                            Sip, savor, and celebrate! Explore our exquisite tequilas and crafted drinks at Taco Y
-                            Tequila. Join us for a refreshing experience that will delight your senses. Cheers to
-                            unforgettable flavors!
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a href="{% url 'products' %}?category=drinks_tequila,drinks_softdrinks,drinks_beers"
-                                    class="btn btn-green rounded-0">
-                                    Shop Drinks
-                                </a>
+    <div class="overlay"></div>
+    <section class="jumbotron text-center dark-green-block">
+        <div class="container jumbotron-content">
+            <img src="https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/logo-whi.png" class="jumbotron-logo"
+                alt="taco y tequila logo" height="90" width="90">
+            <h1 class="logo-font text-white">Taco y Tequila</h1>
+            <p class="text-white">
+                Discover Mexico's culinary essence at Taco Y Tequila! Indulge in vibrant flavors, savor mouthwatering tacos,
+                and sip exquisite tequilas. Bienvenidos to an unforgettable dining experience. ¡Viva Taco Y Tequila!
+            </p>
+            <p>
+                <a href="{% url 'products' %}" class="btn btn-green rounded-0 my-2 logo-font">Explore Some Spice</a>
+            </p>
+        </div>
+    </section>
+    <div class="album py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm bg-red">
+                        <img class="bd-placeholder-img card-img-top" width="475" height="255"
+                            src="https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/cta-drink.webp" alt="drink">
+                        <div class="card-body">
+                            <p>
+                                Sip, savor, and celebrate! Explore our exquisite tequilas and crafted drinks at Taco Y
+                                Tequila. Join us for a refreshing experience that will delight your senses. Cheers to
+                                unforgettable flavors!
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="{% url 'products' %}?category=drinks_tequila,drinks_softdrinks,drinks_beers"
+                                        class="btn btn-green rounded-0">
+                                        Shop Drinks
+                                    </a>
+                                </div>
+                                <i class="fa-solid fa-whiskey-glass"></i>
                             </div>
-                            <i class="fa-solid fa-whiskey-glass"></i>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm dark-green-block">
-                    <img class="bd-placeholder-img card-img-top" width="475" height="225"
-                        src="https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/cta-food.webp" alt="food">
-                    <div class="card-body">
-                        <p class="text-white">
-                            Experience a fiesta of flavors at Taco Y Tequila! Indulge in our mouthwatering Mexican food,
-                            from sizzling tacos to sizzling fajitas. Every bite is a celebration of authentic tastes
-                            that will transport you to the heart of Mexico.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a href="{% url 'products' %}?category=mealkits_mild,mealkits_medium,mealkits_hot,mealkits_veryhot"
-                                    class="btn rounded-0 btn-outline">
-                                    Shop Food
-                                </a>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm dark-green-block">
+                        <img class="bd-placeholder-img card-img-top" width="475" height="225"
+                            src="https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/cta-food.webp" alt="food">
+                        <div class="card-body">
+                            <p class="text-white">
+                                Experience a fiesta of flavors at Taco Y Tequila! Indulge in our mouthwatering Mexican food,
+                                from sizzling tacos to sizzling fajitas. Every bite is a celebration of authentic tastes
+                                that will transport you to the heart of Mexico.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="{% url 'products' %}?category=mealkits_mild,mealkits_medium,mealkits_hot,mealkits_veryhot"
+                                        class="btn rounded-0 btn-outline">
+                                        Shop Food
+                                    </a>
+                                </div>
+                                <i class="fa-solid fa-fish"></i>
                             </div>
-                            <i class="fa-solid fa-fish"></i>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm bg-red">
-                    <img class="bd-placeholder-img card-img-top" width="475" height="225"
-                        src="https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/cta-event.webp" alt="events">
-                    <div class="card-body">
-                        <p>
-                            Spice up your next event with the Taco Y Tequila food truck! Our delectable Mexican cuisine
-                            on wheels will bring the fiesta to you. Book us now and treat your guests to a tantalizing
-                            experience they won't forget!
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a href="{% url 'book_event' %}" class="btn btn-green rounded-0">
-                                    Book Event
-                                </a>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm bg-red">
+                        <img class="bd-placeholder-img card-img-top" width="475" height="225"
+                            src="https://taco-y-tequila.s3.eu-north-1.amazonaws.com/media/cta-event.webp" alt="events">
+                        <div class="card-body">
+                            <p>
+                                Spice up your next event with the Taco Y Tequila food truck! Our delectable Mexican cuisine
+                                on wheels will bring the fiesta to you. Book us now and treat your guests to a tantalizing
+                                experience they won't forget!
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="{% url 'book_event' %}" class="btn btn-green rounded-0">
+                                        Book Event
+                                    </a>
+                                </div>
+                                <i class="fa-solid fa-truck"></i>
                             </div>
-                            <i class="fa-solid fa-truck"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
 {% endblock %}

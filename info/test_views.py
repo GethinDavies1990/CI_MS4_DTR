@@ -14,9 +14,9 @@ class HowWeStartedViewTest(TestCase):
         """
         Test that the events page is rendered correctly
         """
-        response = self.client.get(reverse('how_we_started'), follow=True)
+        response = self.client.get(reverse("how_we_started"), follow=True)
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'how_we_started.html')
+        self.assertTemplateUsed(response, "how_we_started.html")
 
 
 class MeetTheTeamViewTest(TestCase):
@@ -24,6 +24,6 @@ class MeetTheTeamViewTest(TestCase):
         """
         Test that the events page is rendered correctly
         """
-        response = self.client.get(reverse('meet_the_team'), follow=True)
+        response = self.client.get(reverse("meet_the_team"), follow=True)
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'teams/meet_the_team.html')
+        self.assertTemplateUsed(response, "teams/meet_the_team.html")

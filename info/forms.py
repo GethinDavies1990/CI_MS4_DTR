@@ -34,4 +34,3 @@ class TeamsForm(forms.ModelForm):
             field.widget.attrs["class"] = "border-black rounded-0"
 
         self.fields["image"].label = "Image"
-
