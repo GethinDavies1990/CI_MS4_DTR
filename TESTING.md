@@ -604,7 +604,7 @@ templates/allauth/account/register.html | 73 | 97 | 87 | 100 |
 
 Page | Result | Test Detail/Screenshot
 ------------ | ------------- | -------------
-<!-- bag/templates/bag/bag.html  | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+bag/templates/bag/bag.html  | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag_full.png)
 bag/templates/bag/bag.html (empty) | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
 checkout/templates/checkout/checkout.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/checkout.png)
 checkout/templates/checkout/checkout_success.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/checkout_success.png)
@@ -613,7 +613,7 @@ home/templates/home/index.html | 0 errors and 0 contrast errors| [Results](readm
 <!-- products/templates/products/edit_product.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
 products/templates/products/product_detail.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/product_detail.png)
 products/templates/products/products.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/products.png)
-<!-- profile/templates/profile/profile.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+profile/templates/profile/profile.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/profile.png)
 profile/templates/profile/order_history.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)
 info/templates/how_we_started.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/order_history.png)
 info/templates/meet_the_team.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/meet_the_team.png)

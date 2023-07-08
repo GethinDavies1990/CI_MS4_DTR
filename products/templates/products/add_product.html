@@ -27,12 +27,10 @@
                     {% for field in form %}
                     {% if field.name != 'image' %}
                     <div class="form-group">
-                        <label for="field-id">Label Text:</label>
                         {{ field | as_crispy_field }}
                     </div>
                     {% else %}
                     <div class="form-group">
-                        <label for="field-id">Label Text:</label>
                         {{ field }}
                     </div>
                     {% endif %}
