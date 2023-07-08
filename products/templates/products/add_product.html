@@ -25,14 +25,13 @@
             <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
-                    <label for="new-image" class="visually-hidden">New Image</label>
+                <label for="{{ {{ widget.checkbox_id }} }}">Image</label>
                     {% if field.name != 'image' %}
                         <div class="form-group">
                             {{ field | as_crispy_field }}
                         </div>
                     {% else %}
                         <div class="form-group">
-                            <label for="{{ {{ widget.checkbox_id }} }}">Image</label>
                                 {{ field }}
                         </div>
                     {% endif %}
