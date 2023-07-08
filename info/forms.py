@@ -28,5 +28,7 @@ class TeamsForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
 
         for field_name, field in self.fields.items():
-            field.label = True
             field.widget.attrs["class"] = "border-black rounded-0"
+
+        self.fields["image"].label = "Image"
+
