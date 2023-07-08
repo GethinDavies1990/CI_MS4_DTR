@@ -82,153 +82,41 @@ I made a very thorough check on responsiveness on all devices on the the google 
 ### Homepage
 
 <details><summary>Blackberry playbook - home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/blackberry-playbook-home.png">
+<img src="readme/testing/responsiveness/blackberry_playbook_home.png">
 </details>
 <br>
 
 <details><summary>Blackberry Z30 - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/blackberryz30-home.png">
+<img src="readme/testing/responsiveness/blackberryz30_home.png">
 </details>
 <br>
 
 <details><summary>Desktop 1000px - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/desktop-1000-pixels-home.png">
+<img src="readme/testing/responsiveness/desktop-1000-home.png">
 </details>
 <br>
 
 <details><summary>Desktop 1600px - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/desktop-1600-pixels-home.png">
+<img src="readme/testing/responsiveness/desktop-1600-home.png">
 </details>
 <br>
 
 <details><summary>Desktop 2500px - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/desktop-2500-pixels-home.png">
+<img src="readme/testing/responsiveness/desktop-2500-home.png">
 </details>
 <br>
 
 <details><summary>Galaxy 8 - Home<</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/galaxy-8-home.png">
+<img src="readme/testing/responsiveness/galaxy-8-home.png">
 </details>
 <br>
 
-<details><summary>Galaxy Fold - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/galaxy-fold-home.png">
-</details>
-<br>
 
 <details><summary>Galaxy Net Hub - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/galaxy-nest-hub-home.png">
+<img src="readme/testing/responsiveness/nesthub-home.png">
 </details>
 <br>
 
-<details><summary>Galaxy note 3 - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/galaxy-note-3-home.png">
-</details>
-<br>
-
-<details><summary>Galaxy S5 - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/galaxy-s5-home.png">
-</details>
-<br>
-
-<details><summary>Galaxy S9 plus - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/glaxy-s9plus-home.png">
-</details>
-<br>
-
-<details><summary>Ipad Air - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/ipad-air-home.png">
-</details>
-<br>
-
-<details><summary>Ipad Mini - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/ipad-mini-home.png">
-</details>
-<br>
-
-<details><summary>Ipad Pro - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/ipad-pro-home.png">
-</details>
-<br>
-
-<details><summary>Iphone4 - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/iphone-4-home.png">
-</details>
-<br>
-
-<details><summary>Iphone SE - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/iphone-se-home.png">
-</details>
-<br>
-
-<details><summary>Iphone XR - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/iphone-xr-home.png">
-</details>
-<br>
-
-<details><summary>Pixel3 XL - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/pixel3-xl-home.png">
-</details>
-<br>
-
-
-<details><summary>Samsung Galaxy S20 Ultra - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/samsung-glaxy-s20ultra-home.png">
-</details>
-<br>
-
-<details><summary>Samsung Pro Duo - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/surface-pro-duo-home.png">
-</details>
-<br>
-
-<details><summary>Samsung Pro 7 - Home</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/home/surface-pro7-home.png">
-</details>
-<br>
-
-###  Form Pages Login/Register/Add Review/Edit Review
-
-
-<details><summary>Blackberry Playbook - form </summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/forms/blackberry-playbook-login.png">
-</details>
-<br>
-
-<details><summary>Blackberry Z30 - form </summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/forms/blackberry-z30-login.png">
-</details>
-<br>
-
-<details><summary>Desktop 1600px - form </summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/forms/desktop-1600ox-register.png">
-</details>
-<br>
-
-<details><summary>Desktop 1000px - form </summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/forms/desktop-1000px-login.png">
-</details>
-<br>
-
-<details><summary>Desktop 2500px - form </summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/forms/desktop-2500px-register.png">
-</details>
-<br>
-
-<details><summary>Galaxy 8 - form </summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/forms/galaxy-8-register.png">
-</details>
-<br>
-
-<details><summary>Galaxy Note 3 - form </summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/forms/galaxy-note-3-add-review.png">
-</details>
-<br>
-
-<details><summary>Nest- Form</summary>
-<img src="binge_reviews/static/images/readme/testing/responsivness-testing/forms/nest-hub-register.png">
-</details>
-<br>
 
 ### Feature 1 Navigation & Homepage
 #### Description feature 2

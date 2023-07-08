@@ -50,6 +50,7 @@ body {
 
 .jumbotron-logo {
     height: 90px;
+    padding-top: 15px;
 }
 
 .logo {
@@ -501,9 +502,35 @@ footer {
     }
 }
 
-@media (max-width: 320px) {
-    .jumbotron-content  p {
-        height: 250px;
+@media (max-width: 380px) {
+    .jumbotron-logo {
+        padding-top: 10px;
+        height: 80px;
+        width: auto;
     }
+
+    .jumbotron-content > h1 {
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+
+    .jumbotron-content > p {
+        font-size: 0.7rem;
+        padding-top: 10px;
+    }
+
+    .navbar-toggler {
+        font-size: 0.6rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1.6rem;
+        margin-left: 10px;
+    }
+
+    .mobile-text {
+        display: none;
+    }
+
 }
 
