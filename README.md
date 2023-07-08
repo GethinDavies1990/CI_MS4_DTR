@@ -428,7 +428,7 @@ The website links in the footer are the same for all users
 - A footer is displayed at the bottom of the page
 - The footer also contains a logo, some text, links to the 'About us' and 'Events' pages and a 'Newsletter' Sign Up
 - A user can sign up for the mailing list by entering their email and clicking the "Signup" button
-<br>![Mailing list](readme/testing/mailing_list_email.PNG)
+<br>![Mailing list](readme/testing/feature_2/subscribe-email.png)
 #### User Stories feature 2
 - User Story 2.1: As a regular user the footer is displayed with a logo, 'About us links', 'Events' and 'Newsletter' sign up
 - User Story 2.2: As a regular user I can sign up for a newsletter by entering my email address and clicking Signup. I will receive an email after signing up
@@ -441,10 +441,9 @@ The website links in the footer are the same for all users
 - These 5 fields are  mandatory and a user cannot register the same details twice for an account
 <br>![Register error](readme/testing/register-error.png)
 - A confirmation link is sent to the users email address, they must click on the verification link to verify the account.
-<br>![Email content](readme/testing/verification_email_content.jpg)
+<br>![Email content](readme/testing/feature_3/verify_email.png)
 - The user must confirm their email address
-<br>![Confirm email](readme/testing/confirm_email.jpg)
-<br>![Email confirmed](readme/testing/email_confirmed.jpg)
+<br>![Confirm email](readme/testing/feature_3/confirm_email.png)
 - Once that is done they can sign in to the website with their username/email address and password
 #### User Stories feature 3
 - User Story 3.1: As a regular user I can register on the website by providing an email address, email address(confirmation), username, password, password confirmation
