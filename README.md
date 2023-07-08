@@ -303,19 +303,19 @@ Figma was used to create the wireframes
 
 Page | Wireframe |
 ------------ | -------------
-bag/templates/bag/bag.html | [Desktop/Tablet/Mobile](readme/wireframes/bag.png)
-checkout/templates/checkout/checkout.html | [Desktop/Tablet/Mobile](readme/wireframes/checkout.png)
-checkout/templates/checkout/checkout_success.html | [Desktop/Tablet/Mobile](readme/wireframes/checkout_success.png)
-home/templates/home/index.html | [Desktop/Tablet/Mobile](readme/wireframes/index.png)
-products/templates/products/add_product.html | [Desktop/Tablet/Mobile](readme/wireframes/add_product.png)
-products/templates/products/edit_product.html | [Desktop/Tablet/Mobile](readme/wireframes/edit_product.png)
-products/templates/products/product_detail.html | [Desktop/Tablet/Mobile](readme/wireframes/product_detail.png)
-products/templates/products/products.html  | [Desktop/Tablet/Mobile](readme/wireframes/products.png)
-profile/templates/profile/profile.html | [Desktop/Tablet/Mobile](readme/wireframes/profile.png)
-profile/templates/profile/order_history.html | [Desktop/Tablet/Mobile](readme/wireframes/order_history.png)
-templates/allauth/account/login.html | [Desktop/Tablet/Mobile](readme/wireframes/login.png)
-templates/allauth/account/logout.html | [Desktop/Tablet/Mobile](readme/wireframes/logout.png)
-templates/allauth/account/register.html| [Desktop/Tablet/Mobile](readme/wireframes/register.png)
+homepage | [Desktop](readme/wireframes/WIREFRAMES-FIG-01.jpg)
+homepage | [Tablet/Mobile](readme/wireframes/WIREFRAMES-FIG-07.jpg)
+products | [Desktop](readme/wireframes/WIREFRAMES-FIG-02.jpg)
+products | [Tablet/Mobile](readme/wireframes/WIREFRAMES-FIG-81.jpg)
+sign_in/register | [Desktop](readme/wireframes/WIREFRAMES-FIG-03.jpg)
+sign_in/register | [Tablet/Mobile](readme/wireframes/WIREFRAMES-FIG-09.jpg)
+profile | [Desktop](readme/wireframes/WIREFRAMES-FIG-04.jpg)
+profile | [Tablet/Mobile](readme/wireframes/WIREFRAMES-FIG-10.jpg)
+shopping_bag | [Desktop](readme/wireframes/WIREFRAMES-FIG-05.jpg)
+shopping_bag | [Tablet/Mobile](readme/wireframes/WIREFRAMES-FIG-11.jpg)
+checkout | [Desktop](readme/wireframes/WIREFRAMES-FIG-06.jpg)
+checkout | [Tablet/Mobile](readme/wireframes/WIREFRAMES-FIG-12.jpg)
+
 
 ## Surface
 ### Color Palette
@@ -401,7 +401,7 @@ The website links in the footer are the same for all users
 - On a desktop device there is a number of filters described below: All Products, Meal Kits, Drinks, Sauces & Spices, Event's
 <br>![Homepage desktop filter price](readme/testing/homepage-filters.png)
 - If a user encounters an error, the relevant error page is displayed (400, 403, 404 or 500)
-<br>![404](readme/testing/404_desktop.PNG)
+<br>![404](readme/testing/error404.png)
 
 
 ### Feature 1 Navigation & Homepage

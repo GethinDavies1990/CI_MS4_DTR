@@ -185,7 +185,7 @@ Step 5 | Products on the page are filtered by Category (A-Z) | [Desktop](readme/
 #### User Story Testing Results 1
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
-Step 1 | The homepage is displayed, Login and Register links are displayed under My Account | [Desktop](readme/testing/feature_2/feature-2-step2-desktop.png)  | [Tablet](readme/testing/feature_2/feature-2-step1-tablet.png)  | [Mobile](readme/testing/feature_2/feature-2-step1-mobile.png)  | Passed |
+Step 1 | The homepage is displayed, Login and Register links are displayed under My Account | [Desktop](readme/testing/feature_2/feature-2-step1-desktop.png)  | [Tablet](readme/testing/feature_2/feature-2-step1-tablet.png)  | [Mobile](readme/testing/feature_2/feature-2-step1-mobile.png)  | Passed |
 
 ### Feature 3 Register
 #### Description feature 3
@@ -201,7 +201,7 @@ Step 1 | The homepage is displayed, Login and Register links are displayed under
 #### User Story Testing Results 1
 Step| Result | Desktop | Tablet | Mobile | Status
 ------------ | ------------ | ------------- | ------------- | ------------- | -------------
-Step 1 | User registers for an account | [Desktop](readme/testing/feature_4/feature-3-step1-desktop.png)  | [Tablet](readme/testing/feature_3/feature-3-step1-tablet.png)  | [Mobile](readme/testing/feature_3/feature-3-step1-mobile.png)  | Passed |
+Step 1 | User registers for an account | [Desktop](readme/testing/feature_3/feature-3-step1-desktop.png)  | [Tablet](readme/testing/feature_3/feature-3-step1-tablet.png)  | [Mobile](readme/testing/feature_3/feature-3-step1-mobile.png)  | Passed |
 Step 2 | User registers for an account | [Desktop](readme/testing/feature_3/feature-3-step2-desktop.png)  | [Tablet](readme/testing/feature_3/feature-3-step2-tablet.png)  | [Mobile](readme/testing/feature_3/feature-3-step2-mobile.png)  | Passed |
 Step 3 | User registers for an account | [Desktop](readme/testing/feature_3/feature-3-step3-desktop.png)  | [Tablet](readme/testing/feature_3/feature-3-step3-desktop.png)  | [Mobile](readme/testing/feature_3/feature-3-step3-desktop.png)  | Passed |
 
@@ -428,40 +428,40 @@ bag/contexts.py | No errors/warnings | [Results](readme/validation/pep8_validati
 bag/urls.py | No errors/warnings | [Results](readme/validation/pep8_validation/bag_urls.png)
 bag/views.py | No errors/warnings | [Results](readme/validation/pep8_validation/bag_views.png)
 checkout/admin.py | No errors/warnings | [Results](readme/validation/pep8_validation/checkout_admin.png)
-checkout/apps.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_apps.png)
-checkout/forms.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_forms.png)
-checkout/models.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_models.png)
-checkout/signals.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_signals.png)
-checkout/urls.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_urls.png)
-checkout/views.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_views.png)
-checkout/webhook_handler.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_webhook_handler.png)
-checkout/webhooks.py | No errors/warnings [Results](readme/validation/pep8_validation/checkout_webhooks.png)
-home/apps.py | No errors/warnings [Results](readme/validation/pep8_validation/home_apps.png)
-home/urls.py | No errors/warnings [Results](readme/validation/pep8_validation/home_urls.png)
-home/views.py | No errors/warnings [Results](readme/validation/pep8_validation/home_views.png)
-products/admin.py | No errors/warnings [Results](readme/validation/pep8_validation/products_admin.png)
-products/apps.py | No errors/warnings [Results](readme/validation/pep8_validation/products_apps.png)
-products/forms.py | No errors/warnings [Results](readme/validation/pep8_validation/products_forms.png)
-products/models.py | No errors/warnings [Results](readme/validation/pep8_validation/products_models.png)
-products/urls.py | No errors/warnings [Results](readme/validation/pep8_validation/products_urls.png)
-products/views.py | No errors/warnings [Results](readme/validation/pep8_validation/products_views.png)
-products/widgets.py | No errors/warnings [Results](readme/validation/pep8_validation/products_widgets.png)
-profiles/apps.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_apps.png)
-profiles/forms.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_forms.png)
-profiles/models.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_models.png)
-profiles/urls.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_urls.png)
-profiles/views.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_views.png)
-events/admin | No errors/warnings [Results](readme/validation/pep8_validation/events_admin.png)
-events/models | No errors/warnings [Results](readme/validation/pep8_validation/events_models.png)
-events/apps | No errors/warnings [Results](readme/validation/pep8_validation/events_apps.png)
-events/urls | No errors/warnings [Results](readme/validation/pep8_validation/events_urls.png)
-events/views | No errors/warnings [Results](readme/validation/pep8_validation/events_views.png)
-taco_y_tequila/asgi | No errors/warnings [Results](readme/validation/pep8_validation/taco_y_tequila_asgi.png)
-taco_y_tequila/settings | No errors/warnings [Results](readme/validation/pep8_validation/taco_y_tequila_settings.png)
-taco_y_tequila/urls | No errors/warnings [Results](readme/validation/pep8_validation/taco_y_tequila_urls.png)
-taco_y_tequila/views | No errors/warnings [Results](readme/validation/pep8_validation/taco_y_tequila_views.png)
-taco_y_tequila/wsgi | No errors/warnings [Results](readme/validation/pep8_validation/taco_y_tequila_wsgi.png)
-custom_storages.py | No errors/warnings [Results](readme/validation/pep8_validation/profiles_views.png)
+checkout/apps.py | No errors/warnings | [Results](readme/validation/pep8_validation/checkout_apps.png)
+checkout/forms.py | No errors/warnings | [Results](readme/validation/pep8_validation/checkout_forms.png)
+checkout/models.py | No errors/warnings | [Results](readme/validation/pep8_validation/checkout_models.png)
+checkout/signals.py | No errors/warnings | [Results](readme/validation/pep8_validation/checkout_signals.png)
+checkout/urls.py | No errors/warnings | [Results](readme/validation/pep8_validation/checkout_urls.png)
+checkout/views.py | No errors/warnings | [Results](readme/validation/pep8_validation/checkout_views.png)
+checkout/webhook_handler.py | No errors/warnings | [Results](readme/validation/pep8_validation/checkout_webhook_handler.png)
+checkout/webhooks.py | No errors/warnings | [Results](readme/validation/pep8_validation/checkout_webhooks.png)
+home/apps.py | No errors/warnings | [Results](readme/validation/pep8_validation/home_apps.png)
+home/urls.py | No errors/warnings | [Results](readme/validation/pep8_validation/home_urls.png)
+home/views.py | No errors/warnings | [Results](readme/validation/pep8_validation/home_views.png)
+products/admin.py | No errors/warnings | [Results](readme/validation/pep8_validation/products_admin.png)
+products/apps.py | No errors/warnings | [Results](readme/validation/pep8_validation/products_apps.png)
+products/forms.py | No errors/warnings | [Results](readme/validation/pep8_validation/products_forms.png)
+products/models.py | No errors/warnings | [Results](readme/validation/pep8_validation/products_models.png)
+products/urls.py | No errors/warnings | [Results](readme/validation/pep8_validation/products_urls.png)
+products/views.py | No errors/warnings | [Results](readme/validation/pep8_validation/products_views.png)
+products/widgets.py | No errors/warnings | [Results](readme/validation/pep8_validation/products_widgets.png)
+profiles/apps.py | No errors/warnings | [Results](readme/validation/pep8_validation/profiles_apps.png)
+profiles/forms.py | No errors/warnings | [Results](readme/validation/pep8_validation/profiles_forms.png)
+profiles/models.py | No errors/warnings | [Results](readme/validation/pep8_validation/profiles_models.png)
+profiles/urls.py | No errors/warnings | [Results](readme/validation/pep8_validation/profiles_urls.png)
+profiles/views.py | No errors/warnings | [Results](readme/validation/pep8_validation/profiles_views.png)
+events/admin | No errors/warnings | [Results](readme/validation/pep8_validation/events_admin.png)
+events/models | No errors/warnings | [Results](readme/validation/pep8_validation/events_models.png)
+events/apps | No errors/warnings | [Results](readme/validation/pep8_validation/events_apps.png)
+events/urls | No errors/warnings | [Results](readme/validation/pep8_validation/events_urls.png)
+events/views | No errors/warnings | [Results](readme/validation/pep8_validation/events_views.png)
+taco_y_tequila/asgi | No errors/warnings | [Results](readme/validation/pep8_validation/taco_y_tequila_asgi.png)
+taco_y_tequila/settings | No errors/warnings | [Results](readme/validation/pep8_validation/taco_y_tequila_settings.png)
+taco_y_tequila/urls | No errors/warnings | [Results](readme/validation/pep8_validation/taco_y_tequila_urls.png)
+taco_y_tequila/views | No errors/warnings | [Results](readme/validation/pep8_validation/taco_y_tequila_views.png)
+taco_y_tequila/wsgi | No errors/warnings | [Results](readme/validation/pep8_validation/taco_y_tequila_wsgi.png)
+custom_storages.py | No errors/warnings | [Results](readme/validation/pep8_validation/profiles_views.png)
 
 ## Chrome Dev tools Lighthouse
 
@@ -476,7 +476,7 @@ checkout/templates/checkout/checkout.html | 91 | 100 | 92 | 100 |
 checkout/templates/checkout/checkout_success.html | 93 | 100 | 92 | 100 |
 home/templates/home/index.html | 92 | 100 | 83 | 100 ||
 products/templates/products/add_product.html | 94 | 100 | 92 | 100 |
-<!-- products/templates/products/edit_product.html | 96 | 78 | 92 | 90 | -->
+products/templates/products/edit_product.html | 96 | 78 | 92 | 90 |
 products/templates/products/product_detail.html | 96 | 100 | 83 | 100 |
 products/templates/products/products.html  | 91 | 97 | 92 | 90 |
 profile/templates/profile/profile.html | 94 | 100 | 92 | 100 |
@@ -485,22 +485,6 @@ templates/allauth/account/login.html | 90 | 100 | 92 | 100 |
 templates/allauth/account/logout.html | 95 | 100 | 92 | 100 |
 templates/allauth/account/register.html | 96 | 100 | 92 | 100 |
 
-### Mobile
-Page  | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%)
-------------  | ------------ | ------------- | ------------- | -------------
-bag/templates/bag/bag.html | 95 | 100 | 92 | 100 |
-checkout/templates/checkout/checkout.html | 91 | 100 | 92 | 100 |
-checkout/templates/checkout/checkout_success.html | 93 | 100 | 92 | 100 |
-home/templates/home/index.html | 92 | 100 | 83 | 100 ||
-products/templates/products/add_product.html | 94 | 100 | 92 | 100 |
-<!-- products/templates/products/edit_product.html | 96 | 78 | 92 | 90 | -->
-products/templates/products/product_detail.html | 96 | 100 | 83 | 100 |
-products/templates/products/products.html  | 91 | 97 | 92 | 90 |
-profile/templates/profile/profile.html | 94 | 100 | 92 | 100 |
-profile/templates/profile/order_history.html | 93 | 100 | 92 | 100 |
-templates/allauth/account/login.html | 90 | 100 | 92 | 100 |
-templates/allauth/account/logout.html | 95 | 100 | 92 | 100 |
-templates/allauth/account/register.html | 96 | 100 | 92 | 100 |
 
 ## Wave Accessibility
 - Wave accessibility(https://wave.webaim.org/) was used to test the websites accessibility
