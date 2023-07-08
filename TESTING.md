@@ -621,9 +621,4 @@ events/templates/book_event.html | 0 errors and 0 contrast errors| [Results](rea
 events/templates/book_event.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/event_booked.png)
 templates/allauth/account/login.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/sign_in.png)
 templates/allauth/account/logout.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/sign_out.png)
-<!-- templates/allauth/account/register.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
-<!-- templates/allauth/account/password_change.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
-<!-- templates/allauth/account/password_reset.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
-<!-- templates/allauth/account/password_change_done.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
-<!-- templates/allauth/account/verification_sent.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png)) -->
-<!-- templates/allauth/account/verification_email_required.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/bag.png) -->
+templates/allauth/account/register.html | 0 errors and 0 contrast errors| [Results](readme/validation/wave/register.png)
