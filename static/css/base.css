@@ -4,7 +4,7 @@
     --text-main: #0C1829;
     --block-main: #22A699;
     --red: #EE4B2B;
-  }
+}
 
 p {
     font-family: 'Comfortaa', cursive;
@@ -133,15 +133,12 @@ body {
     min-width: 260px;
 }
 
-.btn-red {
+.btn-green {
     background: var(--main-color-sec);
     color: white;
 }
 
 .edit-btn {
-    margin-top: 3px;
-    padding: 5px;
-    border-radius: 3px;
     background-color: var(--main-color-sec);
     color: #fff;
 }
@@ -152,9 +149,6 @@ body {
 }
 
 .delete-btn {
-    margin-top: 3px;
-    padding: 5px;
-    border-radius: 3px;
     background-color: var(--red);
     color: #000;
 }
@@ -192,10 +186,10 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-red:hover,
-.btn-red:active,
-.btn-red:focus {
-    background: var(--main-color);
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
+    background: var(--block-main);
     color: black;
 }
 

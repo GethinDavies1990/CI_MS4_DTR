@@ -39,8 +39,8 @@
                 {% endfor %}
                 <div class="text-right">
                     <a href="{% url 'products' %}" class="btn btn-outline rounded-0">Cancel</a>
-                    <button class="btn btn-red rounded-0" type="submit">Update Team Member</button>
-                    <button type="button" class="delete-btn btn btn-danger rounded-0" data-toggle="modal"
+                    <button class="btn btn-green rounded-0" type="submit">Update Team Member</button>
+                    <button type="button" class="delete-btn btn  rounded-0" data-toggle="modal"
                         data-target="#deleteMember">
                         Delete
                     </button>
@@ -65,7 +65,7 @@
             </div>
             <div class="modal-footer bg-red">
                 <button type="button" class="btn btn-outline rounded-0" data-dismiss="modal">Close</button>
-                <a class="btn btn-red rounded-0" href="{% url 'delete_team_member' teams.id %}">Delete</a>
+                <a class="btn btn-green rounded-0" href="{% url 'delete_team_member' teams.id %}">Delete</a>
             </div>
         </div>
     </div>
