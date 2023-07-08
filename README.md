@@ -8,7 +8,7 @@ Taco y Tequila is mexican website, for users to purchase meal kits and also some
     - For the expiry date, cvc and postal code any series number(s) can be used(once they meet the minimum values)
 <br>
 
-![Responsive site example](readme/responsive/responsive.PNG)
+![Homepage](readme/testing/taco_y_tequila.png)
 
 # Table of Contents
 
